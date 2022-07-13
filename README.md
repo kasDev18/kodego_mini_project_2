@@ -1,5 +1,9 @@
 # Getting Started with Create React App
-
+<<<<<<< HEAD
+pull sample
+=======
+avs
+>>>>>>> 74859a827e7787f2e4a9d75bf570a6f7437a8449
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
