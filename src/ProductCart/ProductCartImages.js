@@ -6,7 +6,7 @@ import ListGroup from 'react-bootstrap/ListGroup';
 class ProductCartImages extends React.Component {
   render() {
     return (
-      <div className={styles + ' container mb-5  '}>
+      <div className={styles.body + ' container mb-5  '}>
         <h1>Product Details - in product cart folder</h1>
 
         <div className="row">

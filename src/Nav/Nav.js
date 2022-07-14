@@ -1,86 +1,174 @@
-import React from 'react';
+/*!
 
+=========================================================
+* Paper Kit React - v1.3.0
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/paper-kit-react
+
+* Copyright 2021 Creative Tim (https://www.creative-tim.com)
+* Licensed under MIT (https://github.com/creativetimofficial/paper-kit-react/blob/main/LICENSE.md)
+
+* Coded by Creative Tim
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+*/
+import React from "react";
+// nodejs library that concatenates strings
+import classnames from "classnames";
+import styles from './Nav.module.css';
 // reactstrap components
 import {
-  UncontrolledCollapse,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  UncontrolledDropdown,
-  FormGroup,
-  Form,
-  Input,
+  Button,
+  Collapse,
   NavbarBrand,
   Navbar,
   NavItem,
   NavLink,
   Nav,
   Container,
-} from 'reactstrap';
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
+  UncontrolledDropdown
+} from "reactstrap";
 
-// core components
+function IndexNavbar() {
+  const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
+  const [navbarCollapse, setNavbarCollapse] = React.useState(false);
 
-function Example() {
-  const [bodyClick, setBodyClick] = React.useState(false);
+  const toggleNavbarCollapse = () => {
+    setNavbarCollapse(!navbarCollapse);
+    document.documentElement.classList.toggle("nav-open");
+  };
+  React.useEffect(() => {
+    const updateNavbarColor = () => {
+      if (
+        document.documentElement.scrollTop > 299 ||
+        document.body.scrollTop > 299
+      ) {
+        setNavbarColor("");
+      } else if (
+        document.documentElement.scrollTop < 300 ||
+        document.body.scrollTop < 300
+      ) {
+        setNavbarColor("navbar-transparent");
+      }
+    };
+
+    window.addEventListener("scroll", updateNavbarColor);
+
+    return function cleanup() {
+      window.removeEventListener("scroll", updateNavbarColor);
+    };
+  });
   return (
-    <>
-      {bodyClick ? (
-        <div
-          id="bodyClick"
-          onClick={() => {
-            document.documentElement.classList.toggle('nav-open');
-            setBodyClick(false);
-          }}
-        />
-      ) : null}
-      <Navbar color="primary" expand="lg">
-        <Container>
-          <NavbarBrand href="#pablo" onClick={(e) => e.preventDefault()}>
-            Navbar
-          </NavbarBrand>
-          <button
-            className="navbar-toggler"
-            id="navbarNav"
-            type="button"
-            onClick={() => {
-              document.documentElement.classList.toggle('nav-open');
-              setBodyClick(true);
-            }}
-          >
-            <span className="navbar-toggler-icon" />
-          </button>
-          <UncontrolledCollapse navbar toggler="#navbarNav">
-            <Nav navbar>
-              <NavItem className="active">
-                <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
-                  Home <span className="sr-only">(current)</span>
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
-                  Features
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
-                  Pricing
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink
-                  className="disabled"
-                  href="#pablo"
-                  onClick={(e) => e.preventDefault()}
-                >
-                  Disabled
-                </NavLink>
-              </NavItem>
-            </Nav>
-          </UncontrolledCollapse>
-        </Container>
-      </Navbar>
-    </>
+    <Navbar className={classnames("fixed-top", navbarColor)} expand="lg">
+      <div className={styles.logo + ' d-flex'}>
+        <span><h1 className={styles.logo}>Kadrielle </h1></span>
+        <h1 className={styles.logo}>Hotel</h1>
+      </div>
+      <Container>
+        <Collapse
+          className="justify-content-end"
+          navbar
+          isOpen={navbarCollapse}
+        >
+          <Nav navbar>
+            <NavItem>
+              <NavLink
+                data-placement="bottom"
+                href="https://twitter.com/CreativeTim?ref=creativetim"
+                target="_blank"
+                title="Follow us on Twitter"
+              >
+                <i className="fa fa-twitter" />
+                <p className="d-lg-none">Twitter</p>
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink
+                data-placement="bottom"
+                href="https://www.facebook.com/CreativeTim?ref=creativetim"
+                target="_blank"
+                title="Like us on Facebook"
+              >
+                <i className="fa fa-facebook-square" />
+                <p className="d-lg-none">Facebook</p>
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink
+                data-placement="bottom"
+                href="https://www.instagram.com/CreativeTimOfficial?ref=creativetim"
+                target="_blank"
+                title="Follow us on Instagram"
+              >
+                <i className="fa fa-instagram" />
+                <p className="d-lg-none">Instagram</p>
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink
+                data-placement="bottom"
+                href="https://www.github.com/CreativeTimOfficial/paper-kit-react?ref=creativetim"
+                target="_blank"
+                title="Star on GitHub"
+              >
+                <i className="fa fa-github" />
+                <p className="d-lg-none">GitHub</p>
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink
+                href="https://demos.creative-tim.com/paper-kit-react/#/documentation?ref=pkr-index-navbar"
+                target="_blank"
+              >
+                <i className="nc-icon nc-book-bookmark" /> Documentation
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <Button
+                className="btn-round"
+                color="danger"
+                href="https://www.creative-tim.com/product/paper-kit-pro-react?ref=pkr-index-navbar"
+                target="_blank"
+              >
+                <i className="nc-icon nc-spaceship"></i> Upgrade to Pro
+              </Button>
+            </NavItem>
+            <UncontrolledDropdown>
+              <DropdownToggle
+                aria-expanded={false}
+                aria-haspopup={true}
+                caret
+                color="secondary"
+                data-toggle="dropdown"
+                id="dropdownMenuButton"
+                type="button"
+              >
+                Dropdown button
+              </DropdownToggle>
+              <DropdownMenu aria-labelledby="dropdownMenuButton">
+                <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
+                  Action
+                </DropdownItem>
+                <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
+                  Another action
+                </DropdownItem>
+                <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
+                  Something else here
+                </DropdownItem>
+              </DropdownMenu>
+            </UncontrolledDropdown>
+          </Nav>
+        </Collapse>
+      </Container>
+    </Navbar>
   );
 }
 
-export default Example;
+export default IndexNavbar;

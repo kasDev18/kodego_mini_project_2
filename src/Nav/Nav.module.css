@@ -1,1 +1,7 @@
-.Nav {}
+.navbarColor {
+    background: red;
+}
+
+.logo {
+    font-family: 'Great Vibes', cursive;
+}
