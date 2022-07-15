@@ -11,7 +11,7 @@ class ProductCartImages extends React.Component {
 
         <div className="row">
           <div className="col-6">
-            <Card.Img variant="top" src="assets/img/tagaytay/tagaytay1.webp" />
+            <Card.Img variant="top" src="assets/tagaytay/tagaytay1.webp" />
             <Card.ImgOverlay>
               <Card.Title>Card title</Card.Title>
               <Card.Text>
@@ -25,30 +25,18 @@ class ProductCartImages extends React.Component {
           <div className="col-6">
             <div className="row">
               <div className="col-6  ">
-                <Card.Img
-                  variant="top"
-                  src="assets/img/tagaytay/tagaytay1.webp"
-                />
+                <Card.Img variant="top" src="assets/tagaytay/tagaytay1.webp" />
               </div>
               <div className="col-6">
-                <Card.Img
-                  variant="top"
-                  src="assets/img/tagaytay/tagaytay1.webp"
-                />
+                <Card.Img variant="top" src="assets/tagaytay/tagaytay1.webp" />
               </div>
             </div>
             <div className="row mt-3">
               <div className="col-6">
-                <Card.Img
-                  variant="top"
-                  src="assets/img/tagaytay/tagaytay1.webp"
-                />
+                <Card.Img variant="top" src="assets/tagaytay/tagaytay1.webp" />
               </div>
               <div className="col-6">
-                <Card.Img
-                  variant="top"
-                  src="assets/img/tagaytay/tagaytay1.webp"
-                />
+                <Card.Img variant="top" src="assets/tagaytay/tagaytay1.webp" />
               </div>
             </div>
           </div>
@@ -58,7 +46,7 @@ class ProductCartImages extends React.Component {
   }
 }
 {
-  /* <Card.Img variant="top" src="assets/img/tagaytay/tagaytay1.webp" />; */
+  /* <Card.Img variant="top" src="assets/tagaytay/tagaytay1.webp" />; */
 }
 
 export default ProductCartImages;
