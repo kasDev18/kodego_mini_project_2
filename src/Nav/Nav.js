@@ -24,21 +24,15 @@ import styles from './Nav.module.css';
 import {
   Button,
   Collapse,
-  NavbarBrand,
   Navbar,
-  NavItem,
-  NavLink,
-  Nav,
   Container,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  UncontrolledDropdown
+  Modal
 } from "reactstrap";
 
 function IndexNavbar() {
   const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
   const [navbarCollapse, setNavbarCollapse] = React.useState(false);
+  const [liveDemo, setLiveDemo] = React.useState(false);
 
   const toggleNavbarCollapse = () => {
     setNavbarCollapse(!navbarCollapse);
@@ -88,30 +82,30 @@ function IndexNavbar() {
               <ul class="navbar-nav navbar-nav-hover ms-auto">
                 <li class="nav-item dropdown dropdown-hover mx-2">
                   <a className={styles + ' nav-link ps-2 d-flex cursor-pointer align-items-center'} id="dropdownMenuPages" data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="fa-solid fa-gauge"></i>
-                    Pages
+                    <i class="fa-solid fa-hotel"></i>
+                    Choose Your Hotel
                     <img src="./assets/img/down-arrow-white.svg" alt="down-arrow" class="arrow ms-auto ms-md-2" />
                   </a>
                   <div class="dropdown-menu dropdown-menu-animation ms-n3 dropdown-md p-3 border-radius-xl mt-0 mt-lg-3" aria-labelledby="dropdownMenuPages">
                     <div class="d-none d-lg-block">
                       <h6 className={styles + ' dropdown-header text-dark font-weight-bolder d-flex align-items-center px-1'}>
-                        Landing Pages
+                        Hotel Location
                       </h6>
                       <a href="./pages/about-us.html" className={styles + ' dropdown-item border-radius-md'}>
-                        <span>About Us</span>
+                        <span>Tagaytay</span>
                       </a>
                       <a href="./pages/contact-us.html" class="dropdown-item border-radius-md">
-                        <span>Contact Us</span>
+                        <span>Boracay</span>
                       </a>
                       <a href="./pages/author.html" class="dropdown-item border-radius-md">
-                        <span>Author</span>
+                        <span>El Nido</span>
                       </a>
-                      <h6 class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-1 mt-3">
+                      {/* <h6 class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-1 mt-3">
                         Account
                       </h6>
                       <a href="./pages/sign-in.html" class="dropdown-item border-radius-md">
                         <span>Sign In</span>
-                      </a>
+                      </a> */}
                     </div>
 
                     <div class="d-lg-none">
@@ -143,8 +137,8 @@ function IndexNavbar() {
 
                 <li class="nav-item dropdown dropdown-hover mx-2">
                   <a class="nav-link ps-2 d-flex cursor-pointer align-items-center" id="dropdownMenuBlocks" data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="fa-solid fa-section"></i>
-                    Sections
+                    <i class="fa-solid fa-bell-concierge"></i>
+                    Services
                     <img src="./assets/img/down-arrow-white.svg" alt="down-arrow" class="arrow ms-auto ms-md-2" />
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end dropdown-menu-animation dropdown-md dropdown-md-responsive p-3 border-radius-lg mt-0 mt-lg-3" aria-labelledby="dropdownMenuBlocks">
@@ -153,18 +147,24 @@ function IndexNavbar() {
                         <a class="dropdown-item py-2 ps-3 border-radius-md" href="./presentation.html">
                           <div class="w-100 d-flex align-items-center justify-content-between">
                             <div>
-                              <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">Page Sections</h6>
-                              <span class="text-sm">See all sections</span>
+                              <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">Rooms</h6>
+                              <span class="text-sm">Rooms from your preference</span>
                             </div>
                             <img src="./assets/img/down-arrow-white.svg" alt="down-arrow" class="arrow ms-auto ms-md-2" />
                           </div>
                         </a>
                         <div class="dropdown-menu mt-0 py-3 px-2 mt-3">
                           <a class="dropdown-item ps-3 border-radius-md mb-1" href="./sections/page-sections/hero-sections.html">
-                            Page Headers
+                            Single
                           </a>
                           <a class="dropdown-item ps-3 border-radius-md mb-1" href="./sections/page-sections/features.html">
-                            Features
+                            Double
+                          </a>
+                          <a class="dropdown-item ps-3 border-radius-md mb-1" href="./sections/page-sections/features.html">
+                            Deluxe Single
+                          </a>
+                          <a class="dropdown-item ps-3 border-radius-md mb-1" href="./sections/page-sections/features.html">
+                            Deluxe Double
                           </a>
                         </div>
                       </li>
@@ -173,21 +173,21 @@ function IndexNavbar() {
                         <a class="dropdown-item py-2 ps-3 border-radius-md" href="./presentation.html">
                           <div class="w-100 d-flex align-items-center justify-content-between">
                             <div>
-                              <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">Navigation</h6>
-                              <span class="text-sm">See all navigations</span>
+                              <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">Gatherings</h6>
+                              <span class="text-sm">Event Plans</span>
                             </div>
                             <img src="./assets/img/down-arrow-white.svg" alt="down-arrow" class="arrow ms-auto ms-md-2" />
                           </div>
                         </a>
                         <div class="dropdown-menu mt-0 py-3 px-2 mt-3">
                           <a class="dropdown-item ps-3 border-radius-md mb-1" href="./sections/navigation/navbars.html">
-                            Navbars
+                            Weddings
                           </a>
                           <a class="dropdown-item ps-3 border-radius-md mb-1" href="./sections/navigation/nav-tabs.html">
-                            Nav Tabs
+                            Corporate
                           </a>
                           <a class="dropdown-item ps-3 border-radius-md mb-1" href="./sections/navigation/pagination.html">
-                            Pagination
+                            Milestone
                           </a>
                         </div>
                       </li>
@@ -405,25 +405,25 @@ function IndexNavbar() {
                       <ul class="list-group">
                         <li class="nav-item list-group-item border-0 p-0">
                           <a class="dropdown-item py-2 ps-3 border-radius-md" href=" https://www.creative-tim.com/learning-lab/bootstrap/overview/material-kit ">
-                            <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">Getting Started</h6>
+                            <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">About Us</h6>
                             <span class="text-sm">All about overview, quick start, license and contents</span>
                           </a>
                         </li>
                         <li class="nav-item list-group-item border-0 p-0">
                           <a class="dropdown-item py-2 ps-3 border-radius-md" href=" https://www.creative-tim.com/learning-lab/bootstrap/colors/material-kit ">
-                            <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">Foundation</h6>
+                            <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">Gallery</h6>
                             <span class="text-sm">See our colors, icons and typography</span>
                           </a>
                         </li>
                         <li class="nav-item list-group-item border-0 p-0">
                           <a class="dropdown-item py-2 ps-3 border-radius-md" href=" https://www.creative-tim.com/learning-lab/bootstrap/alerts/material-kit ">
-                            <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">Components</h6>
+                            <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">Amenities</h6>
                             <span class="text-sm">Explore our collection of fully designed components</span>
                           </a>
                         </li>
                         <li class="nav-item list-group-item border-0 p-0">
                           <a class="dropdown-item py-2 ps-3 border-radius-md" href=" https://www.creative-tim.com/learning-lab/bootstrap/datepicker/material-kit ">
-                            <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">Plugins</h6>
+                            <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">Contact Us</h6>
                             <span class="text-sm">Check how you can integrate our plugins</span>
                           </a>
                         </li>
@@ -475,8 +475,53 @@ function IndexNavbar() {
                 </li>
                 <li class="nav-item my-auto ms-3 ms-lg-0">
 
-                  <a href="https://www.creative-tim.com/product/material-kit-pro" class="btn btn-sm  bg-gradient-primary  mb-0 me-1 mt-2 mt-md-0">Signup/Login</a>
-
+                  <a
+                    class="btn btn-sm  bg-gradient-primary  mb-0 me-1 mt-2 mt-md-0 text-white"
+                    onClick={() => setLiveDemo(true)}
+                  >Signup/Login</a>
+                  <Modal isOpen={liveDemo} toggle={() => setLiveDemo(false)}>
+                    <div className="modal-header">
+                      <h5 className="modal-title" id="exampleModalLiveLabel">
+                        Modal title
+                      </h5>
+                      <button
+                        aria-label="Close"
+                        className="close"
+                        data-dismiss="modal"
+                        type="button"
+                        onClick={() => setLiveDemo(false)}
+                      >
+                        <span aria-hidden={true}>×</span>
+                      </button>
+                    </div>
+                    <div className="modal-body">
+                      <p>Woohoo, you're reading this text in a modal!</p>
+                    </div>
+                    <div className="modal-footer">
+                      <div className="left-side">
+                        <Button
+                          className="btn-link"
+                          color="default"
+                          data-dismiss="modal"
+                          type="button"
+                          onClick={() => setLiveDemo(false)}
+                        >
+                          Never mind
+                        </Button>
+                      </div>
+                      <div className="divider" />
+                      <div className="right-side">
+                        <Button
+                          className="btn-link"
+                          color="danger"
+                          type="button"
+                          onClick={() => setLiveDemo(false)}
+                        >
+                          Delete
+                        </Button>
+                      </div>
+                    </div>
+                  </Modal>
                 </li>
               </ul>
             </div>
