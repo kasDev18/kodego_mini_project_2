@@ -67,20 +67,16 @@ function IndexNavbar() {
   });
   return (
     <Navbar className={classnames("fixed-top", navbarColor)} expand="lg">
-      <div className={styles.logo + ' d-flex'}>
-        <span><h1 className={styles.logo}>Kadrielle </h1></span>
-        <h1 className={styles.logo}>Hotel</h1>
-      </div>
+      <a class="navbar-brand font-weight-bolder ms-sm-3" href="https://demos.creative-tim.com/material-kit/index" rel="tooltip" title="Designed and Coded by Creative Tim" data-placement="bottom" target="_blank">
+        Material Kit 2
+      </a>
       <Container>
         <Collapse
           className="justify-content-end"
           navbar
           isOpen={navbarCollapse}
         >
-          <div class="container-fluid px-0">
-            <a class="navbar-brand font-weight-bolder ms-sm-3" href="https://demos.creative-tim.com/material-kit/index" rel="tooltip" title="Designed and Coded by Creative Tim" data-placement="bottom" target="_blank">
-              Material Kit 2
-            </a>
+          <div>
             <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon mt-2">
                 <span class="navbar-toggler-bar bar1"></span>
@@ -92,7 +88,7 @@ function IndexNavbar() {
               <ul class="navbar-nav navbar-nav-hover ms-auto">
                 <li class="nav-item dropdown dropdown-hover mx-2">
                   <a class="nav-link ps-2 d-flex cursor-pointer align-items-center" id="dropdownMenuPages" data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="material-icons opacity-6 me-2 text-md">dashboard</i>
+                    <i class="fa-solid fa-gauge"></i>
                     Pages
                     {/* <img src="./assets/img/down-arrow-dark.svg" alt="down-arrow" class="arrow ms-auto ms-md-2"> */}
                   </a>
@@ -147,7 +143,7 @@ function IndexNavbar() {
 
                 <li class="nav-item dropdown dropdown-hover mx-2">
                   <a class="nav-link ps-2 d-flex cursor-pointer align-items-center" id="dropdownMenuBlocks" data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="material-icons opacity-6 me-2 text-md">view_day</i>
+                    <i class="fa-solid fa-section"></i>
                     Sections
                     {/* <img src="./assets/img/down-arrow-dark.svg" alt="down-arrow" class="arrow ms-auto ms-md-2"> */}
                   </a>
@@ -400,7 +396,7 @@ function IndexNavbar() {
 
                 <li class="nav-item dropdown dropdown-hover mx-2">
                   <a class="nav-link ps-2 d-flex cursor-pointer align-items-center" id="dropdownMenuDocs" data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="material-icons opacity-6 me-2 text-md">article</i>
+                    <i class="fa-solid fa-newspaper"></i>
                     Docs
                     {/* <img src="./assets/img/down-arrow-dark.svg" alt="down-arrow" class="arrow ms-auto ms-md-2"> */}
                   </a>
