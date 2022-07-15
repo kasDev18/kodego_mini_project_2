@@ -87,17 +87,17 @@ function IndexNavbar() {
             <div class="collapse navbar-collapse pt-3 pb-2 py-lg-0 w-100" id="navigation">
               <ul class="navbar-nav navbar-nav-hover ms-auto">
                 <li class="nav-item dropdown dropdown-hover mx-2">
-                  <a class="nav-link ps-2 d-flex cursor-pointer align-items-center" id="dropdownMenuPages" data-bs-toggle="dropdown" aria-expanded="false">
+                  <a className={styles + ' nav-link ps-2 d-flex cursor-pointer align-items-center'} id="dropdownMenuPages" data-bs-toggle="dropdown" aria-expanded="false">
                     <i class="fa-solid fa-gauge"></i>
                     Pages
-                    {/* <img src="./assets/img/down-arrow-dark.svg" alt="down-arrow" class="arrow ms-auto ms-md-2"> */}
+                    <img src="./assets/img/down-arrow-white.svg" alt="down-arrow" class="arrow ms-auto ms-md-2" />
                   </a>
                   <div class="dropdown-menu dropdown-menu-animation ms-n3 dropdown-md p-3 border-radius-xl mt-0 mt-lg-3" aria-labelledby="dropdownMenuPages">
                     <div class="d-none d-lg-block">
-                      <h6 class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-1">
+                      <h6 className={styles + ' dropdown-header text-dark font-weight-bolder d-flex align-items-center px-1'}>
                         Landing Pages
                       </h6>
-                      <a href="./pages/about-us.html" class="dropdown-item border-radius-md">
+                      <a href="./pages/about-us.html" className={styles + ' dropdown-item border-radius-md'}>
                         <span>About Us</span>
                       </a>
                       <a href="./pages/contact-us.html" class="dropdown-item border-radius-md">
@@ -145,7 +145,7 @@ function IndexNavbar() {
                   <a class="nav-link ps-2 d-flex cursor-pointer align-items-center" id="dropdownMenuBlocks" data-bs-toggle="dropdown" aria-expanded="false">
                     <i class="fa-solid fa-section"></i>
                     Sections
-                    {/* <img src="./assets/img/down-arrow-dark.svg" alt="down-arrow" class="arrow ms-auto ms-md-2"> */}
+                    <img src="./assets/img/down-arrow-white.svg" alt="down-arrow" class="arrow ms-auto ms-md-2" />
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end dropdown-menu-animation dropdown-md dropdown-md-responsive p-3 border-radius-lg mt-0 mt-lg-3" aria-labelledby="dropdownMenuBlocks">
                     <div class="d-none d-lg-block">
@@ -156,7 +156,7 @@ function IndexNavbar() {
                               <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">Page Sections</h6>
                               <span class="text-sm">See all sections</span>
                             </div>
-                            {/* <img src="./assets/img/down-arrow.svg" alt="down-arrow" class="arrow"> */}
+                            <img src="./assets/img/down-arrow-white.svg" alt="down-arrow" class="arrow ms-auto ms-md-2" />
                           </div>
                         </a>
                         <div class="dropdown-menu mt-0 py-3 px-2 mt-3">
@@ -176,7 +176,7 @@ function IndexNavbar() {
                               <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">Navigation</h6>
                               <span class="text-sm">See all navigations</span>
                             </div>
-                            {/* <img src="./assets/img/down-arrow.svg" alt="down-arrow" class="arrow"> */}
+                            <img src="./assets/img/down-arrow-white.svg" alt="down-arrow" class="arrow ms-auto ms-md-2" />
                           </div>
                         </a>
                         <div class="dropdown-menu mt-0 py-3 px-2 mt-3">
@@ -199,7 +199,7 @@ function IndexNavbar() {
                               <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">Input Areas</h6>
                               <span class="text-sm">See all input areas</span>
                             </div>
-                            {/* <img src="./assets/img/down-arrow.svg" alt="down-arrow" class="arrow"> */}
+                            <img src="./assets/img/down-arrow-white.svg" alt="down-arrow" class="arrow ms-auto ms-md-2" />
                           </div>
                         </a>
                         <div class="dropdown-menu mt-0 py-3 px-2 mt-3">
@@ -219,7 +219,7 @@ function IndexNavbar() {
                               <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">Attention Catchers</h6>
                               <span class="text-sm">See all examples</span>
                             </div>
-                            {/* <img src="./assets/img/down-arrow.svg" alt="down-arrow" class="arrow"> */}
+                            <img src="./assets/img/down-arrow-white.svg" alt="down-arrow" class="arrow ms-auto ms-md-2" />
                           </div>
                         </a>
                         <div class="dropdown-menu mt-0 py-3 px-2 mt-3">
@@ -243,7 +243,7 @@ function IndexNavbar() {
                               <span class="text-sm">See all elements</span>
                             </div>
 
-                            {/* <img src="./assets/img/down-arrow.svg" alt="down-arrow" class="arrow"> */}
+                            <img src="./assets/img/down-arrow-white.svg" alt="down-arrow" class="arrow ms-auto ms-md-2" />
                           </div>
                         </a>
                         <div class="dropdown-menu mt-0 py-3 px-2 mt-3">
@@ -398,7 +398,7 @@ function IndexNavbar() {
                   <a class="nav-link ps-2 d-flex cursor-pointer align-items-center" id="dropdownMenuDocs" data-bs-toggle="dropdown" aria-expanded="false">
                     <i class="fa-solid fa-newspaper"></i>
                     Docs
-                    {/* <img src="./assets/img/down-arrow-dark.svg" alt="down-arrow" class="arrow ms-auto ms-md-2"> */}
+                    <img src="./assets/img/down-arrow-white.svg" alt="down-arrow" class="arrow ms-auto ms-md-2" />
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end dropdown-menu-animation dropdown-md dropdown-md-responsive mt-0 mt-lg-3 p-3 border-radius-lg" aria-labelledby="dropdownMenuDocs">
                     <div class="d-none d-lg-block">
@@ -475,7 +475,7 @@ function IndexNavbar() {
                 </li>
                 <li class="nav-item my-auto ms-3 ms-lg-0">
 
-                  <a href="https://www.creative-tim.com/product/material-kit-pro" class="btn btn-sm  bg-gradient-primary  mb-0 me-1 mt-2 mt-md-0">Upgrade to Pro</a>
+                  <a href="https://www.creative-tim.com/product/material-kit-pro" class="btn btn-sm  bg-gradient-primary  mb-0 me-1 mt-2 mt-md-0">Signup/Login</a>
 
                 </li>
               </ul>

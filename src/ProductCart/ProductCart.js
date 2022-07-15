@@ -8,6 +8,7 @@ class ProductCart extends React.Component {
       <div className={styles.Header + ' '}>
         <ProductCartImages />
       </div>
+
     );
   }
 }
