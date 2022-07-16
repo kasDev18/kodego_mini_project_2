@@ -1,20 +1,16 @@
 import React from 'react';
 import styles from './Home.module.css';
 import HomeCarousel from './HomeCarousel';
+import video from './vids.mp4'
 
 class Home extends React.Component {
   render() {
     return (
       <>
-        <div className={styles.Home}>
-          <h1 className="text-white">Video Here</h1>
-          <div className={styles.HomeDescription}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
-            iure quae nobis exercitationem non cupiditate obcaecati illum at
-            quaerat laboriosam nesciunt asperiores quod, voluptatum ipsum eaque
-            eveniet, perspiciatis velit expedita.
+        <div className={styles.containerVideo}>
+            <video src={video}  autoPlay className={styles.videoLanding}/>
+            <small>Welcome to</small> <br />
           </div>
-        </div>
         <div className={styles.HeadCarousel}>
           <HomeCarousel />
           {/* 
