@@ -1,0 +1,6 @@
+.carousel_image {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    background: black;
+}

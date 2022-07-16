@@ -5,12 +5,14 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css';
 import App from './App';
+import Solo from './Rooms_General/Solo/Rooms_Solo';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <App />
+      {/* <App /> */}
+      <Solo />
     </BrowserRouter>
   </React.StrictMode>
 );
