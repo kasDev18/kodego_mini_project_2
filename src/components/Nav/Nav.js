@@ -70,7 +70,7 @@ function IndexNavbar() {
         data-placement="bottom"
         id="bottom"
       >
-        7Seven luxury hotel
+        7Seven luxury hotel <img src="http://static.pinnula.fr/news/i/win7-yellow-logo.png" width="50px" height="50px" class="img-fluid border rounded-circle" alt="..." />
         <UncontrolledTooltip
           placement="bottom"
           className="bg-light"

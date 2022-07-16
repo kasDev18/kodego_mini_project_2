@@ -41,7 +41,13 @@ class Landing extends React.Component {
                                         </CardTitle>
                                         <CardText>From luxe amenities to local attractions, Bellevue Club Hotel has it all. With so many avenues to explore and memories to make, you’re going to want to stay a while. We can’t blame you.</CardText>
                                         <div class="button_cont">
-                                            <a className={styles.example_c + ' text-center'} href="add-website-here" target="_blank" rel="nofollow noopener">Details</a>
+                                            <div className='d-flex justify-content-center'>
+                                                <a className={styles.example_c + ' text-center btn-round mx-2'} href="add-website-here" target="_blank" rel="nofollow noopener">Tagaytay</a>
+                                                <a className={styles.example_c + ' text-center btn-round mx-2'} href="add-website-here" target="_blank" rel="nofollow noopener">Boracay</a>
+                                            </div>
+                                            <div className='d-flex justify-content-center mt-2'>
+                                                <a className={styles.example_c + ' text-center btn-round'} href="add-website-here" target="_blank" rel="nofollow noopener">El Nido</a>
+                                            </div>
                                         </div>
                                     </CardBody>
                                 </Card>
@@ -55,7 +61,13 @@ class Landing extends React.Component {
                                         </CardTitle>
                                         <CardText>Refuel with whatever moves you – a morning espresso, tide-to-table lunch, craft cocktails, or an after-dinner indulgence. Our four distinct dining venues offer all this and more.</CardText>
                                         <div class="button_cont">
-                                            <a className={styles.example_c + ' text-center'} href="add-website-here" target="_blank" rel="nofollow noopener">Details</a>
+                                            <div className='d-flex justify-content-center'>
+                                                <a className={styles.example_c + ' text-center btn-round mx-2'} href="add-website-here" target="_blank" rel="nofollow noopener">Tagaytay</a>
+                                                <a className={styles.example_c + ' text-center btn-round mx-2'} href="add-website-here" target="_blank" rel="nofollow noopener">Boracay</a>
+                                            </div>
+                                            <div className='d-flex justify-content-center mt-2'>
+                                                <a className={styles.example_c + ' text-center btn-round'} href="add-website-here" target="_blank" rel="nofollow noopener">El Nido</a>
+                                            </div>
                                         </div>
                                     </CardBody>
                                 </Card>
@@ -69,7 +81,13 @@ class Landing extends React.Component {
                                         </CardTitle>
                                         <CardText>Creating iconic moments is our specialty. We have stunning spaces for any size of gathering, so whether you’re hosting a corporate meeting or the wedding of the year, we’re here to help.</CardText>
                                         <div class="button_cont">
-                                            <a className={styles.example_c + ' text-center'} href="add-website-here" target="_blank" rel="nofollow noopener">Details</a>
+                                            <div className='d-flex justify-content-center'>
+                                                <a className={styles.example_c + ' text-center btn-round mx-2'} href="add-website-here" target="_blank" rel="nofollow noopener">Tagaytay</a>
+                                                <a className={styles.example_c + ' text-center btn-round mx-2'} href="add-website-here" target="_blank" rel="nofollow noopener">Boracay</a>
+                                            </div>
+                                            <div className='d-flex justify-content-center mt-2'>
+                                                <a className={styles.example_c + ' text-center btn-round'} href="add-website-here" target="_blank" rel="nofollow noopener">El Nido</a>
+                                            </div>
                                         </div>
                                     </CardBody>
                                 </Card>
@@ -97,23 +115,23 @@ class Landing extends React.Component {
                         </h4>
                     </div>
                 </div>
-                <div className={styles.awards + ' d-flex'}>
-                    <div>
+                <div className={styles.awards + ' d-flex justify-content-center'}>
+                    <div className='mx-3'>
                         <img src="https://www.bellevueclubhotel.com/wp-content/uploads/2019/06/the-knot.png" class="rounded " alt="..." />
                     </div>
-                    <div>
+                    <div className='mx-3'>
                         <img src="https://www.bellevueclubhotel.com/wp-content/uploads/2019/06/access-2017.png" class="rounded " alt="..." />
                     </div>
-                    <div>
+                    <div className='mx-3'>
                         <img src="https://www.bellevueclubhotel.com/wp-content/uploads/2019/06/tripadvisor.jpg" class="rounded " alt="..." />
                     </div>
-                    <div>
+                    <div className='mx-3'>
                         <img src="https://www.bellevueclubhotel.com/wp-content/uploads/2022/01/BestOf2021_Bellevue_Vertical.png" class="rounded " alt="..." />
                     </div>
-                    <div>
+                    <div className='mx-3'>
                         <img src="https://www.bellevueclubhotel.com/wp-content/uploads/2022/05/2022-WeddingRule-Editors-Choice.png" class="rounded " alt="..." />
                     </div>
-                    <div>
+                    <div className='mx-3'>
                         <img src="https://www.bellevueclubhotel.com/wp-content/uploads/2022/01/pms_aaa_4diamond_badge_thumb.png" class="rounded " alt="..." />
                     </div>
                 </div>
