@@ -5,14 +5,17 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css';
 import App from './App';
+import Landing from './components/Landing/Landing';
+// import ProductCart from './Pages/Products/ProductCart/ProductCart';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <App />
+      <Landing />
     </BrowserRouter>
   </React.StrictMode>
+  // <ProductCart/>
 );
 
 // If you want to start measuring performance in your app, pass a function

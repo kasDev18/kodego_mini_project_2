@@ -1,0 +1,19 @@
+.containerVideo {
+    width: 100%;
+    height: 100vh;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.landing_article_row {
+    width: 100%;
+    height: 100%;
+}
+
+.landing_article_img img {
+    height: 100vh;
+}
