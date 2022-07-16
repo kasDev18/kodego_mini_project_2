@@ -1,16 +1,7 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import styles from './Hotel.module.css';
-import Navigation from '../components/Nav/Nav';
 
-class Hotel extends React.Component{
-  render(){
-    return(
-      <Navigation>
-        
-      </Navigation>
-    )
-  }
-}
+const Hotel = () => {
+  return <div>Hotel</div>;
+};
 
 export default Hotel;

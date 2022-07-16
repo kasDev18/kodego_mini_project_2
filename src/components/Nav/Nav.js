@@ -21,7 +21,14 @@ import React from 'react';
 import classnames from 'classnames';
 import styles from './Nav.module.css';
 // reactstrap components
-import { Button, Collapse, Navbar, Container, Modal, UncontrolledTooltip } from 'reactstrap';
+import {
+  Button,
+  Collapse,
+  Navbar,
+  Container,
+  Modal,
+  UncontrolledTooltip,
+} from 'reactstrap';
 import { Link } from 'react-router-dom';
 
 function IndexNavbar() {
@@ -60,10 +67,16 @@ function IndexNavbar() {
         to="/"
         class="navbar-brand font-weight-bolder ms-sm-3 text-warning"
         rel="tooltip"
-        data-placement="bottom" id="bottom"
+        data-placement="bottom"
+        id="bottom"
       >
         7Seven luxury hotel
-        <UncontrolledTooltip placement="bottom" className='bg-light' target="bottom" delay={0}>
+        <UncontrolledTooltip
+          placement="bottom"
+          className="bg-light"
+          target="bottom"
+          delay={0}
+        >
           7Seven Luxury Hotel
         </UncontrolledTooltip>
       </Link>
@@ -95,7 +108,8 @@ function IndexNavbar() {
             >
               <ul class="navbar-nav navbar-nav-hover ms-auto">
                 <li class="nav-item dropdown dropdown-hover mx-2">
-                  <a
+                  <Link
+                    to="/"
                     className={
                       styles +
                       ' nav-link ps-2 d-flex cursor-pointer align-items-center'
@@ -111,7 +125,7 @@ function IndexNavbar() {
                       alt="down-arrow"
                       class="arrow ms-auto ms-md-2"
                     />
-                  </a>
+                  </Link>
                   <div
                     class="dropdown-menu dropdown-menu-animation ms-n0 dropdown-md p-3 border-radius-xl mt-0 mt-lg-5"
                     aria-labelledby="dropdownMenuPages"
@@ -125,49 +139,42 @@ function IndexNavbar() {
                       >
                         Hotel Location
                       </h6>
-                      <a
+                      <Link
+                        to="/tagaytay"
                         href="./pages/about-us.html"
                         className={styles + ' dropdown-item border-radius-md'}
                       >
                         <span>Tagaytay</span>
-                      </a>
+                      </Link>
                       <Link
                         to="/boracay"
                         class="dropdown-item border-radius-md"
                       >
                         <span>Boracay</span>
                       </Link>
-                      <a
+                      <Link
+                        to="/el-nido"
                         href="./pages/author.html"
                         class="dropdown-item border-radius-md"
                       >
                         <span>El Nido</span>
-                      </a>
-                      {/* <h6 class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-1 mt-3">
-                        Account
-                      </h6>
-                      <a href="./pages/sign-in.html" class="dropdown-item border-radius-md">
-                        <span>Sign In</span>
-                      </a> */}
+                      </Link>
                     </div>
 
-                    <div class="d-lg-none">
+                    {/* <div class="d-lg-none">
                       <h6 class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-1">
                         Landing Pages
                       </h6>
 
-                      <a
-                        href="./pages/about-us.html"
-                        class="dropdown-item border-radius-md"
-                      >
+                      <Link to="/about" class="dropdown-item border-radius-md">
                         <span>About Us</span>
-                      </a>
-                      <a
-                        href="./pages/contact-us.html"
+                      </Link>
+                      <Link
+                        to="/el-nido"
                         class="dropdown-item border-radius-md"
                       >
                         <span>Contact Us</span>
-                      </a>
+                      </Link>
                       <a
                         href="./pages/author.html"
                         class="dropdown-item border-radius-md"
@@ -184,12 +191,13 @@ function IndexNavbar() {
                       >
                         <span>Sign In</span>
                       </a>
-                    </div>
+                    </div> */}
                   </div>
                 </li>
 
                 <li class="nav-item dropdown dropdown-hover mx-2">
-                  <a
+                  <Link
+                    to="/"
                     class="nav-link ps-2 d-flex cursor-pointer align-items-center"
                     id="dropdownMenuBlocks"
                     data-bs-toggle="dropdown"
@@ -202,16 +210,16 @@ function IndexNavbar() {
                       alt="down-arrow"
                       class="arrow ms-auto ms-md-2"
                     />
-                  </a>
+                  </Link>
                   <ul
                     class="dropdown-menu dropdown-menu-end dropdown-menu-animation dropdown-md dropdown-md-responsive p-3 border-radius-lg mt-0 mt-lg-3"
                     aria-labelledby="dropdownMenuBlocks"
                   >
                     <div class="d-none d-lg-block">
                       <li class="nav-item dropdown dropdown-hover dropdown-subitem">
-                        <a
+                        <Link
+                          to="/"
                           class="dropdown-item py-2 ps-3 border-radius-md"
-                          href="./presentation.html"
                         >
                           <div class="w-100 d-flex align-items-center justify-content-between">
                             <div>
@@ -228,39 +236,39 @@ function IndexNavbar() {
                               class="arrow ms-auto ms-md-2"
                             />
                           </div>
-                        </a>
+                        </Link>
                         <div class="dropdown-menu mt-0 py-3 px-2 mt-3">
                           <Link
-                            class="dropdown-item ps-3 border-radius-md mb-1"
                             to="products"
+                            class="dropdown-item ps-3 border-radius-md mb-1"
                           >
                             Single
                           </Link>
-                          <a
+                          <Link
+                            to="products"
                             class="dropdown-item ps-3 border-radius-md mb-1"
-                            href="./sections/page-sections/features.html"
                           >
                             Double
-                          </a>
-                          <a
+                          </Link>
+                          <Link
+                            to="/products"
                             class="dropdown-item ps-3 border-radius-md mb-1"
-                            href="./sections/page-sections/features.html"
                           >
                             Deluxe Single
-                          </a>
-                          <a
+                          </Link>
+                          <Link
+                            to="products"
                             class="dropdown-item ps-3 border-radius-md mb-1"
-                            href="./sections/page-sections/features.html"
                           >
                             Deluxe Double
-                          </a>
+                          </Link>
                         </div>
                       </li>
 
                       <li class="nav-item dropdown dropdown-hover dropdown-subitem">
-                        <a
+                        <Link
+                          to="/"
                           class="dropdown-item py-2 ps-3 border-radius-md"
-                          href="./presentation.html"
                         >
                           <div class="w-100 d-flex align-items-center justify-content-between">
                             <div>
@@ -275,26 +283,26 @@ function IndexNavbar() {
                               class="arrow ms-auto ms-md-2"
                             />
                           </div>
-                        </a>
+                        </Link>
                         <div class="dropdown-menu mt-0 py-3 px-2 mt-3">
-                          <a
+                          <Link
+                            to="wedding"
                             class="dropdown-item ps-3 border-radius-md mb-1"
-                            href="./sections/navigation/navbars.html"
                           >
                             Weddings
-                          </a>
-                          <a
+                          </Link>
+                          <Link
+                            to="corporate"
                             class="dropdown-item ps-3 border-radius-md mb-1"
-                            href="./sections/navigation/nav-tabs.html"
                           >
                             Corporate
-                          </a>
-                          <a
+                          </Link>
+                          <Link
+                            to="milestone"
                             class="dropdown-item ps-3 border-radius-md mb-1"
-                            href="./sections/navigation/pagination.html"
                           >
                             Milestone
-                          </a>
+                          </Link>
                         </div>
                       </li>
                     </div>
@@ -302,7 +310,8 @@ function IndexNavbar() {
                 </li>
 
                 <li class="nav-item dropdown dropdown-hover mx-2">
-                  <a
+                  <Link
+                    to="/"
                     class="nav-link ps-2 d-flex cursor-pointer align-items-center"
                     id="dropdownMenuDocs"
                     data-bs-toggle="dropdown"
@@ -315,7 +324,7 @@ function IndexNavbar() {
                       alt="down-arrow"
                       class="arrow ms-auto ms-md-2"
                     />
-                  </a>
+                  </Link>
                   <ul
                     class="dropdown-menu dropdown-menu-end dropdown-menu-animation dropdown-md dropdown-md-responsive mt-0 mt-lg-3 p-3 border-radius-lg"
                     aria-labelledby="dropdownMenuDocs"
@@ -323,9 +332,9 @@ function IndexNavbar() {
                     <div class="d-none d-lg-block">
                       <ul class="list-group">
                         <li class="nav-item list-group-item border-0 p-0">
-                          <a
+                          <Link
+                            to="about"
                             class="dropdown-item py-2 ps-3 border-radius-md"
-                            href=" https://www.creative-tim.com/learning-lab/bootstrap/overview/material-kit "
                           >
                             <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
                               About Us
@@ -334,12 +343,12 @@ function IndexNavbar() {
                               All about overview, quick start, license and
                               contents
                             </span>
-                          </a>
+                          </Link>
                         </li>
                         <li class="nav-item list-group-item border-0 p-0">
-                          <a
+                          <Link
+                            to="gallery"
                             class="dropdown-item py-2 ps-3 border-radius-md"
-                            href=" https://www.creative-tim.com/learning-lab/bootstrap/colors/material-kit "
                           >
                             <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
                               Gallery
@@ -347,12 +356,12 @@ function IndexNavbar() {
                             <span class="text-sm">
                               See our colors, icons and typography
                             </span>
-                          </a>
+                          </Link>
                         </li>
                         <li class="nav-item list-group-item border-0 p-0">
-                          <a
+                          <Link
+                            to="amenities"
                             class="dropdown-item py-2 ps-3 border-radius-md"
-                            href=" https://www.creative-tim.com/learning-lab/bootstrap/alerts/material-kit "
                           >
                             <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
                               Amenities
@@ -361,12 +370,12 @@ function IndexNavbar() {
                               Explore our collection of fully designed
                               components
                             </span>
-                          </a>
+                          </Link>
                         </li>
                         <li class="nav-item list-group-item border-0 p-0">
-                          <a
+                          <Link
+                            to="corporate"
                             class="dropdown-item py-2 ps-3 border-radius-md"
-                            href=" https://www.creative-tim.com/learning-lab/bootstrap/datepicker/material-kit "
                           >
                             <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
                               Contact Us
@@ -374,12 +383,12 @@ function IndexNavbar() {
                             <span class="text-sm">
                               Check how you can integrate our plugins
                             </span>
-                          </a>
+                          </Link>
                         </li>
                       </ul>
                     </div>
 
-                    <div class="row d-lg-none">
+                    {/* <div class="row d-lg-none">
                       <div class="col-md-12 g-0">
                         <a
                           class="dropdown-item py-2 ps-3 border-radius-md"
@@ -443,7 +452,7 @@ function IndexNavbar() {
                           </span>
                         </a>
                       </div>
-                    </div>
+                    </div> */}
                   </ul>
                 </li>
                 <li class="nav-item ms-lg-auto">
@@ -470,7 +479,6 @@ function IndexNavbar() {
                   >
                     Signup/Login
                   </a>
-
 
                   {/* Modal */}
                   <Modal isOpen={liveDemo} toggle={() => setLiveDemo(false)}>
@@ -527,4 +535,3 @@ function IndexNavbar() {
 }
 
 export default IndexNavbar;
-
