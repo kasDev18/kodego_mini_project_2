@@ -127,10 +127,10 @@ function IndexNavbar() {
                     />
                   </Link>
                   <div
-                    class="dropdown-menu dropdown-menu-animation ms-n0 dropdown-md p-3 border-radius-xl mt-0 mt-lg-5"
+                    class="dropdown-menu ms-n0 dropdown-md p-3 border-radius-xl mt-0 mt-lg-5"
                     aria-labelledby="dropdownMenuPages"
                   >
-                    <div class="d-none d-lg-block ">
+                    <div class="d-none d-lg-block">
                       <h6
                         className={
                           styles +
@@ -142,20 +142,20 @@ function IndexNavbar() {
                       <Link
                         to="/tagaytay"
                         href="./pages/about-us.html"
-                        className={styles + ' dropdown-item border-radius-md'}
+                        className={styles.navigation_row + ' dropdown-item border-radius-md'}
                       >
                         <span>Tagaytay</span>
                       </Link>
                       <Link
                         to="/boracay"
-                        class="dropdown-item border-radius-md"
+                        className={styles.navigation_row + ' dropdown-item border-radius-md'}
                       >
                         <span>Boracay</span>
                       </Link>
                       <Link
                         to="/el-nido"
                         href="./pages/author.html"
-                        class="dropdown-item border-radius-md"
+                        className={styles.navigation_row + ' dropdown-item border-radius-md'}
                       >
                         <span>El Nido</span>
                       </Link>
@@ -219,7 +219,7 @@ function IndexNavbar() {
                       <li class="nav-item dropdown dropdown-hover dropdown-subitem">
                         <Link
                           to="/"
-                          class="dropdown-item py-2 ps-3 border-radius-md"
+                          className={styles.navigation_row + ' dropdown-item border-radius-md'}
                         >
                           <div class="w-100 d-flex align-items-center justify-content-between">
                             <div>
@@ -240,25 +240,25 @@ function IndexNavbar() {
                         <div class="dropdown-menu mt-0 py-3 px-2 mt-3">
                           <Link
                             to="products"
-                            class="dropdown-item ps-3 border-radius-md mb-1"
+                            className={styles.navigation_row + ' dropdown-item border-radius-md'}
                           >
                             Single
                           </Link>
                           <Link
                             to="products"
-                            class="dropdown-item ps-3 border-radius-md mb-1"
+                            className={styles.navigation_row + ' dropdown-item border-radius-md'}
                           >
                             Double
                           </Link>
                           <Link
                             to="/products"
-                            class="dropdown-item ps-3 border-radius-md mb-1"
+                            className={styles.navigation_row + ' dropdown-item border-radius-md'}
                           >
                             Deluxe Single
                           </Link>
                           <Link
                             to="products"
-                            class="dropdown-item ps-3 border-radius-md mb-1"
+                            className={styles.navigation_row + ' dropdown-item border-radius-md'}
                           >
                             Deluxe Double
                           </Link>
@@ -268,10 +268,10 @@ function IndexNavbar() {
                       <li class="nav-item dropdown dropdown-hover dropdown-subitem">
                         <Link
                           to="/"
-                          class="dropdown-item py-2 ps-3 border-radius-md"
+                          className={styles.navigation_row + ' dropdown-item border-radius-md'}
                         >
                           <div class="w-100 d-flex align-items-center justify-content-between">
-                            <div>
+                            <div className={styles.navigation_row}>
                               <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
                                 Gatherings
                               </h6>
@@ -287,19 +287,19 @@ function IndexNavbar() {
                         <div class="dropdown-menu mt-0 py-3 px-2 mt-3">
                           <Link
                             to="wedding"
-                            class="dropdown-item ps-3 border-radius-md mb-1"
+                            className={styles.navigation_row + ' dropdown-item border-radius-md'}
                           >
                             Weddings
                           </Link>
                           <Link
                             to="corporate"
-                            class="dropdown-item ps-3 border-radius-md mb-1"
+                            className={styles.navigation_row + ' dropdown-item border-radius-md'}
                           >
                             Corporate
                           </Link>
                           <Link
                             to="milestone"
-                            class="dropdown-item ps-3 border-radius-md mb-1"
+                            className={styles.navigation_row + ' dropdown-item border-radius-md'}
                           >
                             Milestone
                           </Link>
@@ -312,7 +312,7 @@ function IndexNavbar() {
                 <li class="nav-item dropdown dropdown-hover mx-2">
                   <Link
                     to="/"
-                    class="nav-link ps-2 d-flex cursor-pointer align-items-center"
+                    className={styles.navigation_row + " nav-link ps-2 d-flex cursor-pointer align-items-center"}
                     id="dropdownMenuDocs"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
@@ -334,7 +334,7 @@ function IndexNavbar() {
                         <li class="nav-item list-group-item border-0 p-0">
                           <Link
                             to="about"
-                            class="dropdown-item py-2 ps-3 border-radius-md"
+                            className={styles.navigation_row + ' dropdown-item border-radius-md'}
                           >
                             <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
                               About Us
@@ -348,7 +348,7 @@ function IndexNavbar() {
                         <li class="nav-item list-group-item border-0 p-0">
                           <Link
                             to="gallery"
-                            class="dropdown-item py-2 ps-3 border-radius-md"
+                            className={styles.navigation_row + ' dropdown-item border-radius-md'}
                           >
                             <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
                               Gallery
@@ -361,7 +361,7 @@ function IndexNavbar() {
                         <li class="nav-item list-group-item border-0 p-0">
                           <Link
                             to="amenities"
-                            class="dropdown-item py-2 ps-3 border-radius-md"
+                            className={styles.navigation_row + ' dropdown-item border-radius-md'}
                           >
                             <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
                               Amenities
@@ -375,7 +375,7 @@ function IndexNavbar() {
                         <li class="nav-item list-group-item border-0 p-0">
                           <Link
                             to="corporate"
-                            class="dropdown-item py-2 ps-3 border-radius-md"
+                            className={styles.navigation_row + ' dropdown-item border-radius-md'}
                           >
                             <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
                               Contact Us

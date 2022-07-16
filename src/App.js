@@ -16,7 +16,7 @@ const App = () => {
   return (
     <>
       <NavMenu />
-      <div className="containe-fluid">
+      <div>
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/boracay" element={<Boracay />} />

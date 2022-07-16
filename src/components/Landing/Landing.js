@@ -134,7 +134,7 @@ class Landing extends React.Component {
                         </h4>
                     </div>
                 </div>
-                <div className={styles.awards + ' d-flex justify-content-center'}>
+                <div className={styles.awards + ' d-flex justify-content-center align-items-center'}>
                     <div className='mx-3'>
                         <img src="https://www.bellevueclubhotel.com/wp-content/uploads/2019/06/the-knot.png" class="rounded " alt="..." />
                     </div>
@@ -153,6 +153,9 @@ class Landing extends React.Component {
                     <div className='mx-3'>
                         <img src="https://www.bellevueclubhotel.com/wp-content/uploads/2022/01/pms_aaa_4diamond_badge_thumb.png" class="rounded " alt="..." />
                     </div>
+                </div>
+                <div className={styles.hotel_locations + ' bg-dark mt-5'}>
+
                 </div>
 
             </>

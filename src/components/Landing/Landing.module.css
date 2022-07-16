@@ -78,10 +78,18 @@ video {
     backdrop-filter: blur(8px);
 }
 
+.awards {
+    height: 80vh;
+}
+
 .awards img {
-    height: 100px;
-    width: 100px;
+    height: 180px;
+    width: 180px;
     /* border: 1px solid grey; */
+}
+
+.hotel_locations {
+    height: 100px;
 }
 
 /* .awards div:nth-child(2) img {
