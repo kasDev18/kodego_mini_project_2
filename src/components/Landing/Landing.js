@@ -2,6 +2,7 @@ import React from 'react'
 import styles from './Landing.module.css';
 import Navigation from '../Nav/Nav';
 import { Card, CardImg, CardBody, CardTitle, CardText, Button } from 'reactstrap';
+import { Link } from 'react-router-dom';
 // import video from '../../../public/video/vids.mp4';
 
 class Landing extends React.Component {
@@ -42,11 +43,17 @@ class Landing extends React.Component {
                                         <CardText>From luxe amenities to local attractions, Bellevue Club Hotel has it all. With so many avenues to explore and memories to make, you’re going to want to stay a while. We can’t blame you.</CardText>
                                         <div class="button_cont">
                                             <div className='d-flex justify-content-center'>
-                                                <a className={styles.example_c + ' text-center btn-round mx-2'} href="add-website-here" target="_blank" rel="nofollow noopener">Tagaytay</a>
-                                                <a className={styles.example_c + ' text-center btn-round mx-2'} href="add-website-here" target="_blank" rel="nofollow noopener">Boracay</a>
+                                                <Link to="/tagaytay">
+                                                    <a className={styles.example_c + ' text-center btn-round mx-2'} href="add-website-here" target="_blank" rel="nofollow noopener">Tagaytay</a>
+                                                </Link>
+                                                <Link to="/boracay">
+                                                    <a className={styles.example_c + ' text-center btn-round mx-2'} href="add-website-here" target="_blank" rel="nofollow noopener">Boracay</a>
+                                                </Link>
                                             </div>
                                             <div className='d-flex justify-content-center mt-2'>
-                                                <a className={styles.example_c + ' text-center btn-round'} href="add-website-here" target="_blank" rel="nofollow noopener">El Nido</a>
+                                                <Link to="/el-nido">
+                                                    <a className={styles.example_c + ' text-center btn-round'} href="add-website-here" target="_blank" rel="nofollow noopener">El Nido</a>
+                                                </Link>
                                             </div>
                                         </div>
                                     </CardBody>
@@ -62,11 +69,17 @@ class Landing extends React.Component {
                                         <CardText>Refuel with whatever moves you – a morning espresso, tide-to-table lunch, craft cocktails, or an after-dinner indulgence. Our four distinct dining venues offer all this and more.</CardText>
                                         <div class="button_cont">
                                             <div className='d-flex justify-content-center'>
-                                                <a className={styles.example_c + ' text-center btn-round mx-2'} href="add-website-here" target="_blank" rel="nofollow noopener">Tagaytay</a>
-                                                <a className={styles.example_c + ' text-center btn-round mx-2'} href="add-website-here" target="_blank" rel="nofollow noopener">Boracay</a>
+                                                <Link to="/tagaytay">
+                                                    <a className={styles.example_c + ' text-center btn-round mx-2'} href="add-website-here" target="_blank" rel="nofollow noopener">Tagaytay</a>
+                                                </Link>
+                                                <Link to="/boracay">
+                                                    <a className={styles.example_c + ' text-center btn-round mx-2'} href="add-website-here" target="_blank" rel="nofollow noopener">Boracay</a>
+                                                </Link>
                                             </div>
                                             <div className='d-flex justify-content-center mt-2'>
-                                                <a className={styles.example_c + ' text-center btn-round'} href="add-website-here" target="_blank" rel="nofollow noopener">El Nido</a>
+                                                <Link to="/el-nido">
+                                                    <a className={styles.example_c + ' text-center btn-round'} href="add-website-here" target="_blank" rel="nofollow noopener">El Nido</a>
+                                                </Link>
                                             </div>
                                         </div>
                                     </CardBody>
@@ -82,11 +95,17 @@ class Landing extends React.Component {
                                         <CardText>Creating iconic moments is our specialty. We have stunning spaces for any size of gathering, so whether you’re hosting a corporate meeting or the wedding of the year, we’re here to help.</CardText>
                                         <div class="button_cont">
                                             <div className='d-flex justify-content-center'>
-                                                <a className={styles.example_c + ' text-center btn-round mx-2'} href="add-website-here" target="_blank" rel="nofollow noopener">Tagaytay</a>
-                                                <a className={styles.example_c + ' text-center btn-round mx-2'} href="add-website-here" target="_blank" rel="nofollow noopener">Boracay</a>
+                                                <Link to="/tagaytay">
+                                                    <a className={styles.example_c + ' text-center btn-round mx-2'} href="add-website-here" target="_blank" rel="nofollow noopener">Tagaytay</a>
+                                                </Link>
+                                                <Link to="/boracay">
+                                                    <a className={styles.example_c + ' text-center btn-round mx-2'} href="add-website-here" target="_blank" rel="nofollow noopener">Boracay</a>
+                                                </Link>
                                             </div>
                                             <div className='d-flex justify-content-center mt-2'>
-                                                <a className={styles.example_c + ' text-center btn-round'} href="add-website-here" target="_blank" rel="nofollow noopener">El Nido</a>
+                                                <Link to="/el-nido">
+                                                    <a className={styles.example_c + ' text-center btn-round'} href="add-website-here" target="_blank" rel="nofollow noopener">El Nido</a>
+                                                </Link>
                                             </div>
                                         </div>
                                     </CardBody>
