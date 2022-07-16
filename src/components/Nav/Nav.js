@@ -129,12 +129,12 @@ function IndexNavbar() {
                       >
                         <span>Tagaytay</span>
                       </a>
-                      <a
-                        href="./pages/contact-us.html"
+                      <Link
+                        to="/boracay"
                         class="dropdown-item border-radius-md"
                       >
                         <span>Boracay</span>
-                      </a>
+                      </Link>
                       <a
                         href="./pages/author.html"
                         class="dropdown-item border-radius-md"
