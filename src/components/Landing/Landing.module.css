@@ -82,14 +82,26 @@ video {
     height: 80vh;
 }
 
+.awards {
+    background: url('https://static.vecteezy.com/system/resources/previews/000/600/376/original/vector-elegant-circles-white-with-halftone-abstract-white-background.jpg')no-repeat;
+    background-size: cover;
+    /* border: 1px solid grey; */
+}
+
 .awards img {
     height: 180px;
     width: 180px;
+    background: url('http://wallpapercave.com/wp/ERJ1Jg2.jpg')no-repeat;
+    background-size: cover;
     /* border: 1px solid grey; */
 }
 
 .hotel_locations {
-    height: 100px;
+    height: 70vh;
+}
+
+.hotel_locations_content {
+    transform: translateY(20vh);
 }
 
 /* .awards div:nth-child(2) img {
