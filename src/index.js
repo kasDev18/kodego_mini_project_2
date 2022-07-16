@@ -1,19 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter } from 'react-router-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css';
-import ProductCards from './Pages/Products/ProductCards/ProductCards';
-import ProductCart from './Pages/Products/ProductCart/ProductCart';
-import  Nav  from './components/Nav/Nav';
-import Hotel from './Hotel/Hotel';
+import App from './App';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {/* <Nav/>
-    <ProductCart />
-    <ProductCards /> */}
-    <Hotel/>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </React.StrictMode>
 );
 

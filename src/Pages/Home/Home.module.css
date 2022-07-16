@@ -1,0 +1,33 @@
+.Home {
+  background-color: rgb(59, 37, 37);
+  padding: 200px;
+  margin-top: 100px;
+  position: relative;
+  margin-bottom: 90px;
+}
+
+.HomeDescription {
+  color: rgb(6, 232, 232);
+  padding: 50px;
+  text-align: center;
+  background-color: rgb(24, 27, 29);
+  position: absolute;
+  bottom: -80px;
+  width: 720px;
+}
+.HomeTestimonials {
+  display: flex;
+}
+
+.HomeAvatar {
+  width: 400px;
+}
+
+.HomeText {
+  width: 400px;
+  margin-top: 12px;
+  background-color: rgb(105, 96, 96);
+  color: rgb(241, 219, 176);
+  letter-spacing: 1px;
+  padding-left: 10px;
+}
