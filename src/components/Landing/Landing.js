@@ -12,16 +12,17 @@ class Landing extends React.Component {
                     <video src='/video/vids.mp4' autoPlay className={styles.videoLanding} />
                 </div>
                 <div>
-                    <div className={styles.landing_article_row + ' d-flex'}>
-                        <div>
+                    <div className={styles.hotel_name}>
+                        <div className='d-flex justify-content-center pt-5'>
                             <h1>(Hotel Name)</h1>
                         </div>
-                        <div className='row'>
-                            <div className='col'>
-                                <h3>As the premier boutique hotel on Seattle’s East Side, the Bellevue Club Hotel offers a luxury stay with 66 rooms and suites for those looking to stay well while traveling. Just steps from the amenities of our athletic and social club, the Bellevue Club, the newly-renovated rooms feature neutral pallets with</h3>
+                        <div className={styles.hotel_description + ' d-flex align-items-center'}>
+                            <div className={styles.description + ' mt-2'}>
+                                <h5>As the premier boutique hotel on Seattle’s East Side, the Bellevue Club Hotel offers a luxury stay with 66 rooms and suites for those looking to stay well while traveling. Just steps from the amenities of our athletic and social club, the Bellevue Club, the newly-renovated rooms feature neutral pallets with</h5>
                             </div>
-                            <div className='col'>
-                                <h3>Pacific Northwest accents. While here, guests enjoy all the perks of being a member: Take a dip in the pool, join a cycling class or get pampered at our spa. Our guests live like locals with shopping, restaurants and other cultural venues just a town car ride away.</h3>
+                            <div className={styles.divider}>|</div>
+                            <div className={styles.description}>
+                                <h5>Pacific Northwest accents. While here, guests enjoy all the perks of being a member: Take a dip in the pool, join a cycling class or get pampered at our spa. Our guests live like locals with shopping, restaurants and other cultural venues just a town car ride away.</h5>
                             </div>
                         </div>
                     </div>
