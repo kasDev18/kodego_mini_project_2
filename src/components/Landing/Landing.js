@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './Landing.module.css';
 import Navigation from '../Nav/Nav';
+import { Card, CardImg, CardBody, CardTitle, CardText, Button } from 'reactstrap';
 // import video from '../../../public/video/vids.mp4';
 
 class Landing extends React.Component {
@@ -9,16 +10,16 @@ class Landing extends React.Component {
             <>
                 <Navigation />
                 <div className={styles.containerVideo + '  mb-5'}>
-                    <video src='/video/vids.mp4' autoPlay className={styles.videoLanding} />
+                    <video src='/video/vids.mp4' autoPlay loop muted className={styles.videoLanding} />
                 </div>
-                <div>
+                <div className={styles.hotel_opening_desc}>
                     <div className={styles.hotel_name}>
                         <div className='d-flex justify-content-center pt-5'>
-                            <h1>(Hotel Name)</h1>
+                            <h1>7Seven Luxury Hotel</h1>
                         </div>
                         <div className={styles.hotel_description + ' d-flex align-items-center'}>
                             <div className={styles.description + ' mt-2'}>
-                                <h5>As the premier boutique hotel on Seattle’s East Side, the Bellevue Club Hotel offers a luxury stay with 66 rooms and suites for those looking to stay well while traveling. Just steps from the amenities of our athletic and social club, the Bellevue Club, the newly-renovated rooms feature neutral pallets with</h5>
+                                <h5>As the premier boutique hotel, the 7Seven Luxury Hotel offers a luxury stay with 66 rooms and suites for those looking to stay well while traveling. Just steps from the amenities of our athletic and social club, the 7Seven Club, the newly-renovated rooms feature neutral pallets with</h5>
                             </div>
                             <div className={styles.divider}>|</div>
                             <div className={styles.description}>
@@ -26,11 +27,101 @@ class Landing extends React.Component {
                             </div>
                         </div>
                     </div>
+                    <div className={styles.offer}>
+                        <div className={styles + ' d-flex justify-content-center mt-5'}>
+                            <h2>We Are Offering</h2>
+                        </div>
+                        <div className={styles.services_offer + ' d-flex p-5'}>
+                            <div className='col'>
+                                <Card className={styles.card + ' text-center'}>
+                                    <CardBody className='mx-2 pt-5'>
+                                        <img src="https://www.corinthia.com/media/2106/corinthia-prague-superior-city-view-room.jpg" class="img-fluid" alt="..." />
+                                        <CardTitle className='mt-3'>
+                                            <b>STAY</b>
+                                        </CardTitle>
+                                        <CardText>From luxe amenities to local attractions, Bellevue Club Hotel has it all. With so many avenues to explore and memories to make, you’re going to want to stay a while. We can’t blame you.</CardText>
+                                        <div class="button_cont">
+                                            <a className={styles.example_c + ' text-center'} href="add-website-here" target="_blank" rel="nofollow noopener">Details</a>
+                                        </div>
+                                    </CardBody>
+                                </Card>
+                            </div>
+                            <div className='col'>
+                                <Card className={styles.card + ' text-center'}>
+                                    <CardBody className='mx-2 pt-5'>
+                                        <img src="https://www.prestigecatering.com.au/wp-content/uploads/2016/09/tea.jpg" class="img-fluid" alt="..." />
+                                        <CardTitle className='mt-3'>
+                                            <b>DINE</b>
+                                        </CardTitle>
+                                        <CardText>Refuel with whatever moves you – a morning espresso, tide-to-table lunch, craft cocktails, or an after-dinner indulgence. Our four distinct dining venues offer all this and more.</CardText>
+                                        <div class="button_cont">
+                                            <a className={styles.example_c + ' text-center'} href="add-website-here" target="_blank" rel="nofollow noopener">Details</a>
+                                        </div>
+                                    </CardBody>
+                                </Card>
+                            </div>
+                            <div className='col'>
+                                <Card className={styles.card + ' text-center'}>
+                                    <CardBody className='mx-2 pt-5'>
+                                        <img src="https://yannidesignstudio.com/app/uploads/2019/08/the-drake-hotel-wedding-ceremony-reception-chicago-event-venue-floral-centerpieces-candles-lights-greenery-decoration-ideas.jpg" class="img-fluid" alt="..." />
+                                        <CardTitle className='mt-3'>
+                                            <b>GATHER</b>
+                                        </CardTitle>
+                                        <CardText>Creating iconic moments is our specialty. We have stunning spaces for any size of gathering, so whether you’re hosting a corporate meeting or the wedding of the year, we’re here to help.</CardText>
+                                        <div class="button_cont">
+                                            <a className={styles.example_c + ' text-center'} href="add-website-here" target="_blank" rel="nofollow noopener">Details</a>
+                                        </div>
+                                    </CardBody>
+                                </Card>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className={styles.sample_img_banner}>
+                    <div className={styles + ' mb-5'}>
+                        <img src="https://api.crimsonhotel.com/storage/media/image/block/642e92efb79421734881b53e1e1b18b6/branch-home-block-3/6bc24fc1ab650b25b4114e93a98f1eba/banner_premierclub.jpg?v=1576652759" class="img-fluid" alt="..." />
+                        <h4 className={styles + ' position-absolute'}>
+                            <b>OUR GUESTROOMS OFFER COMFORT, FAMILIARITY AND HOMELINESS</b>
+                        </h4>
+                    </div>
+                    <div className={styles + ' mb-5'}>
+                        <img src="https://api.crimsonhotel.com/storage/media/image/block/f457c545a9ded88f18ecee47145a72c0/branch-home-block-3/c0c7c76d30bd3dcaefc96f40275bdc0a/manila-home-layer-3-b.jpg?v=1576117283" class="img-fluid" alt="..." />
+                        <h4 className={styles + ' position-absolute flex-end'}>
+                            <b>CONTEMPORARY CUISINE WITH FOCUS ON FRESH & HEALTHY</b>
+                        </h4>
+                    </div>
+                    <div className={styles + ' mb-5'}>
+                        <img src="https://www.princehotels.com/shinyokohama/wp-content/uploads/sites/8/2019/06/Z7T7769%E5%B0%8F.jpg" class="img-fluid" alt="..." />
+                        <h4 className={styles + ' position-absolute flex-end'}>
+                            <b>MEETINGS, SEMINARS, CONVENTIONS, DEBUTS, OR WEDDINGS AT 7SEVEN</b>
+                        </h4>
+                    </div>
+                </div>
+                <div className={styles.awards + ' d-flex'}>
+                    <div>
+                        <img src="https://www.bellevueclubhotel.com/wp-content/uploads/2019/06/the-knot.png" class="rounded " alt="..." />
+                    </div>
+                    <div>
+                        <img src="https://www.bellevueclubhotel.com/wp-content/uploads/2019/06/access-2017.png" class="rounded " alt="..." />
+                    </div>
+                    <div>
+                        <img src="https://www.bellevueclubhotel.com/wp-content/uploads/2019/06/tripadvisor.jpg" class="rounded " alt="..." />
+                    </div>
+                    <div>
+                        <img src="https://www.bellevueclubhotel.com/wp-content/uploads/2022/01/BestOf2021_Bellevue_Vertical.png" class="rounded " alt="..." />
+                    </div>
+                    <div>
+                        <img src="https://www.bellevueclubhotel.com/wp-content/uploads/2022/05/2022-WeddingRule-Editors-Choice.png" class="rounded " alt="..." />
+                    </div>
+                    <div>
+                        <img src="https://www.bellevueclubhotel.com/wp-content/uploads/2022/01/pms_aaa_4diamond_badge_thumb.png" class="rounded " alt="..." />
+                    </div>
                 </div>
 
             </>
         )
     }
 }
+
 
 export default Landing;

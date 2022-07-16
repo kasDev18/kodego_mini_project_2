@@ -21,7 +21,7 @@ import React from 'react';
 import classnames from 'classnames';
 import styles from './Nav.module.css';
 // reactstrap components
-import { Button, Collapse, Navbar, Container, Modal } from 'reactstrap';
+import { Button, Collapse, Navbar, Container, Modal, UncontrolledTooltip } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
 function IndexNavbar() {
@@ -58,12 +58,14 @@ function IndexNavbar() {
     <Navbar className={classnames('fixed-top', navbarColor)} expand="lg">
       <Link
         to="/"
-        class="navbar-brand font-weight-bolder ms-sm-3"
+        class="navbar-brand font-weight-bolder ms-sm-3 text-warning"
         rel="tooltip"
-        title="Designed and Coded by Creative Tim"
-        data-placement="bottom"
+        data-placement="bottom" id="bottom"
       >
-        Material Kit 2
+        7Seven luxury hotel
+        <UncontrolledTooltip placement="bottom" className='bg-light' target="bottom" delay={0}>
+          7Seven Luxury Hotel
+        </UncontrolledTooltip>
       </Link>
       <Container>
         <Collapse
@@ -111,10 +113,10 @@ function IndexNavbar() {
                     />
                   </a>
                   <div
-                    class="dropdown-menu dropdown-menu-animation ms-n3 dropdown-md p-3 border-radius-xl mt-0 mt-lg-3"
+                    class="dropdown-menu dropdown-menu-animation ms-n0 dropdown-md p-3 border-radius-xl mt-0 mt-lg-5"
                     aria-labelledby="dropdownMenuPages"
                   >
-                    <div class="d-none d-lg-block">
+                    <div class="d-none d-lg-block ">
                       <h6
                         className={
                           styles +
@@ -463,11 +465,14 @@ function IndexNavbar() {
                 </li>
                 <li class="nav-item my-auto ms-3 ms-lg-0">
                   <a
-                    class="btn btn-sm  bg-gradient-primary  mb-0 me-1 mt-2 mt-md-0 text-white"
+                    class="btn btn-sm  bg-gradient-warning  mb-0 me-1 mt-2 mt-md-0 text-white"
                     onClick={() => setLiveDemo(true)}
                   >
                     Signup/Login
                   </a>
+
+
+                  {/* Modal */}
                   <Modal isOpen={liveDemo} toggle={() => setLiveDemo(false)}>
                     <div className="modal-header">
                       <h5 className="modal-title" id="exampleModalLiveLabel">
@@ -523,13 +528,3 @@ function IndexNavbar() {
 
 export default IndexNavbar;
 
-// function CustomLink({ to, children, ...props }) {
-//   const path = window.location.pathname;
-//   return (
-//     <li className={path === to ? 'active' : ''}>
-//       <Link to={to} {...props}>
-//         {children}
-//       </Link>
-//     </li>
-//   );
-// }
