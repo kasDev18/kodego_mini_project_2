@@ -111,7 +111,7 @@ function IndexNavbar() {
                   <Link
                     to="/"
                     className={
-                      styles +
+                      styles.dropdown_cont +
                       ' nav-link ps-2 d-flex cursor-pointer align-items-center'
                     }
                     id="dropdownMenuPages"
@@ -127,7 +127,7 @@ function IndexNavbar() {
                     />
                   </Link>
                   <div
-                    class="dropdown-menu ms-n0 dropdown-md p-3 border-radius-xl mt-0 mt-lg-5"
+                    className={styles.dropdown_cont + ' dropdown-menu ms-n0 dropdown-md p-3 border-radius-xl mt-0 mt-lg-5'}
                     aria-labelledby="dropdownMenuPages"
                   >
                     <div class="d-none d-lg-block">
@@ -198,7 +198,7 @@ function IndexNavbar() {
                 <li class="nav-item dropdown dropdown-hover mx-2">
                   <Link
                     to="/"
-                    class="nav-link ps-2 d-flex cursor-pointer align-items-center"
+                    className={styles.dropdown_cont + ' nav-link ps-2 d-flex cursor-pointer align-items-center'}
                     id="dropdownMenuBlocks"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
@@ -239,28 +239,28 @@ function IndexNavbar() {
                         </Link>
                         <div class="dropdown-menu mt-0 py-3 px-2 mt-3">
                           <Link
-                            to="products"
+                            to="wedding"
                             className={styles.navigation_row + ' dropdown-item border-radius-md'}
                           >
-                            Single
+                            Solo
                           </Link>
                           <Link
-                            to="products"
+                            to="corporate"
                             className={styles.navigation_row + ' dropdown-item border-radius-md'}
                           >
                             Double
                           </Link>
                           <Link
-                            to="/products"
+                            to="milestone"
                             className={styles.navigation_row + ' dropdown-item border-radius-md'}
                           >
-                            Deluxe Single
+                            Deluxe
                           </Link>
                           <Link
-                            to="products"
+                            to="milestone"
                             className={styles.navigation_row + ' dropdown-item border-radius-md'}
                           >
-                            Deluxe Double
+                            Premier
                           </Link>
                         </div>
                       </li>
@@ -312,7 +312,7 @@ function IndexNavbar() {
                 <li class="nav-item dropdown dropdown-hover mx-2">
                   <Link
                     to="/"
-                    className={styles.navigation_row + " nav-link ps-2 d-flex cursor-pointer align-items-center"}
+                    className={styles.dropdown_cont + " nav-link ps-2 d-flex cursor-pointer align-items-center"}
                     id="dropdownMenuDocs"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
@@ -457,7 +457,7 @@ function IndexNavbar() {
                 </li>
                 <li class="nav-item ms-lg-auto">
                   <a
-                    class="nav-link nav-link-icon me-2"
+                    className={styles.dropdown_cont + ' nav-link nav-link-icon me-2'}
                     href="https://github.com/creativetimofficial/material-kit"
                     target="_blank"
                   >
@@ -474,7 +474,7 @@ function IndexNavbar() {
                 </li>
                 <li class="nav-item my-auto ms-3 ms-lg-0">
                   <a
-                    class="btn btn-sm  bg-gradient-warning  mb-0 me-1 mt-2 mt-md-0 text-white"
+                    className={styles.dropdown_cont + ' btn btn-sm  bg-gradient-warning  mb-0 me-1 mt-2 mt-md-0 text-white'}
                     onClick={() => setLiveDemo(true)}
                   >
                     Signup/Login

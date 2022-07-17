@@ -10,5 +10,9 @@
 
     background: #fff !important;
     background: linear-gradient(rgb(255, 226, 60), rgb(255, 217, 0), rgb(255, 187, 0)) !important;
-    color: black
+    text-align: center;
+}
+
+.dropdown_cont {
+    transform: translateY(-10px) !important;
 }
