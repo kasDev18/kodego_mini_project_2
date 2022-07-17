@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Boracay.module.css';
-
+import { Link } from 'react-router-dom';
 const iframe =
   '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31224.603007603026!2d121.92722905000001!3d11.969283149999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a53c2f324b4ee7%3A0xa738e81e5e6dda36!2sBoracay!5e0!3m2!1sen!2sph!4v1658059584917!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
 function Iframe(props) {
@@ -42,46 +42,54 @@ class Boracay extends React.Component {
         <div className="container">
           <div className="row">
             <div className={styles.HotelPackage + ' col-6'}>
-              <div align="center" class="fond">
-                <div className={styles.carreaux_presentation_light}>
-                  <div className={styles.shadow_swhow_mini}>
-                    <div className={styles.deroul_titre}>Solo</div>
-                    <div class={styles.deroul_soustitre}>Book Now!</div>
+              <Link to="boracay-solo-room">
+                <div align="center" class="fond">
+                  <div className={styles.carreaux_presentation_light}>
+                    <div className={styles.shadow_swhow_mini}>
+                      <div className={styles.deroul_titre}>Solo</div>
+                      <div class={styles.deroul_soustitre}>Book Now!</div>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </Link>
             </div>
             <div className={styles.HotelPackage + ' col-6'}>
-              <div align="center" class="fond">
-                <div className={styles.carreaux_presentation_light}>
-                  <div className={styles.shadow_swhow_mini}>
-                    <div className={styles.deroul_titre}>Double</div>
-                    <div class={styles.deroul_soustitre}>Book Now!</div>
+              <Link to="boracay-double-room">
+                <div align="center" class="fond">
+                  <div className={styles.carreaux_presentation_light}>
+                    <div className={styles.shadow_swhow_mini}>
+                      <div className={styles.deroul_titre}>Double</div>
+                      <div class={styles.deroul_soustitre}>Book Now!</div>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </Link>
             </div>
           </div>
           <div className="row">
             <div className={styles.HotelPackage + ' col-6'}>
-              <div align="center" class="fond">
-                <div className={styles.carreaux_presentation_light}>
-                  <div className={styles.shadow_swhow_mini}>
-                    <div className={styles.deroul_titre}>Delux </div>
-                    <div class={styles.deroul_soustitre}>Book Now!</div>
+              <Link to="boracay-deluxe-room">
+                <div align="center" class="fond">
+                  <div className={styles.carreaux_presentation_light}>
+                    <div className={styles.shadow_swhow_mini}>
+                      <div className={styles.deroul_titre}>Deluxe </div>
+                      <div class={styles.deroul_soustitre}>Book Now!</div>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </Link>
             </div>
             <div className={styles.HotelPackage + ' col-6'}>
-              <div align="center" class="fond">
-                <div className={styles.carreaux_presentation_light}>
-                  <div className={styles.shadow_swhow_mini}>
-                    <div className={styles.deroul_titre}>Delux Double</div>
-                    <div class={styles.deroul_soustitre}>Book Now!</div>
+              <Link to="boracay-premier-room">
+                <div align="center" class="fond">
+                  <div className={styles.carreaux_presentation_light}>
+                    <div className={styles.shadow_swhow_mini}>
+                      <div className={styles.deroul_titre}>Premier </div>
+                      <div class={styles.deroul_soustitre}>Book Now!</div>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </Link>
             </div>
           </div>
         </div>

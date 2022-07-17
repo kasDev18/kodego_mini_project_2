@@ -264,7 +264,7 @@ function IndexNavbar() {
                         </Link>
                         <div class="dropdown-menu mt-0 py-3 px-2 mt-3">
                           <Link
-                            to="wedding"
+                            to="services-rooms-solo"
                             className={
                               styles.navigation_row +
                               ' dropdown-item border-radius-md'
@@ -273,7 +273,7 @@ function IndexNavbar() {
                             Solo
                           </Link>
                           <Link
-                            to="corporate"
+                            to="services-rooms-double"
                             className={
                               styles.navigation_row +
                               ' dropdown-item border-radius-md'
@@ -282,7 +282,7 @@ function IndexNavbar() {
                             Double
                           </Link>
                           <Link
-                            to="milestone"
+                            to="services-rooms-delux"
                             className={
                               styles.navigation_row +
                               ' dropdown-item border-radius-md'
@@ -291,7 +291,7 @@ function IndexNavbar() {
                             Deluxe
                           </Link>
                           <Link
-                            to="milestone"
+                            to="services-rooms-premier"
                             className={
                               styles.navigation_row +
                               ' dropdown-item border-radius-md'
@@ -326,7 +326,7 @@ function IndexNavbar() {
                         </Link>
                         <div class="dropdown-menu mt-0 py-3 px-2 mt-3">
                           <Link
-                            to="wedding"
+                            to="services-gathering-wedding"
                             className={
                               styles.navigation_row +
                               ' dropdown-item border-radius-md'
@@ -335,7 +335,7 @@ function IndexNavbar() {
                             Weddings
                           </Link>
                           <Link
-                            to="corporate"
+                            to="services-gathering-corporate"
                             className={
                               styles.navigation_row +
                               ' dropdown-item border-radius-md'
@@ -344,7 +344,7 @@ function IndexNavbar() {
                             Corporate
                           </Link>
                           <Link
-                            to="milestone"
+                            to="services-gathering-milestone "
                             className={
                               styles.navigation_row +
                               ' dropdown-item border-radius-md'

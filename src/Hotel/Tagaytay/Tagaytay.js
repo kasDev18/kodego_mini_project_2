@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styles from './Tagaytay.module.css';
 
 const iframe =
@@ -41,46 +42,54 @@ class Boracay extends React.Component {
         <div className="container">
           <div className="row">
             <div className={styles.HotelPackage + ' col-6'}>
-              <div align="center" class="fond">
-                <div className={styles.carreaux_presentation_light}>
-                  <div className={styles.shadow_swhow_mini}>
-                    <div className={styles.deroul_titre}>Solo</div>
-                    <div class={styles.deroul_soustitre}>Book Now!</div>
+              <Link to="tagaytay-solo-room">
+                <div align="center" class="fond">
+                  <div className={styles.carreaux_presentation_light}>
+                    <div className={styles.shadow_swhow_mini}>
+                      <div className={styles.deroul_titre}>Solo</div>
+                      <div class={styles.deroul_soustitre}>Book Now!</div>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </Link>
             </div>
             <div className={styles.HotelPackage + ' col-6'}>
-              <div align="center" class="fond">
-                <div className={styles.carreaux_presentation_light}>
-                  <div className={styles.shadow_swhow_mini}>
-                    <div className={styles.deroul_titre}>Double</div>
-                    <div class={styles.deroul_soustitre}>Book Now!</div>
+              <Link to="tagaytay-double-room">
+                <div align="center" class="fond">
+                  <div className={styles.carreaux_presentation_light}>
+                    <div className={styles.shadow_swhow_mini}>
+                      <div className={styles.deroul_titre}>Double</div>
+                      <div class={styles.deroul_soustitre}>Book Now!</div>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </Link>
             </div>
           </div>
           <div className="row">
             <div className={styles.HotelPackage + ' col-6'}>
-              <div align="center" class="fond">
-                <div className={styles.carreaux_presentation_light}>
-                  <div className={styles.shadow_swhow_mini}>
-                    <div className={styles.deroul_titre}>Delux </div>
-                    <div class={styles.deroul_soustitre}>Book Now!</div>
+              <Link to="tagaytay-deluxe-room">
+                <div align="center" class="fond">
+                  <div className={styles.carreaux_presentation_light}>
+                    <div className={styles.shadow_swhow_mini}>
+                      <div className={styles.deroul_titre}>Deluxe </div>
+                      <div class={styles.deroul_soustitre}>Book Now!</div>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </Link>
             </div>
             <div className={styles.HotelPackage + ' col-6'}>
-              <div align="center" class="fond">
-                <div className={styles.carreaux_presentation_light}>
-                  <div className={styles.shadow_swhow_mini}>
-                    <div className={styles.deroul_titre}>Delux Double</div>
-                    <div class={styles.deroul_soustitre}>Book Now!</div>
+              <Link to="tagaytay-premier-room">
+                <div align="center" class="fond">
+                  <div className={styles.carreaux_presentation_light}>
+                    <div className={styles.shadow_swhow_mini}>
+                      <div className={styles.deroul_titre}>Premier</div>
+                      <div class={styles.deroul_soustitre}>Book Now!</div>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </Link>
             </div>
           </div>
         </div>

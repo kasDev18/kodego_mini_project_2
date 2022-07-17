@@ -1,6 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styles from './El_Nido.module.css';
-
 const iframe =
   '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d250481.19817296893!2d119.40608304999998!3d11.2047403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33b65515ef5c9e0f%3A0xfc4e665b599b0455!2sEl%20Nido%2C%20Palawan!5e0!3m2!1sen!2sph!4v1658059744113!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
 function Iframe(props) {
@@ -42,46 +42,54 @@ class Boracay extends React.Component {
         <div className="container">
           <div className="row">
             <div className={styles.HotelPackage + ' col-6'}>
-              <div align="center" class="fond">
-                <div className={styles.carreaux_presentation_light}>
-                  <div className={styles.shadow_swhow_mini}>
-                    <div className={styles.deroul_titre}>Solo</div>
-                    <div class={styles.deroul_soustitre}>Book Now!</div>
+              <Link to="elnido-solo-room">
+                <div align="center" class="fond">
+                  <div className={styles.carreaux_presentation_light}>
+                    <div className={styles.shadow_swhow_mini}>
+                      <div className={styles.deroul_titre}>Solo</div>
+                      <div class={styles.deroul_soustitre}>Book Now!</div>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </Link>
             </div>
             <div className={styles.HotelPackage + ' col-6'}>
-              <div align="center" class="fond">
-                <div className={styles.carreaux_presentation_light}>
-                  <div className={styles.shadow_swhow_mini}>
-                    <div className={styles.deroul_titre}>Double</div>
-                    <div class={styles.deroul_soustitre}>Book Now!</div>
+              <Link to="elnido-double-room">
+                <div align="center" class="fond">
+                  <div className={styles.carreaux_presentation_light}>
+                    <div className={styles.shadow_swhow_mini}>
+                      <div className={styles.deroul_titre}>Double</div>
+                      <div class={styles.deroul_soustitre}>Book Now!</div>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </Link>
             </div>
           </div>
           <div className="row">
             <div className={styles.HotelPackage + ' col-6'}>
-              <div align="center" class="fond">
-                <div className={styles.carreaux_presentation_light}>
-                  <div className={styles.shadow_swhow_mini}>
-                    <div className={styles.deroul_titre}>Delux </div>
-                    <div class={styles.deroul_soustitre}>Book Now!</div>
+              <Link to="elnido-deluxe">
+                <div align="center" class="fond">
+                  <div className={styles.carreaux_presentation_light}>
+                    <div className={styles.shadow_swhow_mini}>
+                      <div className={styles.deroul_titre}>Deluxe </div>
+                      <div class={styles.deroul_soustitre}>Book Now!</div>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </Link>
             </div>
             <div className={styles.HotelPackage + ' col-6'}>
-              <div align="center" class="fond">
-                <div className={styles.carreaux_presentation_light}>
-                  <div className={styles.shadow_swhow_mini}>
-                    <div className={styles.deroul_titre}>Delux Double</div>
-                    <div class={styles.deroul_soustitre}>Book Now!</div>
+              <Link to="elnido-premier-room">
+                <div align="center" class="fond">
+                  <div className={styles.carreaux_presentation_light}>
+                    <div className={styles.shadow_swhow_mini}>
+                      <div className={styles.deroul_titre}>Premier</div>
+                      <div class={styles.deroul_soustitre}>Book Now!</div>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </Link>
             </div>
           </div>
         </div>
