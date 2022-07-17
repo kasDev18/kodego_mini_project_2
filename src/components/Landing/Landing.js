@@ -9,6 +9,7 @@ class Landing extends React.Component {
     render() {
         return (
             <>
+
                 <Navigation />
                 <div className={styles.containerVideo + '  mb-5'}>
                     <video src='/video/vids.mp4' autoPlay loop muted className={styles.videoLanding} />
@@ -183,9 +184,6 @@ class Landing extends React.Component {
                             <h6 className='text-white'>Reservation Policy </h6>
                         </div>
                     </div>
-                </div>
-                <div className={styles.footer}>
-
                 </div>
 
             </>
