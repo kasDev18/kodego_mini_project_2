@@ -70,7 +70,14 @@ function IndexNavbar() {
         data-placement="bottom"
         id="bottom"
       >
-        7Seven luxury hotel <img src="http://static.pinnula.fr/news/i/win7-yellow-logo.png" width="50px" height="50px" class="img-fluid border rounded-circle" alt="..." />
+        7Seven luxury hotel{' '}
+        <img
+          src="http://static.pinnula.fr/news/i/win7-yellow-logo.png"
+          width="50px"
+          height="50px"
+          class="img-fluid border rounded-circle"
+          alt="..."
+        />
         <UncontrolledTooltip
           placement="bottom"
           className="bg-light"
@@ -127,7 +134,10 @@ function IndexNavbar() {
                     />
                   </Link>
                   <div
-                    className={styles.dropdown_cont + ' dropdown-menu ms-n0 dropdown-md p-3 border-radius-xl mt-0 mt-lg-5'}
+                    className={
+                      styles.dropdown_cont +
+                      ' dropdown-menu ms-n0 dropdown-md p-3 border-radius-xl mt-0 mt-lg-5'
+                    }
                     aria-labelledby="dropdownMenuPages"
                   >
                     <div class="d-none d-lg-block">
@@ -142,20 +152,29 @@ function IndexNavbar() {
                       <Link
                         to="/tagaytay"
                         href="./pages/about-us.html"
-                        className={styles.navigation_row + ' dropdown-item border-radius-md'}
+                        className={
+                          styles.navigation_row +
+                          ' dropdown-item border-radius-md'
+                        }
                       >
                         <span>Tagaytay</span>
                       </Link>
                       <Link
                         to="/boracay"
-                        className={styles.navigation_row + ' dropdown-item border-radius-md'}
+                        className={
+                          styles.navigation_row +
+                          ' dropdown-item border-radius-md'
+                        }
                       >
                         <span>Boracay</span>
                       </Link>
                       <Link
                         to="/el-nido"
                         href="./pages/author.html"
-                        className={styles.navigation_row + ' dropdown-item border-radius-md'}
+                        className={
+                          styles.navigation_row +
+                          ' dropdown-item border-radius-md'
+                        }
                       >
                         <span>El Nido</span>
                       </Link>
@@ -198,7 +217,10 @@ function IndexNavbar() {
                 <li class="nav-item dropdown dropdown-hover mx-2">
                   <Link
                     to="/"
-                    className={styles.dropdown_cont + ' nav-link ps-2 d-flex cursor-pointer align-items-center'}
+                    className={
+                      styles.dropdown_cont +
+                      ' nav-link ps-2 d-flex cursor-pointer align-items-center'
+                    }
                     id="dropdownMenuBlocks"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
@@ -219,7 +241,10 @@ function IndexNavbar() {
                       <li class="nav-item dropdown dropdown-hover dropdown-subitem">
                         <Link
                           to="/"
-                          className={styles.navigation_row + ' dropdown-item border-radius-md'}
+                          className={
+                            styles.navigation_row +
+                            ' dropdown-item border-radius-md'
+                          }
                         >
                           <div class="w-100 d-flex align-items-center justify-content-between">
                             <div>
@@ -240,25 +265,37 @@ function IndexNavbar() {
                         <div class="dropdown-menu mt-0 py-3 px-2 mt-3">
                           <Link
                             to="wedding"
-                            className={styles.navigation_row + ' dropdown-item border-radius-md'}
+                            className={
+                              styles.navigation_row +
+                              ' dropdown-item border-radius-md'
+                            }
                           >
                             Solo
                           </Link>
                           <Link
                             to="corporate"
-                            className={styles.navigation_row + ' dropdown-item border-radius-md'}
+                            className={
+                              styles.navigation_row +
+                              ' dropdown-item border-radius-md'
+                            }
                           >
                             Double
                           </Link>
                           <Link
                             to="milestone"
-                            className={styles.navigation_row + ' dropdown-item border-radius-md'}
+                            className={
+                              styles.navigation_row +
+                              ' dropdown-item border-radius-md'
+                            }
                           >
                             Deluxe
                           </Link>
                           <Link
                             to="milestone"
-                            className={styles.navigation_row + ' dropdown-item border-radius-md'}
+                            className={
+                              styles.navigation_row +
+                              ' dropdown-item border-radius-md'
+                            }
                           >
                             Premier
                           </Link>
@@ -268,7 +305,10 @@ function IndexNavbar() {
                       <li class="nav-item dropdown dropdown-hover dropdown-subitem">
                         <Link
                           to="/"
-                          className={styles.navigation_row + ' dropdown-item border-radius-md'}
+                          className={
+                            styles.navigation_row +
+                            ' dropdown-item border-radius-md'
+                          }
                         >
                           <div class="w-100 d-flex align-items-center justify-content-between">
                             <div className={styles.navigation_row}>
@@ -287,19 +327,28 @@ function IndexNavbar() {
                         <div class="dropdown-menu mt-0 py-3 px-2 mt-3">
                           <Link
                             to="wedding"
-                            className={styles.navigation_row + ' dropdown-item border-radius-md'}
+                            className={
+                              styles.navigation_row +
+                              ' dropdown-item border-radius-md'
+                            }
                           >
                             Weddings
                           </Link>
                           <Link
                             to="corporate"
-                            className={styles.navigation_row + ' dropdown-item border-radius-md'}
+                            className={
+                              styles.navigation_row +
+                              ' dropdown-item border-radius-md'
+                            }
                           >
                             Corporate
                           </Link>
                           <Link
                             to="milestone"
-                            className={styles.navigation_row + ' dropdown-item border-radius-md'}
+                            className={
+                              styles.navigation_row +
+                              ' dropdown-item border-radius-md'
+                            }
                           >
                             Milestone
                           </Link>
@@ -312,7 +361,10 @@ function IndexNavbar() {
                 <li class="nav-item dropdown dropdown-hover mx-2">
                   <Link
                     to="/"
-                    className={styles.dropdown_cont + " nav-link ps-2 d-flex cursor-pointer align-items-center"}
+                    className={
+                      styles.dropdown_cont +
+                      ' nav-link ps-2 d-flex cursor-pointer align-items-center'
+                    }
                     id="dropdownMenuDocs"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
@@ -334,7 +386,10 @@ function IndexNavbar() {
                         <li class="nav-item list-group-item border-0 p-0">
                           <Link
                             to="about"
-                            className={styles.navigation_row + ' dropdown-item border-radius-md'}
+                            className={
+                              styles.navigation_row +
+                              ' dropdown-item border-radius-md'
+                            }
                           >
                             <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
                               About Us
@@ -348,7 +403,10 @@ function IndexNavbar() {
                         <li class="nav-item list-group-item border-0 p-0">
                           <Link
                             to="gallery"
-                            className={styles.navigation_row + ' dropdown-item border-radius-md'}
+                            className={
+                              styles.navigation_row +
+                              ' dropdown-item border-radius-md'
+                            }
                           >
                             <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
                               Gallery
@@ -361,7 +419,10 @@ function IndexNavbar() {
                         <li class="nav-item list-group-item border-0 p-0">
                           <Link
                             to="amenities"
-                            className={styles.navigation_row + ' dropdown-item border-radius-md'}
+                            className={
+                              styles.navigation_row +
+                              ' dropdown-item border-radius-md'
+                            }
                           >
                             <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
                               Amenities
@@ -375,7 +436,10 @@ function IndexNavbar() {
                         <li class="nav-item list-group-item border-0 p-0">
                           <Link
                             to="corporate"
-                            className={styles.navigation_row + ' dropdown-item border-radius-md'}
+                            className={
+                              styles.navigation_row +
+                              ' dropdown-item border-radius-md'
+                            }
                           >
                             <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
                               Contact Us
@@ -457,7 +521,9 @@ function IndexNavbar() {
                 </li>
                 <li class="nav-item ms-lg-auto">
                   <a
-                    className={styles.dropdown_cont + ' nav-link nav-link-icon me-2'}
+                    className={
+                      styles.dropdown_cont + ' nav-link nav-link-icon me-2'
+                    }
                     href="https://github.com/creativetimofficial/material-kit"
                     target="_blank"
                   >
@@ -474,7 +540,10 @@ function IndexNavbar() {
                 </li>
                 <li class="nav-item my-auto ms-3 ms-lg-0">
                   <a
-                    className={styles.dropdown_cont + ' btn btn-sm  bg-gradient-warning  mb-0 me-1 mt-2 mt-md-0 text-white'}
+                    className={
+                      styles.dropdown_cont +
+                      ' btn btn-sm  bg-gradient-warning  mb-0 me-1 mt-2 mt-md-0 text-white'
+                    }
                     onClick={() => setLiveDemo(true)}
                   >
                     Signup/Login

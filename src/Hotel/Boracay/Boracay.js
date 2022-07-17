@@ -1,6 +1,15 @@
 import React from 'react';
 import styles from './Boracay.module.css';
 
+const iframe =
+  '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31224.603007603026!2d121.92722905000001!3d11.969283149999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a53c2f324b4ee7%3A0xa738e81e5e6dda36!2sBoracay!5e0!3m2!1sen!2sph!4v1658059584917!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+function Iframe(props) {
+  return (
+    <div
+      dangerouslySetInnerHTML={{ __html: props.iframe ? props.iframe : '' }}
+    />
+  );
+}
 class Boracay extends React.Component {
   render() {
     return (
@@ -8,7 +17,7 @@ class Boracay extends React.Component {
         <div className={styles.HotelBoracay}>
           <div className={styles.containerImage}>
             <img
-              src="boracay/boracay.webp"
+              src="https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_680/v1630914997/blog/zzydhmcu7khdqixvlmxg.webp"
               autoPlay
               className={styles.ImageBoracay}
               alt="Boracay"
@@ -178,14 +187,9 @@ class Boracay extends React.Component {
               <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h4>
             </div>
             <div className={styles.boraMap + ' col-6'}>
-              <img src="boracay/mapBora.avif" alt="bora" />
+              <Iframe iframe={iframe} />
             </div>
           </div>
-        </div>
-
-        <div className="container   justify-content-center">
-          <h1>LOCATIONS</h1>
-          <p>Crimson</p>
         </div>
       </>
     );
