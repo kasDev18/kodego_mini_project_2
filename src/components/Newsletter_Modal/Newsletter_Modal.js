@@ -15,7 +15,7 @@ function Newsletter_Modal() {
   return (
     <>
       <a
-        className=" text-white bg-warning p-2 border rounded"
+        className=" text-white bg-gradient-warning p-2 border rounded mx-5 px-4"
         onClick={() => setLoginModal(true)}
       >
         Login modal

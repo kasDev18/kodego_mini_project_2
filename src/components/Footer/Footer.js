@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Footer.module.css';
 import Newsletter_Modal from '../Newsletter_Modal/Newsletter_Modal';
+import { UncontrolledTooltip } from 'reactstrap';
 
 class Footer extends React.Component {
   awardsImage = [
@@ -12,18 +13,35 @@ class Footer extends React.Component {
     { src: 'https://www.bellevueclubhotel.com/wp-content/uploads/2022/01/pms_aaa_4diamond_badge_thumb.png' }
   ];
   awardsImageArray = [];
+  mediaFooterIcon = [
+    { id: 'faceboook', iconClass: ' fab fa-facebook-f' },
+    { id: 'twitter', iconClass: ' fab fa-twitter' },
+    { id: 'linkedin', iconClass: ' fab fa-linkedin-in' },
+    { id: 'google-plus', iconClass: ' fab fa-google-plus-g' },
+  ]
+  mediaFooterIconArray = [];
 
   CreateAwardsImageArray() {
     this.awardsImageArray = this.awardsImage.map((element) => (
-      <div className={styles.container_awards + ' container'}>
+      <div className={styles.container_awards + ' container btn'} id={element.id} data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
         <img src={element.src} />
       </div>
     ))
   }
 
+  CreatemediaFooterIconArray() {
+    this.mediaFooterIconArray = this.mediaFooterIcon.map((element) => (
+      <li>
+        <a href="#">
+          <i className={styles.media_footer + element.iconClass}></i>    </a>
+      </li>
+    ))
+  }
+
 
   render() {
-    this.CreateAwardsImageArray()
+    this.CreateAwardsImageArray();
+    this.CreatemediaFooterIconArray();
     return (
       <>
         <div className={styles.awards + ' d-flex justify-content-center align-items-center'}>
@@ -59,54 +77,24 @@ class Footer extends React.Component {
             </div>
           </div>
         </div>
-        <div className={styles.footer + ' d-flex justify-content-center'}>
+        <div className={styles.footer + ' d-flex'}>
           <div className='col'>
-            <div className={styles.media_title + ' pt-5'}>
+            <div className={styles.media_title + ' pt-5 d-flex justify-content-end mx-3 px-4'}>
               <h5 className='text-light text-transform-uppercase'>Stay Connected</h5>
             </div>
-            <ul className={styles.media_footer_cont + ' d-flex '}>
-              <li>
-                <a href="#">
-                  <i className={styles.media_footer + ' fab fa-facebook-f'}></i>    </a>
-              </li>
-              <li>
-                <a href="#"><i className={styles.media_footer + ' fab fa-twitter'}></i></a>
-              </li>
-              <li>
-                <a href="#"><i className={styles.media_footer + ' fab fa-linkedin-in'}></i></a></li>
-              <li>
-                <a href="#"><i className={styles.media_footer + ' fab fa-google-plus-g'}></i></a></li>
+            <ul className={styles.media_footer_cont + ' d-flex justify-content-end'}>
+              {this.mediaFooterIconArray}
             </ul>
 
           </div>
           <div className='col '>
-            <div className={styles.media_title + ' pt-5 d-flex justify-content-center'}>
+            <div className={styles.media_title + ' pt-5 mb-4'}>
               <h5 className='text-light text-transform-uppercase'>Subscribe to our Newsletter</h5>
             </div>
-            <div className={styles.media_title + ' d-flex justify-content-center'}>
+            <div className={styles.media_title}>
               <Newsletter_Modal />
             </div>
           </div>
-          <div className='col'>
-            <div className={styles.media_title + ' pt-5'}>
-              <h5 className='text-light text-transform-uppercase'>Stay Connected</h5>
-            </div>
-            <ul className={styles.media_footer_cont + ' d-flex '}>
-              <li>
-                <a href="#">
-                  <i className={styles.media_footer + ' fab fa-facebook-f'}></i>    </a>
-              </li>
-              <li>
-                <a href="#"><i className={styles.media_footer + ' fab fa-twitter'}></i></a>
-              </li>
-              <li>
-                <a href="#"><i className={styles.media_footer + ' fab fa-linkedin-in'}></i></a></li>
-              <li>
-                <a href="#"><i className={styles.media_footer + ' fab fa-google-plus-g'}></i></a></li>
-            </ul>
-
-          </div>
-
         </div>
       </>
     )
