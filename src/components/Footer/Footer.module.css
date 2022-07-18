@@ -1,5 +1,5 @@
 .awards {
-    height: 80vh;
+    height: 50vh;
 }
 
 .awards {
@@ -8,12 +8,53 @@
     /* border: 1px solid grey; */
 }
 
-.awards img {
-    height: 180px;
-    width: 180px;
-    background: url('http://wallpapercave.com/wp/ERJ1Jg2.jpg')no-repeat;
-    background-size: cover;
-    /* border: 1px solid grey; */
+.container_awards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 18%;
+}
+
+.container_awards:hover {
+    cursor: pointer;
+}
+
+.container_awards img {
+    filter: grayscale();
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 6px solid whitesmoke;
+    box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.5);
+    margin-bottom: 1rem;
+    transition: filter 0.4s ease-in-out;
+}
+
+.container_awards:hover img {
+    filter: none;
+}
+
+.title {
+    font-family: "Dancing Script", cursive;
+    font-size: 3rem;
+    color: whitesmoke;
+    position: relative;
+}
+
+.title::after {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 4px;
+    background-color: whitesmoke;
+    left: 50%;
+    bottom: -10px;
+    transition: all 0.4s ease-in-out;
+}
+
+.container_awards:hover .title::after {
+    width: 100%;
+    left: 0;
 }
 
 .hotel_locations {

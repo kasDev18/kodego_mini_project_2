@@ -15,8 +15,8 @@ class Footer extends React.Component {
 
   CreateAwardsImageArray() {
     this.awardsImageArray = this.awardsImage.map((element) => (
-      <div className='mx-3'>
-        <img src={element.src} class="rounded " alt="..." />
+      <div className={styles.container_awards + ' container'}>
+        <img src={element.src} />
       </div>
     ))
   }
