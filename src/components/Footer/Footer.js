@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './Footer.module.css';
+import Newsletter_Modal from '../Newsletter_Modal/Newsletter_Modal';
 
 class Footer extends React.Component {
   awardsImage = [
@@ -80,22 +81,11 @@ class Footer extends React.Component {
           </div>
           <div className='col '>
             <div className={styles.media_title + ' pt-5 d-flex justify-content-center'}>
-              <h5 className='text-light text-transform-uppercase'>Stay Connected</h5>
+              <h5 className='text-light text-transform-uppercase'>Subscribe to our Newsletter</h5>
             </div>
-            <ul className={styles.media_footer_cont + ' d-flex justify-content-center'}>
-              <li>
-                <a href="#">
-                  <i className={styles.media_footer + ' fab fa-facebook-f'}></i>    </a>
-              </li>
-              <li>
-                <a href="#"><i className={styles.media_footer + ' fab fa-twitter'}></i></a>
-              </li>
-              <li>
-                <a href="#"><i className={styles.media_footer + ' fab fa-linkedin-in'}></i></a></li>
-              <li>
-                <a href="#"><i className={styles.media_footer + ' fab fa-google-plus-g'}></i></a></li>
-            </ul>
-
+            <div className={styles.media_title + ' d-flex justify-content-center'}>
+              <Newsletter_Modal />
+            </div>
           </div>
           <div className='col'>
             <div className={styles.media_title + ' pt-5'}>
