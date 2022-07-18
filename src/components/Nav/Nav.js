@@ -81,9 +81,9 @@ function IndexNavbar() {
       {
         setIsLoading ? isLoading && (
           <>
-            <Landing className="d-none">
+            {/* <Landing className="d-none">
 
-            </Landing>
+            </Landing> */}
             <div className={styles.footer}>
               <div className={styles.wrapper}>
                 <div className={styles.circle}></div>
