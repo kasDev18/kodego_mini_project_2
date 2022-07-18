@@ -31,21 +31,131 @@ import {
   Nav,
 } from 'reactstrap';
 import { Link } from 'react-router-dom';
-import Landing from '../Landing/Landing';
+import Loader from '../Loader/Loader';
 
 
 
 function IndexNavbar() {
 
-  // Redirection
-  const [isLoading, setIsLoading] = useState(false);
-  const handleSubmit = async () => {
-    setIsLoading(true);
+  // Redirection Navbar
+  const homepage = () => {
+    setTimeout(() => {
+      window.location = '/'
+    }, 1500);
+  }
+  const [redirectTagaytay, setRedirectTagaytay] = useState(false);
+  const handleSubmitTagaytay = async () => {
+    setRedirectTagaytay(true);
 
-    await new Promise((resolve) => setTimeout(resolve, 3000))
+    await new Promise((resolve) => setTimeout(resolve, 2000))
 
     window.location = "/tagaytay"
   }
+  const [redirectBoracay, setRedirectBoracay] = useState(false);
+  const handleSubmitBoracay = async () => {
+    setRedirectBoracay(true);
+
+    await new Promise((resolve) => setTimeout(resolve, 2000))
+
+    window.location = "/boracay"
+  }
+  const [redirectElNido, setRedirectElNido] = useState(false);
+  const handleSubmitElNido = async () => {
+    setRedirectElNido(true);
+
+    await new Promise((resolve) => setTimeout(resolve, 2000))
+
+    window.location = "/el-nido"
+  }
+  const [redirectRoomSolo, setRedirectRoomSolo] = useState(false);
+  const handleSubmitRoomSolo = async () => {
+    setRedirectRoomSolo(true);
+
+    await new Promise((resolve) => setTimeout(resolve, 2000))
+
+    window.location = "/services-rooms-solo"
+  }
+  const [redirectRoomDouble, setRedirectRoomDouble] = useState(false);
+  const handleSubmitRoomDouble = async () => {
+    setRedirectRoomDouble(true);
+
+    await new Promise((resolve) => setTimeout(resolve, 2000))
+
+    window.location = "/services-rooms-double"
+  }
+  const [redirectRoomDeluxe, setRedirectRoomDeluxe] = useState(false);
+  const handleSubmitRoomDeluxe = async () => {
+    setRedirectRoomDeluxe(true);
+
+    await new Promise((resolve) => setTimeout(resolve, 2000))
+
+    window.location = "/services-rooms-deluxe"
+  }
+  const [redirectRoomPremier, setRedirectRoomPremier] = useState(false);
+  const handleSubmitRoomPremier = async () => {
+    setRedirectRoomPremier(true);
+
+    await new Promise((resolve) => setTimeout(resolve, 2000))
+
+    window.location = "/services-rooms-premier"
+  }
+  const [redirectGatheringWedding, setRedirectGatheringWedding] = useState(false);
+  const handleSubmitGatheringWedding = async () => {
+    setRedirectGatheringWedding(true);
+
+    await new Promise((resolve) => setTimeout(resolve, 2000))
+
+    window.location = "/services-gathering-wedding"
+  }
+  const [redirectGatheringCorporate, setRedirectGatheringCorporate] = useState(false);
+  const handleSubmitGatheringCorporate = async () => {
+    setRedirectGatheringCorporate(true);
+
+    await new Promise((resolve) => setTimeout(resolve, 2000))
+
+    window.location = "/services-gathering-corporate"
+  }
+  const [redirectGatheringMilestone, setRedirectGatheringMilestone] = useState(false);
+  const handleSubmitGatheringMilestone = async () => {
+    setRedirectGatheringMilestone(true);
+
+    await new Promise((resolve) => setTimeout(resolve, 2000))
+
+    window.location = "/services-gathering-milestone"
+  }
+  const [redirectLibraryAbout, setRedirectLibraryAbout] = useState(false);
+  const handleSubmitLibraryAbout = async () => {
+    setRedirectLibraryAbout(true);
+
+    await new Promise((resolve) => setTimeout(resolve, 2000))
+
+    window.location = "/about"
+  }
+  const [redirectLibraryAmenities, setRedirectLibraryAmenities] = useState(false);
+  const handleSubmitLibraryAmenities = async () => {
+    setRedirectLibraryAmenities(true);
+
+    await new Promise((resolve) => setTimeout(resolve, 2000))
+
+    window.location = "/amenities"
+  }
+  const [redirectLibraryGallery, setRedirectLibraryGallery] = useState(false);
+  const handleSubmitLibraryGallery = async () => {
+    setRedirectLibraryGallery(true);
+
+    await new Promise((resolve) => setTimeout(resolve, 2000))
+
+    window.location = "/gallery"
+  }
+
+
+
+
+
+
+
+
+
 
   const [navbarColor, setNavbarColor] = React.useState('navbar-transparent');
   const [navbarCollapse, setNavbarCollapse] = React.useState(false);
@@ -78,35 +188,145 @@ function IndexNavbar() {
   });
   return (
     <>
+      {/* Return Loading Animation */}
       {
-        setIsLoading ? isLoading && (
+        setRedirectTagaytay ? redirectTagaytay && (
           <>
-            {/* <Landing className="d-none">
-
-            </Landing> */}
-            <div className={styles.footer}>
-              <div className={styles.wrapper}>
-                <div className={styles.circle}></div>
-                <div className={styles.circle}></div>
-                <div className={styles.circle}></div>
-                <div className={styles.shadow}></div>
-                <div className={styles.shadow}></div>
-                <div className={styles.shadow}></div>
-                <span>Loading</span>
-              </div>
-            </div>
+            <img className={styles.image_loader} src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/90/b3/5b/escala-tagaytay.jpg?w=1200&h=-1&s=1" />
+            <Loader />
           </>
 
         ) : ''
 
       }
+      {
+        setRedirectBoracay ? redirectBoracay && (
+          <>
+            <img className={styles.image_loader} src="https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_680/v1630914997/blog/zzydhmcu7khdqixvlmxg.webp" />
+            <Loader />
+          </>
+
+        ) : ''
+
+      }
+      {
+        setRedirectElNido ? redirectElNido && (
+          <>
+            <img className={styles.image_loader} src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp" />
+            <Loader />
+          </>
+
+        ) : ''
+
+      }
+      {
+        setRedirectRoomSolo ? redirectRoomSolo && (
+          <>
+            <img className={styles.image_loader} src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp" />
+            <Loader />
+          </>
+
+        ) : ''
+
+      }
+      {
+        setRedirectRoomDouble ? redirectRoomDouble && (
+          <>
+            <img className={styles.image_loader} src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp" />
+            <Loader />
+          </>
+
+        ) : ''
+
+      }
+      {
+        setRedirectRoomDeluxe ? redirectRoomDeluxe && (
+          <>
+            <img className={styles.image_loader} src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp" />
+            <Loader />
+          </>
+
+        ) : ''
+
+      }
+      {
+        setRedirectRoomPremier ? redirectRoomPremier && (
+          <>
+            <img className={styles.image_loader} src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp" />
+            <Loader />
+          </>
+
+        ) : ''
+
+      }
+      {
+        setRedirectGatheringWedding ? redirectGatheringWedding && (
+          <>
+            <img className={styles.image_loader} src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp" />
+            <Loader />
+          </>
+
+        ) : ''
+
+      }
+      {
+        setRedirectGatheringCorporate ? redirectGatheringCorporate && (
+          <>
+            <img className={styles.image_loader} src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp" />
+            <Loader />
+          </>
+
+        ) : ''
+
+      }
+      {
+        setRedirectGatheringMilestone ? redirectGatheringMilestone && (
+          <>
+            <img className={styles.image_loader} src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp" />
+            <Loader />
+          </>
+
+        ) : ''
+
+      }
+      {
+        setRedirectLibraryAbout ? redirectLibraryAbout && (
+          <>
+            <img className={styles.image_loader} src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp" />
+            <Loader />
+          </>
+
+        ) : ''
+
+      }
+      {
+        setRedirectLibraryAmenities ? redirectLibraryAmenities && (
+          <>
+            <img className={styles.image_loader} src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp" />
+            <Loader />
+          </>
+
+        ) : ''
+
+      }
+      {
+        setRedirectLibraryGallery ? redirectLibraryGallery && (
+          <>
+            <img className={styles.image_loader} src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp" />
+            <Loader />
+          </>
+
+        ) : ''
+
+      }
+      {/* End Return Loading Animation */}
+
       <Navbar className={classnames('fixed-top', navbarColor)} id="navbar_cont" expand="lg">
-        <Link
-          to="/"
+        <div
           class="navbar-brand font-weight-bolder ms-sm-3 text-warning"
           rel="tooltip"
           data-placement="bottom"
-          id="bottom"
+          id="bottom" onClick={homepage}
         >
           7Seven luxury hotel{' '}
           <img
@@ -124,7 +344,7 @@ function IndexNavbar() {
           >
             7Seven Luxury Hotel
           </UncontrolledTooltip>
-        </Link>
+        </div>
         <Container>
           <Collapse
             className="justify-content-end"
@@ -153,8 +373,7 @@ function IndexNavbar() {
               >
                 <ul class="navbar-nav navbar-nav-hover ms-auto">
                   <li class="nav-item dropdown dropdown-hover mx-2">
-                    <Link
-                      to="/"
+                    <div
                       className={
                         styles.dropdown_cont +
                         ' nav-link ps-2 d-flex cursor-pointer align-items-center'
@@ -165,7 +384,7 @@ function IndexNavbar() {
                     >
                       <i class="fa-solid fa-hotel"></i>
                       Choose Your Hotel
-                    </Link>
+                    </div>
                     <div
                       className={
                         styles.dropdown_cont +
@@ -188,32 +407,39 @@ function IndexNavbar() {
                             ' dropdown-item border-radius-md'
                           }
                           onClick={
-                            setIsLoading ?
-                              handleSubmit :
+                            setRedirectTagaytay ?
+                              handleSubmitTagaytay :
                               ''
                           }
                         >
                           <span>Tagaytay</span>
                         </div>
-                        <Link
-                          to="/boracay"
+                        <div
                           className={
                             styles.navigation_row +
                             ' dropdown-item border-radius-md'
+                          }
+                          onClick={
+                            setRedirectBoracay ?
+                              handleSubmitBoracay :
+                              ''
                           }
                         >
                           <span>Boracay</span>
-                        </Link>
-                        <Link
-                          to="/el-nido"
-                          href="./pages/author.html"
+                        </div>
+                        <div
                           className={
                             styles.navigation_row +
                             ' dropdown-item border-radius-md'
                           }
+                          onClick={
+                            setRedirectElNido ?
+                              handleSubmitElNido :
+                              ''
+                          }
                         >
                           <span>El Nido</span>
-                        </Link>
+                        </div>
                       </div>
 
                       {/* <div class="d-lg-none">
@@ -251,8 +477,7 @@ function IndexNavbar() {
                   </li>
 
                   <li class="nav-item dropdown dropdown-hover mx-2">
-                    <Link
-                      to="/"
+                    <div
                       className={
                         styles.dropdown_cont +
                         ' nav-link ps-2 d-flex cursor-pointer align-items-center'
@@ -263,15 +488,14 @@ function IndexNavbar() {
                     >
                       <i class="fa-solid fa-bell-concierge"></i>
                       Services
-                    </Link>
+                    </div>
                     <ul
                       class="dropdown-menu dropdown-menu-end dropdown-menu-animation dropdown-md dropdown-md-responsive p-3 border-radius-lg mt-0 mt-lg-3"
                       aria-labelledby="dropdownMenuBlocks"
                     >
                       <div class="d-none d-lg-block">
                         <li class="nav-item dropdown dropdown-hover dropdown-subitem">
-                          <Link
-                            to="/"
+                          <div
                             className={
                               styles.navigation_row +
                               ' dropdown-item border-radius-md'
@@ -287,50 +511,65 @@ function IndexNavbar() {
                                 </span>
                               </div>
                             </div>
-                          </Link>
+                          </div>
                           <div class="dropdown-menu mt-0 py-3 px-2 mt-3">
-                            <Link
-                              to="wedding"
+                            <div
                               className={
                                 styles.navigation_row +
                                 ' dropdown-item border-radius-md'
+                              }
+                              onClick={
+                                setRedirectRoomSolo ?
+                                  handleSubmitRoomSolo :
+                                  ''
                               }
                             >
                               Solo
-                            </Link>
-                            <Link
-                              to="corporate"
+                            </div>
+                            <div
                               className={
                                 styles.navigation_row +
                                 ' dropdown-item border-radius-md'
+                              }
+                              onClick={
+                                setRedirectRoomDouble ?
+                                  handleSubmitRoomDouble :
+                                  ''
                               }
                             >
                               Double
-                            </Link>
-                            <Link
-                              to="milestone"
+                            </div>
+                            <div
                               className={
                                 styles.navigation_row +
                                 ' dropdown-item border-radius-md'
+                              }
+                              onClick={
+                                setRedirectRoomDeluxe ?
+                                  handleSubmitRoomDeluxe :
+                                  ''
                               }
                             >
                               Deluxe
-                            </Link>
-                            <Link
-                              to="milestone"
+                            </div>
+                            <div
                               className={
                                 styles.navigation_row +
                                 ' dropdown-item border-radius-md'
                               }
+                              onClick={
+                                setRedirectRoomPremier ?
+                                  handleSubmitRoomPremier :
+                                  ''
+                              }
                             >
                               Premier
-                            </Link>
+                            </div>
                           </div>
                         </li>
 
                         <li class="nav-item dropdown dropdown-hover dropdown-subitem">
-                          <Link
-                            to="/"
+                          <div
                             className={
                               styles.navigation_row +
                               ' dropdown-item border-radius-md'
@@ -344,35 +583,47 @@ function IndexNavbar() {
                                 <span class="text-sm">Event Plans</span>
                               </div>
                             </div>
-                          </Link>
+                          </div>
                           <div class="dropdown-menu mt-0 py-3 px-2 mt-3">
-                            <Link
-                              to="wedding"
+                            <div
                               className={
                                 styles.navigation_row +
                                 ' dropdown-item border-radius-md'
+                              }
+                              onClick={
+                                setRedirectGatheringWedding ?
+                                  handleSubmitGatheringWedding :
+                                  ''
                               }
                             >
                               Weddings
-                            </Link>
-                            <Link
-                              to="corporate"
+                            </div>
+                            <div
                               className={
                                 styles.navigation_row +
                                 ' dropdown-item border-radius-md'
+                              }
+                              onClick={
+                                setRedirectGatheringCorporate ?
+                                  handleSubmitGatheringCorporate :
+                                  ''
                               }
                             >
                               Corporate
-                            </Link>
-                            <Link
-                              to="milestone"
+                            </div>
+                            <div
                               className={
                                 styles.navigation_row +
                                 ' dropdown-item border-radius-md'
                               }
+                              onClick={
+                                setRedirectGatheringMilestone ?
+                                  handleSubmitGatheringMilestone :
+                                  ''
+                              }
                             >
                               Milestone
-                            </Link>
+                            </div>
                           </div>
                         </li>
                       </div>
@@ -380,8 +631,7 @@ function IndexNavbar() {
                   </li>
 
                   <li class="nav-item dropdown dropdown-hover mx-2">
-                    <Link
-                      to="/"
+                    <div
                       className={
                         styles.dropdown_cont +
                         ' nav-link ps-2 d-flex cursor-pointer align-items-center'
@@ -392,7 +642,7 @@ function IndexNavbar() {
                     >
                       <i class="fa-solid fa-newspaper"></i>
                       Docs
-                    </Link>
+                    </div>
                     <ul
                       class="dropdown-menu dropdown-menu-end dropdown-menu-animation dropdown-md dropdown-md-responsive mt-0 mt-lg-3 p-3 border-radius-lg"
                       aria-labelledby="dropdownMenuDocs"
@@ -400,11 +650,15 @@ function IndexNavbar() {
                       <div class="d-none d-lg-block">
                         <ul class="list-group">
                           <li class="nav-item list-group-item border-0 p-0">
-                            <Link
-                              to="about"
+                            <div
                               className={
                                 styles.navigation_row +
                                 ' dropdown-item border-radius-md'
+                              }
+                              onClick={
+                                setRedirectLibraryAbout ?
+                                  handleSubmitLibraryAbout :
+                                  ''
                               }
                             >
                               <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
@@ -414,14 +668,18 @@ function IndexNavbar() {
                                 All about overview, quick start, license and
                                 contents
                               </span>
-                            </Link>
+                            </div>
                           </li>
                           <li class="nav-item list-group-item border-0 p-0">
-                            <Link
-                              to="gallery"
+                            <div
                               className={
                                 styles.navigation_row +
                                 ' dropdown-item border-radius-md'
+                              }
+                              onClick={
+                                setRedirectLibraryGallery ?
+                                  handleSubmitLibraryGallery :
+                                  ''
                               }
                             >
                               <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
@@ -430,14 +688,18 @@ function IndexNavbar() {
                               <span class="text-sm">
                                 See our colors, icons and typography
                               </span>
-                            </Link>
+                            </div>
                           </li>
                           <li class="nav-item list-group-item border-0 p-0">
-                            <Link
-                              to="amenities"
+                            <div
                               className={
                                 styles.navigation_row +
                                 ' dropdown-item border-radius-md'
+                              }
+                              onClick={
+                                setRedirectLibraryAmenities ?
+                                  handleSubmitLibraryAmenities :
+                                  ''
                               }
                             >
                               <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
@@ -447,23 +709,7 @@ function IndexNavbar() {
                                 Explore our collection of fully designed
                                 components
                               </span>
-                            </Link>
-                          </li>
-                          <li class="nav-item list-group-item border-0 p-0">
-                            <Link
-                              to="corporate"
-                              className={
-                                styles.navigation_row +
-                                ' dropdown-item border-radius-md'
-                              }
-                            >
-                              <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
-                                Contact Us
-                              </h6>
-                              <span class="text-sm">
-                                Check how you can integrate our plugins
-                              </span>
-                            </Link>
+                            </div>
                           </li>
                         </ul>
                       </div>

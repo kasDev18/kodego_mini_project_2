@@ -74,13 +74,13 @@ class App extends React.Component {
             <Route path="/elnido-delux-room" element={<ElNidoDelux />} />
             <Route path="/elnido-premier-room" element={<ElNidoPremier />} />
 
-            <Route path="/services-gathering" element={<Corporate />} />
-            <Route path="/services-gathering" element={<Milestone />} />
-            <Route path="/services-gathering" element={<Wedding />} />
+            <Route path="/services-gathering-corporate" element={<Corporate />} />
+            <Route path="/services-gathering-milestone" element={<Milestone />} />
+            <Route path="/services-gathering-wedding" element={<Wedding />} />
 
             <Route path="/services-rooms-solo" element={<RoomsSolo />} />
             <Route path="/services-rooms-double" element={<RoomsDouble />} />
-            <Route path="/services-rooms-delux" element={<RoomsDelux />} />
+            <Route path="/services-rooms-deluxe" element={<RoomsDelux />} />
             <Route path="/services-rooms-premier" element={<RoomsPremier />} />
 
             <Route
