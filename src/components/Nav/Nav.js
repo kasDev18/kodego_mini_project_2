@@ -535,24 +535,29 @@ function IndexNavbar() {
                     </div> */}
                     </ul>
                   </li>
-                  <li class="nav-item ms-lg-auto">
-                    <a
-                      className={
-                        styles.dropdown_cont + ' nav-link nav-link-icon me-2'
-                      }
-                      href="https://github.com/creativetimofficial/material-kit"
-                      target="_blank"
-                    >
-                      <i class="fa fa-github me-1"></i>
-                      <p
-                        class="d-inline text-sm z-index-1 font-weight-bold"
-                        data-bs-toggle="tooltip"
-                        data-bs-placement="bottom"
-                        title="Star us on Github"
-                      >
-                        Github
-                      </p>
+                  <li class="nav-item dropdown dropdown-hover mx-2">
+                    <a href="#" className={styles.language_selector_dropdown + ' btn bg-gradient-dark dropdown-toggle p-1 px-2'} data-bs-toggle="dropdown" id="navbarDropdownMenuLink2">
+                      <img src="https://demos.creative-tim.com/test/material-dashboard-pro/assets/img/icons/flags/US.png" /> Flags
                     </a>
+                    <div
+                      className={
+                        styles.dropdown_cont +
+                        ' dropdown-menu ms-n0 dropdown-md p-3 border-radius-xl mt-0 mt-lg-5'
+                      }
+                      aria-labelledby="dropdownMenuPages"
+                    >
+                      <div class="d-none d-lg-block">
+                        <a className={styles.navigation_row + ' dropdown-item'} href="#">
+                          <img src="https://demos.creative-tim.com/test/material-dashboard-pro/assets/img/icons/flags/DE.png" /> Deutsch
+                        </a>
+                        <a className={styles.navigation_row + ' dropdown-item'} href="#">
+                          <img src="https://demos.creative-tim.com/test/material-dashboard-pro/assets/img/icons/flags/US.png" /> English
+                        </a>
+                        <a className={styles.navigation_row + ' dropdown-item'} href="#">
+                          <img src="https://demos.creative-tim.com/test/material-dashboard-pro/assets/img/icons/flags/BR.png" /> Brasil
+                        </a>
+                      </div>
+                    </div>
                   </li>
                   <li class="nav-item my-auto ms-3 ms-lg-0">
                     <a
