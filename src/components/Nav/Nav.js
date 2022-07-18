@@ -536,8 +536,8 @@ function IndexNavbar() {
                     </ul>
                   </li>
                   <li class="nav-item dropdown dropdown-hover mx-2">
-                    <a href="#" className={styles.language_selector_dropdown + ' btn bg-gradient-dark dropdown-toggle p-1 px-2'} data-bs-toggle="dropdown" id="navbarDropdownMenuLink2">
-                      <img src="https://demos.creative-tim.com/test/material-dashboard-pro/assets/img/icons/flags/US.png" /> Flags
+                    <a href="#" className={styles.language_selector_dropdown + ' text-light btn bg-gradient-dark dropdown-toggle p-2 px-2'} data-bs-toggle="dropdown" id="navbarDropdownMenuLink2">
+                      <img src="https://demos.creative-tim.com/test/material-dashboard-pro/assets/img/icons/flags/US.png" /> Language
                     </a>
                     <div
                       className={
@@ -548,13 +548,13 @@ function IndexNavbar() {
                     >
                       <div class="d-none d-lg-block">
                         <a className={styles.navigation_row + ' dropdown-item'} href="#">
-                          <img src="https://demos.creative-tim.com/test/material-dashboard-pro/assets/img/icons/flags/DE.png" /> Deutsch
+                          <img src="./plugins/flag-icon-css/flags/4x3/ph.svg" width={"20px"} height={"20px"} /> Tagalog
                         </a>
                         <a className={styles.navigation_row + ' dropdown-item'} href="#">
-                          <img src="https://demos.creative-tim.com/test/material-dashboard-pro/assets/img/icons/flags/US.png" /> English
+                          <img src="./plugins/flag-icon-css/flags/4x3/us.svg" width={"20px"} height={"20px"} /> English
                         </a>
                         <a className={styles.navigation_row + ' dropdown-item'} href="#">
-                          <img src="https://demos.creative-tim.com/test/material-dashboard-pro/assets/img/icons/flags/BR.png" /> Brasil
+                          <img src="./plugins/flag-icon-css/flags/4x3/th.svg" width={"20px"} height={"20px"} /> Thai
                         </a>
                       </div>
                     </div>
@@ -563,7 +563,7 @@ function IndexNavbar() {
                     <a
                       className={
                         styles.dropdown_cont +
-                        ' btn btn-sm  bg-gradient-warning  mb-0 me-1 mt-2 mt-md-0 text-white'
+                        ' btn btn-sm  bg-warning p-2 mb-0 me-1 mt-2 mt-md-0 text-white'
                       }
                       onClick={() => setLiveDemo(true)}
                     >
