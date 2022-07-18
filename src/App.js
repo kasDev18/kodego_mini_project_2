@@ -52,6 +52,10 @@ class App extends React.Component {
             <Route path="/el-nido" element={<ElNido />} />
             <Route path="/tagaytay" element={<Tagaytay />} />
 
+            <Route path="/corporate" element={<Corporate />} />
+            <Route path="/milestone" element={<Milestone />} />
+            <Route path="/wedding" element={<Wedding />} />
+
             <Route path="/about" element={<About />} />
             <Route path="/amenities" element={<Amenities />} />
             <Route path="/gallery" element={<Gallery />} />
@@ -74,52 +78,48 @@ class App extends React.Component {
             <Route path="/elnido-delux-room" element={<ElNidoDelux />} />
             <Route path="/elnido-premier-room" element={<ElNidoPremier />} />
 
-            <Route path="/services-gathering" element={<Corporate />} />
-            <Route path="/services-gathering" element={<Milestone />} />
-            <Route path="/services-gathering" element={<Wedding />} />
-
             <Route path="/services-rooms-solo" element={<RoomsSolo />} />
             <Route path="/services-rooms-double" element={<RoomsDouble />} />
             <Route path="/services-rooms-delux" element={<RoomsDelux />} />
             <Route path="/services-rooms-premier" element={<RoomsPremier />} />
 
             <Route
-              path="/boracay-gathering-corporate"
+              path="/corporate/boracay-gathering-corporate"
               element={<BoracayGatheringCorporate />}
+            />
+            <Route
+              path="/tagaytay-gathering-corporate"
+              element={<TagaytayGatheringWedding />}
+            />
+            <Route
+              path="/elnido-gathering-corporate"
+              element={<ElNidoGatheringCorporate />}
+            />
+
+            <Route
+              path="/boracay-gathering-wedding"
+              element={<BoracayGatheringWedding />}
+            />
+            <Route
+              path="/tagaytay-gathering-wedding"
+              element={<TagaytayGatheringCorporate />}
+            />
+            <Route
+              path="/elnido-gathering-wedding"
+              element={<ElNidoGatheringWedding />}
+            />
+
+            <Route
+              path="/tagaytay-gathering-milestone "
+              element={<TagaytayGatheringMilestone />}
             />
             <Route
               path="/boracay-gathering-milestone "
               element={<BoracayGatheringMilestone />}
             />
             <Route
-              path="/boracay-gathering-wedding"
-              element={<BoracayGatheringWedding />}
-            />
-
-            <Route
-              path="/tagaytay-gathering-corporate"
-              element={<TagaytayGatheringWedding />}
-            />
-            <Route
-              path="/tagaytay-gathering-milestone "
-              element={<TagaytayGatheringMilestone />}
-            />
-            <Route
-              path="/tagaytay-gathering-wedding"
-              element={<TagaytayGatheringCorporate />}
-            />
-
-            <Route
-              path="/elnido-gathering-corporate"
-              element={<ElNidoGatheringCorporate />}
-            />
-            <Route
               path="/elnido-gathering-milestone "
               element={<ElNidoGatheringMilestone />}
-            />
-            <Route
-              path="/elnido-gathering-wedding"
-              element={<ElNidoGatheringWedding />}
             />
           </Routes>
         </div>
