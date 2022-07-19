@@ -45,7 +45,7 @@ class LanguageSelector extends React.Component {
           data-bs-toggle="dropdown"
           id="navbarDropdownMenuLink2"
         >
-          <img src="https://demos.creative-tim.com/test/material-dashboard-pro/assets/img/icons/flags/US.png" />{' '}
+          <img src={us_flag} width={"20px"} height={"10px"} />{' '}
           Language
         </a>
         <div
