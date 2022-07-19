@@ -42,7 +42,7 @@ class Boracay extends React.Component {
         <div className="container">
           <div className="row">
             <div className={styles.HotelPackage + ' col-6'}>
-              <Link to="boracay-solo-room">
+              <Link to="/services-rooms-solo/boracay">
                 <div align="center" class="fond">
                   <div className={styles.carreaux_presentation_light}>
                     <div className={styles.shadow_swhow_mini}>
@@ -54,7 +54,7 @@ class Boracay extends React.Component {
               </Link>
             </div>
             <div className={styles.HotelPackage + ' col-6'}>
-              <Link to="boracay-double-room">
+              <Link to="/services-rooms-double/boracay">
                 <div align="center" class="fond">
                   <div className={styles.carreaux_presentation_light}>
                     <div className={styles.shadow_swhow_mini}>
@@ -68,7 +68,7 @@ class Boracay extends React.Component {
           </div>
           <div className="row">
             <div className={styles.HotelPackage + ' col-6'}>
-              <Link to="boracay-deluxe-room">
+              <Link to="/services-rooms-deluxe/boracay">
                 <div align="center" class="fond">
                   <div className={styles.carreaux_presentation_light}>
                     <div className={styles.shadow_swhow_mini}>
@@ -80,7 +80,7 @@ class Boracay extends React.Component {
               </Link>
             </div>
             <div className={styles.HotelPackage + ' col-6'}>
-              <Link to="boracay-premier-room">
+              <Link to="/services-rooms-premier/boracay">
                 <div align="center" class="fond">
                   <div className={styles.carreaux_presentation_light}>
                     <div className={styles.shadow_swhow_mini}>
@@ -173,18 +173,6 @@ class Boracay extends React.Component {
               </p>
             </div>
             <hr />
-          </div>
-          {/* 
-          Awards
-        */}
-
-          <div className={styles.Awards + ' container-fluid pb-5'}>
-            <img src="boracay/award1.png" alt="award1" />
-            <img src="boracay/award2.png" alt="award2" />
-            <img src="boracay/award3.png" alt="award3" />
-            <img src="boracay/award4.png" alt="award4" />
-            <img src="boracay/award5.png" alt="award5" />
-            <img src="boracay/award6.jpg" alt="award6" />
           </div>
         </div>
 

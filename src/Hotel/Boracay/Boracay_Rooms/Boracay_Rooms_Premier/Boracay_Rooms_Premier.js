@@ -10,7 +10,7 @@ class Boracay extends React.Component {
         <div className={styles.HotelBoracay}>
           <div className={styles.containerImage}>
             <img
-              src="https://img.tagvenue.com/resize/8c/8a/widen-1680-noupsize;4194-westminster-suite-room.jpg"
+              src="https://belmonthotelboracay.com/Resources/images/BelmontHotelBoracay-PremiereDeluxeBanner-1920w.jpg"
               autoPlay
               className={styles.ImageBoracay}
               alt="milestone"
@@ -39,66 +39,43 @@ class Boracay extends React.Component {
           Rooms
         */}
         <div className="container my-5 ">
-          <h1 className="text-center">Choose your Package</h1>
           <div className="row my-5">
-            <div className={styles.HotelPackage + ' col-4'}>
+            <div className={styles.HotelPackage + ' col-6'}>
               <Link to=" ">
                 <div align="center" class="fond">
                   <div
                     className={styles.carreaux_presentation_light}
                     style={{
-                      backgroundImage: `url("https://img.tagvenue.com/resize/67/e8/widen-1680-noupsize;4194-westminster-suite-room.jpg")`,
+                      backgroundImage: `url("https://belmonthotelboracay.com/Resources/images/superior-01.jpg")`,
                     }}
                   >
                     <div className={styles.shadow_swhow_mini}>
-                      <div className={styles.deroul_titre}>Package 1</div>
+                      <div className={styles.deroul_titre}>BORACAY</div>
                       <div class={styles.deroul_soustitre}>Book Now!</div>
                     </div>
                   </div>
                 </div>
               </Link>
             </div>
-            <div className={styles.HotelPackage + ' col-4'}>
-              <Link to=" ">
-                <div align="center" class="fond">
-                  <div
-                    className={styles.carreaux_presentation_light}
-                    style={{
-                      backgroundImage: `url("https://img.tagvenue.com/resize/08/1b/widen-1680-noupsize;4194-westminster-suite-room.jpg")`,
-                    }}
-                  >
-                    <div className={styles.shadow_swhow_mini}>
-                      <div className={styles.deroul_titre}>Package 2</div>
-                      <div class={styles.deroul_soustitre}>Book Now!</div>
-                    </div>
-                  </div>
-                </div>
-              </Link>
+            <div className={styles.HotelPackage + ' col-6'}>
+              <div className={styles.boraAddress}>
+                <h1 className="mb-5">PREMIER ROOM</h1>
+                <p>
+                  <strong>Floor area:</strong> 33 sqm
+                </p>
+                <p>
+                  <strong>Bed Configuration:</strong> Queen bed
+                </p>
+                <p>
+                  The Premier Room is perfect for couples. It features both an
+                  intimate space and comfortable living quarters.
+                </p>
+              </div>
             </div>
-            <div className={styles.HotelPackage + ' col-4'}>
-              <Link to=" ">
-                <div align="center" class="fond">
-                  <div
-                    className={styles.carreaux_presentation_light}
-                    style={{
-                      backgroundImage: `url("https://img.tagvenue.com/resize/90/bb/widen-1680-noupsize;4194-westminster-suite-room.jpg")`,
-                    }}
-                  >
-                    <div className={styles.shadow_swhow_mini}>
-                      <div className={styles.deroul_titre}>Package 3</div>
-                      <div class={styles.deroul_soustitre}>Book Now!</div>
-                    </div>
-                  </div>
-                </div>
-              </Link>
+            <div className="text-center mt-5">
+              <span className="btn btn-primary ">Book Now</span>
             </div>
           </div>
-        </div>
-
-        <div className="container mt-5 bg-body">
-          <h1 className="text-center mb-4">Book Now!</h1>
-
-          <BookingForm />
         </div>
       </>
     );
