@@ -10,7 +10,7 @@ class Boracay extends React.Component {
         <div className={styles.HotelBoracay}>
           <div className={styles.containerImage}>
             <img
-              src="https://milestonehotel.com/media/qpeflslh/the-milestone-wedding_5.jpg?width=1920&height=1080&anchor=center&format=webp&mode=crop&quality=80&rnd=132406786275430000&scale=both"
+              src="https://img.tagvenue.com/resize/55/b6/widen-1680-noupsize;30528-the-london-gin-club-room.jpg"
               autoPlay
               className={styles.ImageBoracay}
               alt="milestone"
@@ -43,11 +43,11 @@ class Boracay extends React.Component {
                   <div
                     className={styles.carreaux_presentation_light}
                     style={{
-                      backgroundImage: `url("https://img.tagvenue.com/resize/21/c9/fit-535-358;10241-cambridge-cottage-room.jpg")`,
+                      backgroundImage: `url("https://img.tagvenue.com/resize/d8/33/widen-1680-noupsize;14525-the-london-gin-club-venue.jpg")`,
                     }}
                   >
                     <div className={styles.shadow_swhow_mini}>
-                      <div className={styles.deroul_titre}>Tagaytay</div>
+                      <div className={styles.deroul_titre}>Package 1</div>
                       <div class={styles.deroul_soustitre}>Book Now!</div>
                     </div>
                   </div>
@@ -60,11 +60,11 @@ class Boracay extends React.Component {
                   <div
                     className={styles.carreaux_presentation_light}
                     style={{
-                      backgroundImage: `url("https://img.tagvenue.com/resize/21/c9/fit-535-358;10241-cambridge-cottage-room.jpg")`,
+                      backgroundImage: `url("https://img.tagvenue.com/resize/59/48/widen-1680-noupsize;335-whole-venue-room.jpg")`,
                     }}
                   >
                     <div className={styles.shadow_swhow_mini}>
-                      <div className={styles.deroul_titre}>Tagaytay</div>
+                      <div className={styles.deroul_titre}>Package 2</div>
                       <div class={styles.deroul_soustitre}>Book Now!</div>
                     </div>
                   </div>
@@ -77,11 +77,11 @@ class Boracay extends React.Component {
                   <div
                     className={styles.carreaux_presentation_light}
                     style={{
-                      backgroundImage: `url("https://img.tagvenue.com/resize/21/c9/fit-535-358;10241-cambridge-cottage-room.jpg")`,
+                      backgroundImage: `url("https://img.tagvenue.com/resize/e8/a3/widen-1680-noupsize;1219-main-space-room.jpg")`,
                     }}
                   >
                     <div className={styles.shadow_swhow_mini}>
-                      <div className={styles.deroul_titre}>Tagaytay</div>
+                      <div className={styles.deroul_titre}>Package 3</div>
                       <div class={styles.deroul_soustitre}>Book Now!</div>
                     </div>
                   </div>

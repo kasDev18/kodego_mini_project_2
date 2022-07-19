@@ -40,7 +40,7 @@ class Boracay extends React.Component {
                   <div
                     className={styles.carreaux_presentation_light}
                     style={{
-                      backgroundImage: `url("https://www.diamondhotel.com/optimized_img/meetings/corporate2.jpg")`,
+                      backgroundImage: `url("https://img.tagvenue.com/resize/c8/20/widen-1680-noupsize;1521-the-durham-street-auditorium-room.jpg")`,
                     }}
                   >
                     <div className={styles.shadow_swhow_mini}>
@@ -67,7 +67,7 @@ class Boracay extends React.Component {
                   <div
                     className={styles.carreaux_presentation_light}
                     style={{
-                      backgroundImage: `url("https://www.diamondhotel.com/optimized_img/meetings/corporate4.jpg")`,
+                      backgroundImage: `url("https://img.tagvenue.com/resize/ce/03/widen-1680-noupsize;1007-members-room-room.jpg")`,
                     }}
                   >
                     <div className={styles.shadow_swhow_mini}>
@@ -86,7 +86,7 @@ class Boracay extends React.Component {
                   <div
                     className={styles.carreaux_presentation_light}
                     style={{
-                      backgroundImage: `url("https://www.diamondhotel.com/optimized_img/meetings/corporate1.jpg")`,
+                      backgroundImage: `url("https://img.tagvenue.com/resize/23/31/widen-1680-noupsize;14025-whole-venue-room.jpg")`,
                     }}
                   >
                     <div className={styles.shadow_swhow_mini}>

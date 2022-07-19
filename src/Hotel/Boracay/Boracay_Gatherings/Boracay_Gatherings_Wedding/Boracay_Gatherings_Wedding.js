@@ -10,7 +10,7 @@ class Boracay extends React.Component {
         <div className={styles.HotelBoracay}>
           <div className={styles.containerImage}>
             <img
-              src="https://milestonehotel.com/media/qpeflslh/the-milestone-wedding_5.jpg?width=1920&height=1080&anchor=center&format=webp&mode=crop&quality=80&rnd=132406786275430000&scale=both"
+              src="https://img.tagvenue.com/resize/8c/8a/widen-1680-noupsize;4194-westminster-suite-room.jpg"
               autoPlay
               className={styles.ImageBoracay}
               alt="milestone"
@@ -22,12 +22,16 @@ class Boracay extends React.Component {
         */}
         <div className={styles.BoracayDescription}>
           <p>
-            We pour our creativity into every room, always with our guests’
-            comfort in mind. Each room has a distinct character, filled with
-            curated artworks and sumptuous prints. Our Grand Master Suites are
-            iconic, from the Noel Coward Suite, with its art deco touches and
-            priceless antiques, to the Hermès Suite, featuring lofty ceilings,
-            extraordinary custom-made furniture, and a romantic balcony.
+            When you need a large venue for your business seminar or company
+            banquet, the 7Seven Luxury Hotel is sure to impress. Invite up to
+            144 guests, and we take care of the rest. The 7Seven Luxury Hotel
+            can be divided into two distinctive suites – one for business
+            presentations and the other for dining and discussions, or one for a
+            brainstorm over breakfast followed by a productive training session
+            in the other. A separate anteroom can also be used as a breakout
+            room during meetings, a VIP room for events or an interview room.
+            Whatever your agenda, the 7Seven Luxury Hotel at somewhere adapts to
+            meet your requirements.
           </p>
         </div>
 
@@ -43,11 +47,11 @@ class Boracay extends React.Component {
                   <div
                     className={styles.carreaux_presentation_light}
                     style={{
-                      backgroundImage: `url("https://img.tagvenue.com/resize/21/c9/fit-535-358;10241-cambridge-cottage-room.jpg")`,
+                      backgroundImage: `url("https://img.tagvenue.com/resize/67/e8/widen-1680-noupsize;4194-westminster-suite-room.jpg")`,
                     }}
                   >
                     <div className={styles.shadow_swhow_mini}>
-                      <div className={styles.deroul_titre}>Tagaytay</div>
+                      <div className={styles.deroul_titre}>Package 1</div>
                       <div class={styles.deroul_soustitre}>Book Now!</div>
                     </div>
                   </div>
@@ -60,11 +64,11 @@ class Boracay extends React.Component {
                   <div
                     className={styles.carreaux_presentation_light}
                     style={{
-                      backgroundImage: `url("https://img.tagvenue.com/resize/21/c9/fit-535-358;10241-cambridge-cottage-room.jpg")`,
+                      backgroundImage: `url("https://img.tagvenue.com/resize/08/1b/widen-1680-noupsize;4194-westminster-suite-room.jpg")`,
                     }}
                   >
                     <div className={styles.shadow_swhow_mini}>
-                      <div className={styles.deroul_titre}>Tagaytay</div>
+                      <div className={styles.deroul_titre}>Package 2</div>
                       <div class={styles.deroul_soustitre}>Book Now!</div>
                     </div>
                   </div>
@@ -77,11 +81,11 @@ class Boracay extends React.Component {
                   <div
                     className={styles.carreaux_presentation_light}
                     style={{
-                      backgroundImage: `url("https://img.tagvenue.com/resize/21/c9/fit-535-358;10241-cambridge-cottage-room.jpg")`,
+                      backgroundImage: `url("https://img.tagvenue.com/resize/90/bb/widen-1680-noupsize;4194-westminster-suite-room.jpg")`,
                     }}
                   >
                     <div className={styles.shadow_swhow_mini}>
-                      <div className={styles.deroul_titre}>Tagaytay</div>
+                      <div className={styles.deroul_titre}>Package 3</div>
                       <div class={styles.deroul_soustitre}>Book Now!</div>
                     </div>
                   </div>

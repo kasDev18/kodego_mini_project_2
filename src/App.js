@@ -108,7 +108,7 @@ class App extends React.Component {
             />
 
             <Route
-              path="/gathering-wedding/tagaytay "
+              path="/gathering-wedding/tagaytay"
               element={<TagaytayGatheringWedding />}
             />
             <Route

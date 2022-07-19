@@ -10,7 +10,7 @@ class Boracay extends React.Component {
         <div className={styles.HotelBoracay}>
           <div className={styles.containerImage}>
             <img
-              src="https://milestonehotel.com/media/qpeflslh/the-milestone-wedding_5.jpg?width=1920&height=1080&anchor=center&format=webp&mode=crop&quality=80&rnd=132406786275430000&scale=both"
+              src="https://img.tagvenue.com/resize/b8/d7/widen-1680-noupsize;393-one-moorgate-place-venue.jpg"
               autoPlay
               className={styles.ImageBoracay}
               alt="milestone"
@@ -22,12 +22,12 @@ class Boracay extends React.Component {
         */}
         <div className={styles.BoracayDescription}>
           <p>
-            We pour our creativity into every room, always with our guests’
-            comfort in mind. Each room has a distinct character, filled with
-            curated artworks and sumptuous prints. Our Grand Master Suites are
-            iconic, from the Noel Coward Suite, with its art deco touches and
-            priceless antiques, to the Hermès Suite, featuring lofty ceilings,
-            extraordinary custom-made furniture, and a romantic balcony.
+            This charming room is always a talking point at events. It features
+            a balustrade bridge designed in the style of the Rialto Bridge in
+            Venice, together with a portrait gallery and display cabinets full
+            of rare books and other curiosities. The room can be laid out in
+            multiple styles and will add a touch of class to your board room
+            meetings.
           </p>
         </div>
 
@@ -43,11 +43,11 @@ class Boracay extends React.Component {
                   <div
                     className={styles.carreaux_presentation_light}
                     style={{
-                      backgroundImage: `url("https://img.tagvenue.com/resize/21/c9/fit-535-358;10241-cambridge-cottage-room.jpg")`,
+                      backgroundImage: `url("https://img.tagvenue.com/resize/ef/d1/widen-1680-noupsize;5076-whole-venue-room.jpg")`,
                     }}
                   >
                     <div className={styles.shadow_swhow_mini}>
-                      <div className={styles.deroul_titre}>Tagaytay</div>
+                      <div className={styles.deroul_titre}>Package 1</div>
                       <div class={styles.deroul_soustitre}>Book Now!</div>
                     </div>
                   </div>
@@ -60,11 +60,11 @@ class Boracay extends React.Component {
                   <div
                     className={styles.carreaux_presentation_light}
                     style={{
-                      backgroundImage: `url("https://img.tagvenue.com/resize/21/c9/fit-535-358;10241-cambridge-cottage-room.jpg")`,
+                      backgroundImage: `url("https://img.tagvenue.com/resize/ec/24/widen-1680-noupsize;655-exclusive-hire-of-helix-iris-room.jpg")`,
                     }}
                   >
                     <div className={styles.shadow_swhow_mini}>
-                      <div className={styles.deroul_titre}>Tagaytay</div>
+                      <div className={styles.deroul_titre}>Package 2</div>
                       <div class={styles.deroul_soustitre}>Book Now!</div>
                     </div>
                   </div>
@@ -77,11 +77,11 @@ class Boracay extends React.Component {
                   <div
                     className={styles.carreaux_presentation_light}
                     style={{
-                      backgroundImage: `url("https://img.tagvenue.com/resize/21/c9/fit-535-358;10241-cambridge-cottage-room.jpg")`,
+                      backgroundImage: `url("https://img.tagvenue.com/resize/73/80/widen-1680-noupsize;13673-the-waiting-room-room.jpg")`,
                     }}
                   >
                     <div className={styles.shadow_swhow_mini}>
-                      <div className={styles.deroul_titre}>Tagaytay</div>
+                      <div className={styles.deroul_titre}>Package 3</div>
                       <div class={styles.deroul_soustitre}>Book Now!</div>
                     </div>
                   </div>

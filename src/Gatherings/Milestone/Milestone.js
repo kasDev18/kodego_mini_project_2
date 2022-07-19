@@ -44,7 +44,7 @@ class Boracay extends React.Component {
                   <div
                     className={styles.carreaux_presentation_light}
                     style={{
-                      backgroundImage: `url("https://img.tagvenue.com/resize/6a/a5/fit-535-358;3881-the-conservatory-room.jpg")`,
+                      backgroundImage: `url("https://img.tagvenue.com/resize/cc/4e/widen-1680-noupsize;335-whole-venue-room.jpg")`,
                     }}
                   >
                     <div className={styles.shadow_swhow_mini}>
@@ -79,7 +79,7 @@ class Boracay extends React.Component {
                   <div
                     className={styles.carreaux_presentation_light}
                     style={{
-                      backgroundImage: `url("https://img.tagvenue.com/resize/2d/ab/fit-535-358;3834-the-windsor-suite-room.jpg")`,
+                      backgroundImage: `url("https://img.tagvenue.com/resize/91/7d/widen-1680-noupsize;1219-main-space-room.jpg")`,
                     }}
                   >
                     <div className={styles.shadow_swhow_mini}>
@@ -98,7 +98,7 @@ class Boracay extends React.Component {
                   <div
                     className={styles.carreaux_presentation_light}
                     style={{
-                      backgroundImage: `url("https://milestonehotel.com/media/d3nmkoku/the-milestone-map-room.jpg?width=549&height=533&center=0.68775790921595592,0.46166666666666667&format=webp&mode=crop&quality=80&rnd=132557118669170000&scale=both")`,
+                      backgroundImage: `url("https://img.tagvenue.com/resize/55/b6/widen-1680-noupsize;30528-the-london-gin-club-room.jpg")`,
                     }}
                   >
                     <div className={styles.shadow_swhow_mini}>
