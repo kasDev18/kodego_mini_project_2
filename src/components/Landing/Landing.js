@@ -4,6 +4,7 @@ import Navigation from '../Nav/Nav';
 import { Card, CardImg, CardBody, CardTitle, CardText, Button } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import Footer from '../Footer/Footer';
+import LandingCard from './LandingCard/LandingCard';
 
 class Landing extends React.Component {
     render() {
@@ -34,84 +35,7 @@ class Landing extends React.Component {
                             <h2>We Are Offering</h2>
                         </div>
                         <div className={styles.services_offer + ' d-flex p-5'}>
-                            <div className='col'>
-                                <Card className={styles.card + ' text-center'}>
-                                    <CardBody className='mx-2 pt-5'>
-                                        <img src="https://www.corinthia.com/media/2106/corinthia-prague-superior-city-view-room.jpg" class="img-fluid" alt="..." />
-                                        <CardTitle className='mt-3'>
-                                            <b>STAY</b>
-                                        </CardTitle>
-                                        <CardText>From luxe amenities to local attractions, Bellevue Club Hotel has it all. With so many avenues to explore and memories to make, you’re going to want to stay a while. We can’t blame you.</CardText>
-                                        <div class="button_cont">
-                                            <div className='d-flex justify-content-center'>
-                                                <Link to="/tagaytay">
-                                                    <a className={styles.example_c + ' text-center btn-round mx-2'} href="add-website-here" target="_blank" rel="nofollow noopener">Tagaytay</a>
-                                                </Link>
-                                                <Link to="/boracay">
-                                                    <a className={styles.example_c + ' text-center btn-round mx-2'} href="add-website-here" target="_blank" rel="nofollow noopener">Boracay</a>
-                                                </Link>
-                                            </div>
-                                            <div className='d-flex justify-content-center mt-2'>
-                                                <Link to="/el-nido">
-                                                    <a className={styles.example_c + ' text-center btn-round'} href="add-website-here" target="_blank" rel="nofollow noopener">El Nido</a>
-                                                </Link>
-                                            </div>
-                                        </div>
-                                    </CardBody>
-                                </Card>
-                            </div>
-                            <div className='col'>
-                                <Card className={styles.card + ' text-center'}>
-                                    <CardBody className='mx-2 pt-5'>
-                                        <img src="https://www.prestigecatering.com.au/wp-content/uploads/2016/09/tea.jpg" class="img-fluid" alt="..." />
-                                        <CardTitle className='mt-3'>
-                                            <b>DINE</b>
-                                        </CardTitle>
-                                        <CardText>Refuel with whatever moves you – a morning espresso, tide-to-table lunch, craft cocktails, or an after-dinner indulgence. Our four distinct dining venues offer all this and more.</CardText>
-                                        <div class="button_cont">
-                                            <div className='d-flex justify-content-center'>
-                                                <Link to="/tagaytay">
-                                                    <a className={styles.example_c + ' text-center btn-round mx-2'} href="add-website-here" target="_blank" rel="nofollow noopener">Tagaytay</a>
-                                                </Link>
-                                                <Link to="/boracay">
-                                                    <a className={styles.example_c + ' text-center btn-round mx-2'} href="add-website-here" target="_blank" rel="nofollow noopener">Boracay</a>
-                                                </Link>
-                                            </div>
-                                            <div className='d-flex justify-content-center mt-2'>
-                                                <Link to="/el-nido">
-                                                    <a className={styles.example_c + ' text-center btn-round'} href="add-website-here" target="_blank" rel="nofollow noopener">El Nido</a>
-                                                </Link>
-                                            </div>
-                                        </div>
-                                    </CardBody>
-                                </Card>
-                            </div>
-                            <div className='col'>
-                                <Card className={styles.card + ' text-center'}>
-                                    <CardBody className='mx-2 pt-5'>
-                                        <img src="https://yannidesignstudio.com/app/uploads/2019/08/the-drake-hotel-wedding-ceremony-reception-chicago-event-venue-floral-centerpieces-candles-lights-greenery-decoration-ideas.jpg" class="img-fluid" alt="..." />
-                                        <CardTitle className='mt-3'>
-                                            <b>GATHER</b>
-                                        </CardTitle>
-                                        <CardText>Creating iconic moments is our specialty. We have stunning spaces for any size of gathering, so whether you’re hosting a corporate meeting or the wedding of the year, we’re here to help.</CardText>
-                                        <div class="button_cont">
-                                            <div className='d-flex justify-content-center'>
-                                                <Link to="/tagaytay">
-                                                    <a className={styles.example_c + ' text-center btn-round mx-2'} href="add-website-here" target="_blank" rel="nofollow noopener">Tagaytay</a>
-                                                </Link>
-                                                <Link to="/boracay">
-                                                    <a className={styles.example_c + ' text-center btn-round mx-2'} href="add-website-here" target="_blank" rel="nofollow noopener">Boracay</a>
-                                                </Link>
-                                            </div>
-                                            <div className='d-flex justify-content-center mt-2'>
-                                                <Link to="/el-nido">
-                                                    <a className={styles.example_c + ' text-center btn-round'} href="add-website-here" target="_blank" rel="nofollow noopener">El Nido</a>
-                                                </Link>
-                                            </div>
-                                        </div>
-                                    </CardBody>
-                                </Card>
-                            </div>
+                            <LandingCard />
                         </div>
                     </div>
                 </div>

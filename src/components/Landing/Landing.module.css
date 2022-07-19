@@ -46,31 +46,6 @@ video {
     height: 100vh;
 }
 
-.card {
-    height: 540px !important;
-    background: url('https://tse2.mm.bing.net/th?id=OIP.xjYWspMu21f0_Ks6IP_PUgHaE8&pid=Api&P=0&w=237&h=158')no-repeat;
-    background-size: cover;
-}
-
-.example_c {
-    color: #494949 !important;
-    text-transform: uppercase;
-    text-decoration: none;
-    background: #ffffff;
-    padding: 0 20px 20px 20px;
-    border: 1px solid #494949 !important;
-    display: inline-block;
-    transition: all 0.4s ease 0s;
-    height: 20px;
-}
-
-.example_c:hover {
-    color: #ffffff !important;
-    background: #073e85;
-    border-color: #073e85 !important;
-    transition: all 0.4s ease 0s;
-}
-
 .sample_img_banner h4 {
     transform: translate(50px, -40px);
     text-transform: uppercase;
