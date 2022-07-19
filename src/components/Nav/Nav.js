@@ -33,129 +33,121 @@ import {
 import { Link } from 'react-router-dom';
 import Loader from '../Loader/Loader';
 
-
-
 function IndexNavbar() {
-
   // Redirection Navbar
   const homepage = () => {
     setTimeout(() => {
-      window.location = '/'
+      window.location = '/';
     }, 1500);
-  }
+  };
   const [redirectTagaytay, setRedirectTagaytay] = useState(false);
   const handleSubmitTagaytay = async () => {
     setRedirectTagaytay(true);
 
-    await new Promise((resolve) => setTimeout(resolve, 2000))
+    await new Promise((resolve) => setTimeout(resolve, 2000));
 
-    window.location = "/tagaytay"
-  }
+    window.location = '/tagaytay';
+  };
   const [redirectBoracay, setRedirectBoracay] = useState(false);
   const handleSubmitBoracay = async () => {
     setRedirectBoracay(true);
 
-    await new Promise((resolve) => setTimeout(resolve, 2000))
+    await new Promise((resolve) => setTimeout(resolve, 2000));
 
-    window.location = "/boracay"
-  }
+    window.location = '/boracay';
+  };
   const [redirectElNido, setRedirectElNido] = useState(false);
   const handleSubmitElNido = async () => {
     setRedirectElNido(true);
 
-    await new Promise((resolve) => setTimeout(resolve, 2000))
+    await new Promise((resolve) => setTimeout(resolve, 2000));
 
-    window.location = "/el-nido"
-  }
+    window.location = '/el-nido';
+  };
   const [redirectRoomSolo, setRedirectRoomSolo] = useState(false);
   const handleSubmitRoomSolo = async () => {
     setRedirectRoomSolo(true);
 
-    await new Promise((resolve) => setTimeout(resolve, 2000))
+    await new Promise((resolve) => setTimeout(resolve, 2000));
 
-    window.location = "/services-rooms-solo"
-  }
+    window.location = '/services-rooms-solo';
+  };
   const [redirectRoomDouble, setRedirectRoomDouble] = useState(false);
   const handleSubmitRoomDouble = async () => {
     setRedirectRoomDouble(true);
 
-    await new Promise((resolve) => setTimeout(resolve, 2000))
+    await new Promise((resolve) => setTimeout(resolve, 2000));
 
-    window.location = "/services-rooms-double"
-  }
+    window.location = '/services-rooms-double';
+  };
   const [redirectRoomDeluxe, setRedirectRoomDeluxe] = useState(false);
   const handleSubmitRoomDeluxe = async () => {
     setRedirectRoomDeluxe(true);
 
-    await new Promise((resolve) => setTimeout(resolve, 2000))
+    await new Promise((resolve) => setTimeout(resolve, 2000));
 
-    window.location = "/services-rooms-deluxe"
-  }
+    window.location = '/services-rooms-deluxe';
+  };
   const [redirectRoomPremier, setRedirectRoomPremier] = useState(false);
   const handleSubmitRoomPremier = async () => {
     setRedirectRoomPremier(true);
 
-    await new Promise((resolve) => setTimeout(resolve, 2000))
+    await new Promise((resolve) => setTimeout(resolve, 2000));
 
-    window.location = "/services-rooms-premier"
-  }
-  const [redirectGatheringWedding, setRedirectGatheringWedding] = useState(false);
+    window.location = '/services-rooms-premier';
+  };
+  const [redirectGatheringWedding, setRedirectGatheringWedding] =
+    useState(false);
   const handleSubmitGatheringWedding = async () => {
     setRedirectGatheringWedding(true);
 
-    await new Promise((resolve) => setTimeout(resolve, 2000))
+    await new Promise((resolve) => setTimeout(resolve, 2000));
 
-    window.location = "/services-gathering-wedding"
-  }
-  const [redirectGatheringCorporate, setRedirectGatheringCorporate] = useState(false);
+    window.location = '/gathering-wedding';
+  };
+  const [redirectGatheringCorporate, setRedirectGatheringCorporate] =
+    useState(false);
   const handleSubmitGatheringCorporate = async () => {
     setRedirectGatheringCorporate(true);
 
-    await new Promise((resolve) => setTimeout(resolve, 2000))
+    await new Promise((resolve) => setTimeout(resolve, 2000));
 
-    window.location = "/services-gathering-corporate"
-  }
-  const [redirectGatheringMilestone, setRedirectGatheringMilestone] = useState(false);
+    window.location = '/gathering-corporate';
+  };
+  const [redirectGatheringMilestone, setRedirectGatheringMilestone] =
+    useState(false);
   const handleSubmitGatheringMilestone = async () => {
     setRedirectGatheringMilestone(true);
 
-    await new Promise((resolve) => setTimeout(resolve, 2000))
+    await new Promise((resolve) => setTimeout(resolve, 2000));
 
-    window.location = "/services-gathering-milestone"
-  }
+    window.location = '/gathering-milestone';
+  };
   const [redirectLibraryAbout, setRedirectLibraryAbout] = useState(false);
   const handleSubmitLibraryAbout = async () => {
     setRedirectLibraryAbout(true);
 
-    await new Promise((resolve) => setTimeout(resolve, 2000))
+    await new Promise((resolve) => setTimeout(resolve, 2000));
 
-    window.location = "/about"
-  }
-  const [redirectLibraryAmenities, setRedirectLibraryAmenities] = useState(false);
+    window.location = '/about';
+  };
+  const [redirectLibraryAmenities, setRedirectLibraryAmenities] =
+    useState(false);
   const handleSubmitLibraryAmenities = async () => {
     setRedirectLibraryAmenities(true);
 
-    await new Promise((resolve) => setTimeout(resolve, 2000))
+    await new Promise((resolve) => setTimeout(resolve, 2000));
 
-    window.location = "/amenities"
-  }
+    window.location = '/amenities';
+  };
   const [redirectLibraryGallery, setRedirectLibraryGallery] = useState(false);
   const handleSubmitLibraryGallery = async () => {
     setRedirectLibraryGallery(true);
 
-    await new Promise((resolve) => setTimeout(resolve, 2000))
+    await new Promise((resolve) => setTimeout(resolve, 2000));
 
-    window.location = "/gallery"
-  }
-
-
-
-
-
-
-
-
-
+    window.location = '/gallery';
+  };
 
   const [navbarColor, setNavbarColor] = React.useState('navbar-transparent');
   const [navbarCollapse, setNavbarCollapse] = React.useState(false);
@@ -189,144 +181,162 @@ function IndexNavbar() {
   return (
     <>
       {/* Return Loading Animation */}
-      {
-        setRedirectTagaytay ? redirectTagaytay && (
-          <>
-            <img className={styles.image_loader} src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/90/b3/5b/escala-tagaytay.jpg?w=1200&h=-1&s=1" />
-            <Loader />
-          </>
-
-        ) : ''
-
-      }
-      {
-        setRedirectBoracay ? redirectBoracay && (
-          <>
-            <img className={styles.image_loader} src="https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_680/v1630914997/blog/zzydhmcu7khdqixvlmxg.webp" />
-            <Loader />
-          </>
-
-        ) : ''
-
-      }
-      {
-        setRedirectElNido ? redirectElNido && (
-          <>
-            <img className={styles.image_loader} src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp" />
-            <Loader />
-          </>
-
-        ) : ''
-
-      }
-      {
-        setRedirectRoomSolo ? redirectRoomSolo && (
-          <>
-            <img className={styles.image_loader} src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp" />
-            <Loader />
-          </>
-
-        ) : ''
-
-      }
-      {
-        setRedirectRoomDouble ? redirectRoomDouble && (
-          <>
-            <img className={styles.image_loader} src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp" />
-            <Loader />
-          </>
-
-        ) : ''
-
-      }
-      {
-        setRedirectRoomDeluxe ? redirectRoomDeluxe && (
-          <>
-            <img className={styles.image_loader} src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp" />
-            <Loader />
-          </>
-
-        ) : ''
-
-      }
-      {
-        setRedirectRoomPremier ? redirectRoomPremier && (
-          <>
-            <img className={styles.image_loader} src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp" />
-            <Loader />
-          </>
-
-        ) : ''
-
-      }
-      {
-        setRedirectGatheringWedding ? redirectGatheringWedding && (
-          <>
-            <img className={styles.image_loader} src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp" />
-            <Loader />
-          </>
-
-        ) : ''
-
-      }
-      {
-        setRedirectGatheringCorporate ? redirectGatheringCorporate && (
-          <>
-            <img className={styles.image_loader} src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp" />
-            <Loader />
-          </>
-
-        ) : ''
-
-      }
-      {
-        setRedirectGatheringMilestone ? redirectGatheringMilestone && (
-          <>
-            <img className={styles.image_loader} src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp" />
-            <Loader />
-          </>
-
-        ) : ''
-
-      }
-      {
-        setRedirectLibraryAbout ? redirectLibraryAbout && (
-          <>
-            <img className={styles.image_loader} src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp" />
-            <Loader />
-          </>
-
-        ) : ''
-
-      }
-      {
-        setRedirectLibraryAmenities ? redirectLibraryAmenities && (
-          <>
-            <img className={styles.image_loader} src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp" />
-            <Loader />
-          </>
-
-        ) : ''
-
-      }
-      {
-        setRedirectLibraryGallery ? redirectLibraryGallery && (
-          <>
-            <img className={styles.image_loader} src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp" />
-            <Loader />
-          </>
-
-        ) : ''
-
-      }
+      {setRedirectTagaytay
+        ? redirectTagaytay && (
+            <>
+              <img
+                className={styles.image_loader}
+                src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/90/b3/5b/escala-tagaytay.jpg?w=1200&h=-1&s=1"
+              />
+              <Loader />
+            </>
+          )
+        : ''}
+      {setRedirectBoracay
+        ? redirectBoracay && (
+            <>
+              <img
+                className={styles.image_loader}
+                src="https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_680/v1630914997/blog/zzydhmcu7khdqixvlmxg.webp"
+              />
+              <Loader />
+            </>
+          )
+        : ''}
+      {setRedirectElNido
+        ? redirectElNido && (
+            <>
+              <img
+                className={styles.image_loader}
+                src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp"
+              />
+              <Loader />
+            </>
+          )
+        : ''}
+      {setRedirectRoomSolo
+        ? redirectRoomSolo && (
+            <>
+              <img
+                className={styles.image_loader}
+                src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp"
+              />
+              <Loader />
+            </>
+          )
+        : ''}
+      {setRedirectRoomDouble
+        ? redirectRoomDouble && (
+            <>
+              <img
+                className={styles.image_loader}
+                src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp"
+              />
+              <Loader />
+            </>
+          )
+        : ''}
+      {setRedirectRoomDeluxe
+        ? redirectRoomDeluxe && (
+            <>
+              <img
+                className={styles.image_loader}
+                src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp"
+              />
+              <Loader />
+            </>
+          )
+        : ''}
+      {setRedirectRoomPremier
+        ? redirectRoomPremier && (
+            <>
+              <img
+                className={styles.image_loader}
+                src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp"
+              />
+              <Loader />
+            </>
+          )
+        : ''}
+      {setRedirectGatheringWedding
+        ? redirectGatheringWedding && (
+            <>
+              <img
+                className={styles.image_loader}
+                src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp"
+              />
+              <Loader />
+            </>
+          )
+        : ''}
+      {setRedirectGatheringCorporate
+        ? redirectGatheringCorporate && (
+            <>
+              <img
+                className={styles.image_loader}
+                src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp"
+              />
+              <Loader />
+            </>
+          )
+        : ''}
+      {setRedirectGatheringMilestone
+        ? redirectGatheringMilestone && (
+            <>
+              <img
+                className={styles.image_loader}
+                src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp"
+              />
+              <Loader />
+            </>
+          )
+        : ''}
+      {setRedirectLibraryAbout
+        ? redirectLibraryAbout && (
+            <>
+              <img
+                className={styles.image_loader}
+                src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp"
+              />
+              <Loader />
+            </>
+          )
+        : ''}
+      {setRedirectLibraryAmenities
+        ? redirectLibraryAmenities && (
+            <>
+              <img
+                className={styles.image_loader}
+                src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp"
+              />
+              <Loader />
+            </>
+          )
+        : ''}
+      {setRedirectLibraryGallery
+        ? redirectLibraryGallery && (
+            <>
+              <img
+                className={styles.image_loader}
+                src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp"
+              />
+              <Loader />
+            </>
+          )
+        : ''}
       {/* End Return Loading Animation */}
 
-      <Navbar className={classnames('fixed-top', navbarColor)} id="navbar_cont" expand="lg">
+      <Navbar
+        className={classnames('fixed-top', navbarColor)}
+        id="navbar_cont"
+        expand="lg"
+      >
         <div
           class="navbar-brand font-weight-bolder ms-sm-3 text-warning"
           rel="tooltip"
           data-placement="bottom"
-          id="bottom" onClick={homepage}
+          id="bottom"
+          onClick={homepage}
         >
           7Seven luxury hotel{' '}
           <img
@@ -407,9 +417,7 @@ function IndexNavbar() {
                             ' dropdown-item border-radius-md'
                           }
                           onClick={
-                            setRedirectTagaytay ?
-                              handleSubmitTagaytay :
-                              ''
+                            setRedirectTagaytay ? handleSubmitTagaytay : ''
                           }
                         >
                           <span>Tagaytay</span>
@@ -420,9 +428,7 @@ function IndexNavbar() {
                             ' dropdown-item border-radius-md'
                           }
                           onClick={
-                            setRedirectBoracay ?
-                              handleSubmitBoracay :
-                              ''
+                            setRedirectBoracay ? handleSubmitBoracay : ''
                           }
                         >
                           <span>Boracay</span>
@@ -432,11 +438,7 @@ function IndexNavbar() {
                             styles.navigation_row +
                             ' dropdown-item border-radius-md'
                           }
-                          onClick={
-                            setRedirectElNido ?
-                              handleSubmitElNido :
-                              ''
-                          }
+                          onClick={setRedirectElNido ? handleSubmitElNido : ''}
                         >
                           <span>El Nido</span>
                         </div>
@@ -519,9 +521,7 @@ function IndexNavbar() {
                                 ' dropdown-item border-radius-md'
                               }
                               onClick={
-                                setRedirectRoomSolo ?
-                                  handleSubmitRoomSolo :
-                                  ''
+                                setRedirectRoomSolo ? handleSubmitRoomSolo : ''
                               }
                             >
                               Solo
@@ -532,9 +532,9 @@ function IndexNavbar() {
                                 ' dropdown-item border-radius-md'
                               }
                               onClick={
-                                setRedirectRoomDouble ?
-                                  handleSubmitRoomDouble :
-                                  ''
+                                setRedirectRoomDouble
+                                  ? handleSubmitRoomDouble
+                                  : ''
                               }
                             >
                               Double
@@ -545,9 +545,9 @@ function IndexNavbar() {
                                 ' dropdown-item border-radius-md'
                               }
                               onClick={
-                                setRedirectRoomDeluxe ?
-                                  handleSubmitRoomDeluxe :
-                                  ''
+                                setRedirectRoomDeluxe
+                                  ? handleSubmitRoomDeluxe
+                                  : ''
                               }
                             >
                               Deluxe
@@ -558,9 +558,9 @@ function IndexNavbar() {
                                 ' dropdown-item border-radius-md'
                               }
                               onClick={
-                                setRedirectRoomPremier ?
-                                  handleSubmitRoomPremier :
-                                  ''
+                                setRedirectRoomPremier
+                                  ? handleSubmitRoomPremier
+                                  : ''
                               }
                             >
                               Premier
@@ -591,9 +591,9 @@ function IndexNavbar() {
                                 ' dropdown-item border-radius-md'
                               }
                               onClick={
-                                setRedirectGatheringWedding ?
-                                  handleSubmitGatheringWedding :
-                                  ''
+                                setRedirectGatheringWedding
+                                  ? handleSubmitGatheringWedding
+                                  : ''
                               }
                             >
                               Weddings
@@ -604,9 +604,9 @@ function IndexNavbar() {
                                 ' dropdown-item border-radius-md'
                               }
                               onClick={
-                                setRedirectGatheringCorporate ?
-                                  handleSubmitGatheringCorporate :
-                                  ''
+                                setRedirectGatheringCorporate
+                                  ? handleSubmitGatheringCorporate
+                                  : ''
                               }
                             >
                               Corporate
@@ -617,9 +617,9 @@ function IndexNavbar() {
                                 ' dropdown-item border-radius-md'
                               }
                               onClick={
-                                setRedirectGatheringMilestone ?
-                                  handleSubmitGatheringMilestone :
-                                  ''
+                                setRedirectGatheringMilestone
+                                  ? handleSubmitGatheringMilestone
+                                  : ''
                               }
                             >
                               Milestone
@@ -656,9 +656,9 @@ function IndexNavbar() {
                                 ' dropdown-item border-radius-md'
                               }
                               onClick={
-                                setRedirectLibraryAbout ?
-                                  handleSubmitLibraryAbout :
-                                  ''
+                                setRedirectLibraryAbout
+                                  ? handleSubmitLibraryAbout
+                                  : ''
                               }
                             >
                               <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
@@ -677,9 +677,9 @@ function IndexNavbar() {
                                 ' dropdown-item border-radius-md'
                               }
                               onClick={
-                                setRedirectLibraryGallery ?
-                                  handleSubmitLibraryGallery :
-                                  ''
+                                setRedirectLibraryGallery
+                                  ? handleSubmitLibraryGallery
+                                  : ''
                               }
                             >
                               <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
@@ -697,9 +697,9 @@ function IndexNavbar() {
                                 ' dropdown-item border-radius-md'
                               }
                               onClick={
-                                setRedirectLibraryAmenities ?
-                                  handleSubmitLibraryAmenities :
-                                  ''
+                                setRedirectLibraryAmenities
+                                  ? handleSubmitLibraryAmenities
+                                  : ''
                               }
                             >
                               <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
@@ -782,8 +782,17 @@ function IndexNavbar() {
                     </ul>
                   </li>
                   <li class="nav-item dropdown dropdown-hover mx-2">
-                    <a href="#" className={styles.language_selector_dropdown + ' text-light btn bg-gradient-dark dropdown-toggle p-2 px-2'} data-bs-toggle="dropdown" id="navbarDropdownMenuLink2">
-                      <img src="https://demos.creative-tim.com/test/material-dashboard-pro/assets/img/icons/flags/US.png" /> Language
+                    <a
+                      href="#"
+                      className={
+                        styles.language_selector_dropdown +
+                        ' text-light btn bg-gradient-dark dropdown-toggle p-2 px-2'
+                      }
+                      data-bs-toggle="dropdown"
+                      id="navbarDropdownMenuLink2"
+                    >
+                      <img src="https://demos.creative-tim.com/test/material-dashboard-pro/assets/img/icons/flags/US.png" />{' '}
+                      Language
                     </a>
                     <div
                       className={
@@ -793,14 +802,38 @@ function IndexNavbar() {
                       aria-labelledby="dropdownMenuPages"
                     >
                       <div class="d-none d-lg-block">
-                        <a className={styles.navigation_row + ' dropdown-item'} href="#">
-                          <img src="./plugins/flag-icon-css/flags/4x3/ph.svg" width={"20px"} height={"20px"} /> Tagalog
+                        <a
+                          className={styles.navigation_row + ' dropdown-item'}
+                          href="#"
+                        >
+                          <img
+                            src="./plugins/flag-icon-css/flags/4x3/ph.svg"
+                            width={'20px'}
+                            height={'20px'}
+                          />{' '}
+                          Tagalog
                         </a>
-                        <a className={styles.navigation_row + ' dropdown-item'} href="#">
-                          <img src="./plugins/flag-icon-css/flags/4x3/us.svg" width={"20px"} height={"20px"} /> English
+                        <a
+                          className={styles.navigation_row + ' dropdown-item'}
+                          href="#"
+                        >
+                          <img
+                            src="./plugins/flag-icon-css/flags/4x3/us.svg"
+                            width={'20px'}
+                            height={'20px'}
+                          />{' '}
+                          English
                         </a>
-                        <a className={styles.navigation_row + ' dropdown-item'} href="#">
-                          <img src="./plugins/flag-icon-css/flags/4x3/th.svg" width={"20px"} height={"20px"} /> Thai
+                        <a
+                          className={styles.navigation_row + ' dropdown-item'}
+                          href="#"
+                        >
+                          <img
+                            src="./plugins/flag-icon-css/flags/4x3/th.svg"
+                            width={'20px'}
+                            height={'20px'}
+                          />{' '}
+                          Thai
                         </a>
                       </div>
                     </div>

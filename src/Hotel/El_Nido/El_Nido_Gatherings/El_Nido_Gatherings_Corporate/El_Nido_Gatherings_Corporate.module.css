@@ -1,1 +1,134 @@
-.El_Nido_Gatherings_Corporate {}
+.containerImage {
+  width: 100%;
+  height: 100vh;
+}
+
+.ImageBoracay {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.BoracayDescription {
+  padding: 20px;
+  letter-spacing: 0.05em;
+}
+
+.HotelPackage {
+  padding: 20px;
+  height: 100%;
+}
+
+/* Hotel Package */
+.fond {
+  position: absolute;
+  padding-top: 85px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #65c6bb;
+}
+
+.carreaux_presentation_light {
+  display: table-cell;
+  width: 450px;
+  height: 450px;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+.carreaux_presentation_light .shadow_swhow_mini {
+  background-color: rgba(19, 30, 33, 0.4);
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.carreaux_presentation_light:hover .shadow_swhow_mini {
+  background-color: rgba(16, 23, 41, 0);
+}
+.carreaux_presentation_light .deroul_titre {
+  position: absolute;
+  text-transform: uppercase;
+  font-family: 'Roboto';
+  padding: 20px;
+  z-index: 1000;
+  top: 42%;
+  left: -80%;
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 27px;
+  width: 80%;
+  -webkit-transition: all 0.7s;
+  -moz-transition: all 0.7s;
+  -ms-transition: all 0.7s;
+  transition: all 0.7s;
+}
+.carreaux_presentation_light:hover .deroul_titre {
+  background-color: #1e4944;
+  left: 0px;
+}
+.carreaux_presentation_light .deroul_soustitre {
+  position: absolute;
+  font-family: 'Roboto';
+  padding: 5px;
+  z-index: 1000;
+  top: 54%;
+  right: -85%;
+  margin-top: 25px;
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 21px;
+  width: 80%;
+  -webkit-transition: all 0.7s;
+  -moz-transition: all 0.7s;
+  -ms-transition: all 0.7s;
+  transition: all 0.7s;
+}
+.carreaux_presentation_light:hover .deroul_soustitre {
+  background-color: #417c74;
+  right: 0px;
+  padding: 12px;
+}
+
+/* TESTIMONIAL */
+
+.HotelTestimonials {
+  margin-top: 20px;
+  background-color: rgb(159, 255, 223);
+  display: flex;
+  justify-content: center;
+}
+
+.HotelsTestimonialText {
+  display: inline-block;
+  width: 220px;
+  margin: 30px;
+  letter-spacing: 0.1em;
+}
+
+/* AWARDS */
+.Awards {
+  background-color: rgb(159, 255, 223);
+  text-align: center;
+  border-top-width: medium;
+}
+.Awards img {
+  height: 120px;
+  width: 120px;
+  margin: 20px;
+}
+
+.boraMap img {
+  width: 450px;
+}
+
+.boraAddress {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 120px;
+  width: 480px;
+}

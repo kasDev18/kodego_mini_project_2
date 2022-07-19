@@ -37,7 +37,7 @@ class Boracay extends React.Component {
         <div className="container">
           <div className="row">
             <div className={styles.HotelPackage + ' col-6'}>
-              <Link to="tagaytay-gathering-wedding">
+              <Link to="/gathering-wedding/tagaytay">
                 <div align="center" class="fond">
                   <div
                     className={styles.carreaux_presentation_light}
@@ -78,7 +78,7 @@ class Boracay extends React.Component {
               </p>
             </div>
             <div className={styles.HotelPackage + ' col-6'}>
-              <Link to="boracay-gathering-wedding">
+              <Link to="/gathering-wedding/boracay">
                 <div align="center" class="fond">
                   <div
                     className={styles.carreaux_presentation_light}
@@ -97,7 +97,7 @@ class Boracay extends React.Component {
           </div>
           <div className="row">
             <div className={styles.HotelPackage + ' col-6'}>
-              <Link to="elnido-gathering-wedding">
+              <Link to="/gathering-wedding/elnido">
                 <div align="center" class="fond">
                   <div
                     className={styles.carreaux_presentation_light}
