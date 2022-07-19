@@ -30,7 +30,6 @@ import {
   UncontrolledTooltip,
   Nav,
 } from 'reactstrap';
-import { Link } from 'react-router-dom';
 import Loader from '../Loader/Loader';
 
 function IndexNavbar() {
@@ -183,146 +182,146 @@ function IndexNavbar() {
       {/* Return Loading Animation */}
       {setRedirectTagaytay
         ? redirectTagaytay && (
-            <>
-              <img
-                className={styles.image_loader}
-                src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/90/b3/5b/escala-tagaytay.jpg?w=1200&h=-1&s=1"
-              />
-              <Loader />
-            </>
-          )
+          <>
+            <img
+              className={styles.image_loader}
+              src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/90/b3/5b/escala-tagaytay.jpg?w=1200&h=-1&s=1"
+            />
+            <Loader />
+          </>
+        )
         : ''}
       {setRedirectBoracay
         ? redirectBoracay && (
-            <>
-              <img
-                className={styles.image_loader}
-                src="https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_680/v1630914997/blog/zzydhmcu7khdqixvlmxg.webp"
-              />
-              <Loader />
-            </>
-          )
+          <>
+            <img
+              className={styles.image_loader}
+              src="https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_680/v1630914997/blog/zzydhmcu7khdqixvlmxg.webp"
+            />
+            <Loader />
+          </>
+        )
         : ''}
       {setRedirectElNido
         ? redirectElNido && (
-            <>
-              <img
-                className={styles.image_loader}
-                src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp"
-              />
-              <Loader />
-            </>
-          )
+          <>
+            <img
+              className={styles.image_loader}
+              src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp"
+            />
+            <Loader />
+          </>
+        )
         : ''}
       {setRedirectRoomSolo
         ? redirectRoomSolo && (
-            <>
-              <img
-                className={styles.image_loader}
-                src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp"
-              />
-              <Loader />
-            </>
-          )
+          <>
+            <img
+              className={styles.image_loader}
+              src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp"
+            />
+            <Loader />
+          </>
+        )
         : ''}
       {setRedirectRoomDouble
         ? redirectRoomDouble && (
-            <>
-              <img
-                className={styles.image_loader}
-                src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp"
-              />
-              <Loader />
-            </>
-          )
+          <>
+            <img
+              className={styles.image_loader}
+              src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp"
+            />
+            <Loader />
+          </>
+        )
         : ''}
       {setRedirectRoomDeluxe
         ? redirectRoomDeluxe && (
-            <>
-              <img
-                className={styles.image_loader}
-                src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp"
-              />
-              <Loader />
-            </>
-          )
+          <>
+            <img
+              className={styles.image_loader}
+              src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp"
+            />
+            <Loader />
+          </>
+        )
         : ''}
       {setRedirectRoomPremier
         ? redirectRoomPremier && (
-            <>
-              <img
-                className={styles.image_loader}
-                src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp"
-              />
-              <Loader />
-            </>
-          )
+          <>
+            <img
+              className={styles.image_loader}
+              src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp"
+            />
+            <Loader />
+          </>
+        )
         : ''}
       {setRedirectGatheringWedding
         ? redirectGatheringWedding && (
-            <>
-              <img
-                className={styles.image_loader}
-                src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp"
-              />
-              <Loader />
-            </>
-          )
+          <>
+            <img
+              className={styles.image_loader}
+              src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp"
+            />
+            <Loader />
+          </>
+        )
         : ''}
       {setRedirectGatheringCorporate
         ? redirectGatheringCorporate && (
-            <>
-              <img
-                className={styles.image_loader}
-                src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp"
-              />
-              <Loader />
-            </>
-          )
+          <>
+            <img
+              className={styles.image_loader}
+              src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp"
+            />
+            <Loader />
+          </>
+        )
         : ''}
       {setRedirectGatheringMilestone
         ? redirectGatheringMilestone && (
-            <>
-              <img
-                className={styles.image_loader}
-                src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp"
-              />
-              <Loader />
-            </>
-          )
+          <>
+            <img
+              className={styles.image_loader}
+              src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp"
+            />
+            <Loader />
+          </>
+        )
         : ''}
       {setRedirectLibraryAbout
         ? redirectLibraryAbout && (
-            <>
-              <img
-                className={styles.image_loader}
-                src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp"
-              />
-              <Loader />
-            </>
-          )
+          <>
+            <img
+              className={styles.image_loader}
+              src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp"
+            />
+            <Loader />
+          </>
+        )
         : ''}
       {setRedirectLibraryAmenities
         ? redirectLibraryAmenities && (
-            <>
-              <img
-                className={styles.image_loader}
-                src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp"
-              />
-              <Loader />
-            </>
-          )
+          <>
+            <img
+              className={styles.image_loader}
+              src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp"
+            />
+            <Loader />
+          </>
+        )
         : ''}
       {setRedirectLibraryGallery
         ? redirectLibraryGallery && (
-            <>
-              <img
-                className={styles.image_loader}
-                src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp"
-              />
-              <Loader />
-            </>
-          )
+          <>
+            <img
+              className={styles.image_loader}
+              src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp"
+            />
+            <Loader />
+          </>
+        )
         : ''}
       {/* End Return Loading Animation */}
 
