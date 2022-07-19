@@ -94,8 +94,8 @@ class App extends React.Component {
               element={<BoracayGatheringCorporate />}
             />
             <Route
-              path="/gathering-corporate/tagaytay "
-              element={<TagaytayGatheringWedding />}
+              path="/gathering-corporate/tagaytay"
+              element={<TagaytayGatheringCorporate />}
             />
             <Route
               path="/gathering-corporate/elnido"
@@ -106,9 +106,10 @@ class App extends React.Component {
               path="/gathering-wedding/boracay"
               element={<BoracayGatheringWedding />}
             />
+
             <Route
-              path="/gathering-wedding/tagaytay"
-              element={<TagaytayGatheringCorporate />}
+              path="/gathering-wedding/tagaytay "
+              element={<TagaytayGatheringWedding />}
             />
             <Route
               path="/gathering-wedding/elnido"
