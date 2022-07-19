@@ -45,6 +45,7 @@ import ElNidoSolo from './Hotel/El_Nido/El_Nido_Rooms/El_Nido_Rooms_Solo/El_Nido
 import ElNidoDouble from './Hotel/El_Nido/El_Nido_Rooms/El_Nido_Rooms_Double/El_Nido_Rooms_Double';
 import ElNidoDelux from './Hotel/El_Nido/El_Nido_Rooms/El_Nido_Rooms_Deluxe/El_Nido_Rooms_Deluxe';
 import ElNidoPremier from './Hotel/El_Nido/El_Nido_Rooms/El_Nido_Rooms_Premier/El_Nido_Rooms_Premier';
+import Footer from './components/Footer/Footer';
 
 class App extends React.Component {
   render() {
@@ -66,23 +67,57 @@ class App extends React.Component {
             <Route path="/amenities" element={<Amenities />} />
             <Route path="/gallery" element={<Gallery />} />
 
-            <Route path="/boracay-solo-room" element={<BoracaySolo />} />
-            <Route path="/boracay-double-room" element={<BoracayDouble />} />
-            <Route path="/boracay-delux-room" element={<BoracayDelux />} />
-            <Route path="/boracay-premier-room" element={<BoracayPremier />} />
-
-            <Route path="/tagaytay-solo-room" element={<TagaytaySolo />} />
-            <Route path="/tagaytay-double-room" element={<TagaytayDouble />} />
-            <Route path="/tagaytay-deluxe-room" element={<TagaytayDelux />} />
             <Route
-              path="/tagaytay-premier-room"
-              element={<TagaytayPremier />}
+              path="/services-rooms-solo/boracay"
+              element={<BoracaySolo />}
+            />
+            <Route
+              path="/services-rooms-solo/tagaytay"
+              element={<TagaytaySolo />}
+            />
+            <Route
+              path="/services-rooms-solo/elnido"
+              element={<ElNidoSolo />}
             />
 
-            <Route path="/elnido-solo-room" element={<ElNidoSolo />} />
-            <Route path="/elnido-double-room" element={<ElNidoDouble />} />
-            <Route path="/elnido-delux-room" element={<ElNidoDelux />} />
-            <Route path="/elnido-premier-room" element={<ElNidoPremier />} />
+            <Route
+              path="/services-rooms-double/boracay"
+              element={<BoracayDouble />}
+            />
+            <Route
+              path="/services-rooms-double/tagaytay"
+              element={<TagaytayDouble />}
+            />
+            <Route
+              path="/services-rooms-double/elnido"
+              element={<ElNidoDouble />}
+            />
+
+            <Route
+              path="/services-rooms-deluxe/tagaytay"
+              element={<TagaytayDelux />}
+            />
+            <Route
+              path="/services-rooms-deluxe/boracay"
+              element={<BoracayDelux />}
+            />
+            <Route
+              path="/services-rooms-deluxe/elnido"
+              element={<ElNidoDelux />}
+            />
+
+            <Route
+              path="/services-rooms-premier/elnido"
+              element={<ElNidoPremier />}
+            />
+            <Route
+              path="/services-rooms-premier/boracay"
+              element={<BoracayPremier />}
+            />
+            <Route
+              path="/services-rooms-premier/tagaytay"
+              element={<TagaytayPremier />}
+            />
 
             <Route path="/services-rooms-solo" element={<RoomsSolo />} />
             <Route path="/services-rooms-double" element={<RoomsDouble />} />
@@ -130,6 +165,7 @@ class App extends React.Component {
             />
           </Routes>
         </div>
+        <Footer />
       </>
     );
   }
