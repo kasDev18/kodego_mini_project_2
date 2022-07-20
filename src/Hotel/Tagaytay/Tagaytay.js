@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import styles from './Tagaytay.module.css';
 
 const iframe =
-  '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61909.11239521726!2d120.96893275!3d14.117297200000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd777b1ab54c8f%3A0x6ecc514451ce2be8!2sTagaytay%2C%20Cavite!5e0!3m2!1sen!2sph!4v1658058038718!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+  '<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15479.458475973914!2d120.8861609!3d14.085168!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x91c5bb9003d5e4f8!2sThe%20Oriental%20Luxury%20Suites!5e0!3m2!1sen!2sph!4v1658321397261!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
 function Iframe(props) {
   return (
     <div
@@ -27,12 +27,15 @@ class Boracay extends React.Component {
         {/* 
           Description Hotel
         */}
-        <div className={styles.BoracayDescription}>
+        <div className={styles.BoracayDescription + ' container'}>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora
-            aliquam nobis mollitia pariatur amet quo quasi incidunt veritatis
-            voluptatibus sapiente ipsum consequuntur id, deserunt vel deleniti!
-            Commodi voluptates pariatur corrupti?
+            An upscale hotel overlooking the Batangas landscape along with
+            picturesque views of the Taal Lake and Volcano, the Oriental Luxury
+            Suites offers 7 room types named after a colorful city in Thailand.
+            Each opulently styled Thai-inspired suite comes with a complimentary
+            set breakfast, a set of bathroom amenities, a hot and cold shower,
+            cable television, free parking, welcome drinks, free bottled water,
+            and wifi access.
           </p>
         </div>
 
@@ -179,8 +182,8 @@ class Boracay extends React.Component {
         <div className="container m-5">
           <div className="row">
             <div className={styles.boraAddress + ' col-6'}>
-              <h1>ADDRESS</h1>
-              <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h4>
+              <h1>The Oriental Luxury Suites</h1>
+              <h4>Tagaytay - Nasugbu Hwy, Alfonso, Cavite</h4>
             </div>
             <div className={styles.boraMap + ' col-6'}>
               <Iframe iframe={iframe} />

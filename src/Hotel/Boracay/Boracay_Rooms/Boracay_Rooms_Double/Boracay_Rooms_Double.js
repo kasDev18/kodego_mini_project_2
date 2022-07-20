@@ -1,16 +1,15 @@
 import React from 'react';
 import styles from './Boracay_Rooms_Double.module.css';
 import { Link } from 'react-router-dom';
-import BookingForm from '../../../../components/BookingForm/BookingForm';
 
-class Boracay extends React.Component {
+class BoracayRoomsDouble extends React.Component {
   render() {
     return (
       <>
         <div className={styles.HotelBoracay}>
           <div className={styles.containerImage}>
             <img
-              src="https://belmonthotelboracay.com/Resources/images/Premiere-Deluxe-Room-1920w.jpg"
+              src="https://belmonthotelboracay.com/Resources/images/004BelmontHotelBoracay-DeluxeRoomBanner-1920w.jpg"
               autoPlay
               className={styles.ImageBoracay}
               alt="milestone"
@@ -20,7 +19,7 @@ class Boracay extends React.Component {
         {/* 
           Description Hotel
         */}
-        <div className={styles.BoracayDescription}>
+        <div className={styles.BoracayDescription + ' container'}>
           <p>
             When you need a large venue for your business seminar or company
             banquet, the 7Seven Luxury Hotel is sure to impress. Invite up to
@@ -83,4 +82,4 @@ class Boracay extends React.Component {
   }
 }
 
-export default Boracay;
+export default BoracayRoomsDouble;

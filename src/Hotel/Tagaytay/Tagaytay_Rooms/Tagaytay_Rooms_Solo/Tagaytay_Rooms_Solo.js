@@ -1,9 +1,8 @@
 import React from 'react';
 import styles from './Tagaytay_Rooms_Solo.module.css';
 import { Link } from 'react-router-dom';
-import BookingForm from '../../../../components/BookingForm/BookingForm';
 
-class Boracay extends React.Component {
+class TagaytayRoomsSolo extends React.Component {
   render() {
     return (
       <>
@@ -84,4 +83,4 @@ class Boracay extends React.Component {
   }
 }
 
-export default Boracay;
+export default TagaytayRoomsSolo;

@@ -1,16 +1,15 @@
 import React from 'react';
 import styles from './Tagaytay_Rooms_Premier.module.css';
 import { Link } from 'react-router-dom';
-import BookingForm from '../../../../components/BookingForm/BookingForm';
 
-class Boracay extends React.Component {
+class TagaytayRoomsPremier extends React.Component {
   render() {
     return (
       <>
         <div className={styles.HotelBoracay}>
           <div className={styles.containerImage}>
             <img
-              src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/07/43/c7/14/avant-penthouse-suite--v4858299.jpg?w=1200&h=-1&s=1"
+              src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/07/43/c6/a1/avant-penthouse-suite--v4857991.jpg?w=1200&h=-1&s=1"
               autoPlay
               className={styles.ImageBoracay}
               alt="milestone"
@@ -46,7 +45,7 @@ class Boracay extends React.Component {
                   <div
                     className={styles.carreaux_presentation_light}
                     style={{
-                      backgroundImage: `url("https://dynamic-media-cdn.tripadvisor.com/media/photo-o/07/43/c6/a1/avant-penthouse-suite--v4857991.jpg?w=1200&h=-1&s=1")`,
+                      backgroundImage: `url("https://dynamic-media-cdn.tripadvisor.com/media/photo-o/07/43/c7/14/avant-penthouse-suite--v4858299.jpg?w=1200&h=-1&s=1")`,
                     }}
                   >
                     <div className={styles.shadow_swhow_mini}>
@@ -84,4 +83,4 @@ class Boracay extends React.Component {
   }
 }
 
-export default Boracay;
+export default TagaytayRoomsPremier;

@@ -1,9 +1,8 @@
 import React from 'react';
 import styles from './Boracay_Rooms_Solo.module.css';
 import { Link } from 'react-router-dom';
-import BookingForm from '../../../../components/BookingForm/BookingForm';
 
-class Boracay extends React.Component {
+class BoracayRoomsSolo extends React.Component {
   render() {
     return (
       <>
@@ -20,7 +19,7 @@ class Boracay extends React.Component {
         {/* 
           Description Hotel
         */}
-        <div className={styles.BoracayDescription}>
+        <div className={styles.BoracayDescription + ' container'}>
           <p>
             When you need a large venue for your business seminar or company
             banquet, the 7Seven Luxury Hotel is sure to impress. Invite up to
@@ -84,4 +83,4 @@ class Boracay extends React.Component {
   }
 }
 
-export default Boracay;
+export default BoracayRoomsSolo;

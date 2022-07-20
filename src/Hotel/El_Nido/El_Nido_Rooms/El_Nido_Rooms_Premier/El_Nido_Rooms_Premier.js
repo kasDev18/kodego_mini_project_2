@@ -1,9 +1,8 @@
 import React from 'react';
 import styles from './El_Nido_Rooms_Premier.module.css';
 import { Link } from 'react-router-dom';
-import BookingForm from '../../../../components/BookingForm/BookingForm';
 
-class Boracay extends React.Component {
+class ElNidoRoomsPremier extends React.Component {
   render() {
     return (
       <>
@@ -84,4 +83,4 @@ class Boracay extends React.Component {
   }
 }
 
-export default Boracay;
+export default ElNidoRoomsPremier;

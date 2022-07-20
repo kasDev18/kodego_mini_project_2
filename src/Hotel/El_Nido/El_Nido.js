@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './El_Nido.module.css';
 const iframe =
-  '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d250481.19817296893!2d119.40608304999998!3d11.2047403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33b65515ef5c9e0f%3A0xfc4e665b599b0455!2sEl%20Nido%2C%20Palawan!5e0!3m2!1sen!2sph!4v1658059744113!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+  '<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15656.68547208685!2d119.2891598!3d11.1749444!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf80398c891b4bfef!2sMatinloc%20Resort%20El%20Nido!5e0!3m2!1sen!2sph!4v1658327124748!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
 function Iframe(props) {
   return (
     <div
@@ -27,12 +27,13 @@ class Boracay extends React.Component {
         {/* 
           Description Hotel
         */}
-        <div className={styles.BoracayDescription}>
+        <div className={styles.BoracayDescription + ' container'}>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora
-            aliquam nobis mollitia pariatur amet quo quasi incidunt veritatis
-            voluptatibus sapiente ipsum consequuntur id, deserunt vel deleniti!
-            Commodi voluptates pariatur corrupti?
+            Matinloc Resort prides itself as a family-friendly resort situated
+            right in the heart of Matinloc Island. This exclusive enclave offers
+            a luxurious treat for holiday-goers. From its premium guestrooms,
+            private beach to its beachside restaurant and top-notch recreational
+            facilities, one cannot help but feel like a VIP.
           </p>
         </div>
 
@@ -179,8 +180,8 @@ class Boracay extends React.Component {
         <div className="container m-5">
           <div className="row">
             <div className={styles.boraAddress + ' col-6'}>
-              <h1>ADDRESS</h1>
-              <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h4>
+              <h1>Matinloc Resort El Nido</h1>
+              <h4>Matinloc Island, Brgy, El Nido, Palawan </h4>
             </div>
             <div className={styles.boraMap + ' col-6'}>
               <Iframe iframe={iframe} />

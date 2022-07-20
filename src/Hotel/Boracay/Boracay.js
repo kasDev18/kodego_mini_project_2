@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './Boracay.module.css';
 import { Link } from 'react-router-dom';
 const iframe =
-  '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31224.603007603026!2d121.92722905000001!3d11.969283149999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a53c2f324b4ee7%3A0xa738e81e5e6dda36!2sBoracay!5e0!3m2!1sen!2sph!4v1658059584917!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+  '<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15612.706970581512!2d121.925545!3d11.962262!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x23ee7386a9db7a67!2sThe%20Tides%20Hotel%20Boracay!5e0!3m2!1sen!2sph!4v1658322180553!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
 function Iframe(props) {
   return (
     <div
@@ -27,12 +27,15 @@ class Boracay extends React.Component {
         {/* 
           Description Hotel
         */}
-        <div className={styles.BoracayDescription}>
+        <div className={styles.BoracayDescription + ' container'}>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora
-            aliquam nobis mollitia pariatur amet quo quasi incidunt veritatis
-            voluptatibus sapiente ipsum consequuntur id, deserunt vel deleniti!
-            Commodi voluptates pariatur corrupti?
+            Get your trip off to a great start with a stay at this property,
+            which offers free Wi-Fi in all rooms. Strategically situated in
+            Station 2, allowing you access and proximity to local attractions
+            and sights. Be sure to set some time aside to visit Ariel's Point as
+            well as White Beach nearby. Rated with 3.5 stars, this high-quality
+            property provides guests with access to massage, restaurant and
+            fitness center on-site.
           </p>
         </div>
 
@@ -179,8 +182,8 @@ class Boracay extends React.Component {
         <div className="container m-5">
           <div className="row">
             <div className={styles.boraAddress + ' col-6'}>
-              <h1>ADDRESS</h1>
-              <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h4>
+              <h1>The Tides Hotel Boracay</h1>
+              <h4>D'Mall Station 2, Boracay Island, Boracay, 5608 Aklan</h4>
             </div>
             <div className={styles.boraMap + ' col-6'}>
               <Iframe iframe={iframe} />

@@ -3,7 +3,7 @@ import styles from './Wedding.module.css';
 import { Link } from 'react-router-dom';
 import BookingForm from '../../components/BookingForm/BookingForm';
 
-class Boracay extends React.Component {
+class Wedding extends React.Component {
   render() {
     return (
       <>
@@ -188,4 +188,4 @@ class Boracay extends React.Component {
   }
 }
 
-export default Boracay;
+export default Wedding;
