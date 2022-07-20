@@ -23,3 +23,7 @@
     height: 100vh;
     object-fit: cover;
 }
+
+.language_selector {
+    transform: translateY(7px);
+}

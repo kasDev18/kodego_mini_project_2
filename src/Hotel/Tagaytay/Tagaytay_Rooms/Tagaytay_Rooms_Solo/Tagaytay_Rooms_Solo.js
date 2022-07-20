@@ -1,6 +1,17 @@
 import React from 'react';
 import styles from './Tagaytay_Rooms_Solo.module.css';
 import { Link } from 'react-router-dom';
+<<<<<<< Updated upstream
+=======
+import BookingForm from '../../../../components/BookingForm/BookingForm';
+import RoomSoloModal from './Tagaytay_Rooms_Solo_Modal/Tagaytay_Rooms_Solo_Modal';
+
+import {
+  Row,
+  Col,
+  Input
+} from "reactstrap";
+>>>>>>> Stashed changes
 
 class TagaytayRoomsSolo extends React.Component {
   render() {
@@ -20,7 +31,7 @@ class TagaytayRoomsSolo extends React.Component {
           Description Hotel
         */}
         <div className={styles.BoracayDescription}>
-          <p>
+          <p className='p-5'>
             When you need a large venue for your business seminar or company
             banquet, the 7Seven Luxury Hotel is sure to impress. Invite up to
             144 guests, and we take care of the rest. The 7Seven Luxury Hotel
@@ -74,7 +85,19 @@ class TagaytayRoomsSolo extends React.Component {
               </div>
             </div>
             <div className="text-center mt-5">
-              <span className="btn btn-primary ">Book Now</span>
+              <div>
+                <Row className='d-flex justify-content-center mb-3'>
+                  <Col className='col-3'>
+                    <Input type="text" placeholder="     Check-in" />
+                    <i className={styles.calendar_icon + ' fa-solid fa-calendar-days'}></i>
+                  </Col>
+                  <Col className='col-3'>
+                    <Input type="text" placeholder="     Check-out" />
+                    <i className={styles.calendar_icon + ' fa-solid fa-calendar-days'}></i>
+                  </Col>
+                </Row>
+              </div>
+              <RoomSoloModal />
             </div>
           </div>
         </div>

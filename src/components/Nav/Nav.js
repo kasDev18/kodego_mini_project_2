@@ -29,12 +29,22 @@ import {
   Modal,
   UncontrolledTooltip,
   Nav,
+  FormGroup,
+  Label,
+  Input
 } from 'reactstrap';
 import Loader from '../Loader/Loader';
-import LanguageSelector from './LanguageSelector/LanguageSelector';
-// import PhFlag from '/plugins/flag-icon-css/flags/1x1/ph.svg'
+import axios from 'axios';
+import i18next from 'i18next'
 
 function IndexNavbar() {
+  // Language Selector
+  const changeLanguage = (option) => {
+    localStorage.setItem('lang', option.target.value)
+    window.location.reload()
+  }
+  const lang = localStorage.getItem('lang') || 'en';
+
   // Redirection Navbar
   const homepage = () => {
     setTimeout(() => {
@@ -179,6 +189,7 @@ function IndexNavbar() {
       window.removeEventListener('scroll', updateNavbarColor);
     };
   });
+
   return (
     <>
       {/* Return Loading Animation */}
@@ -339,7 +350,7 @@ function IndexNavbar() {
           id="bottom"
           onClick={homepage}
         >
-          7Seven luxury hotel{' '}
+          {i18next.t('7seven_luxury_hotel')}{' '}
           <img
             src="http://static.pinnula.fr/news/i/win7-yellow-logo.png"
             width="50px"
@@ -353,7 +364,7 @@ function IndexNavbar() {
             target="bottom"
             delay={0}
           >
-            7Seven Luxury Hotel
+            {i18next.t('7seven_luxury_hotel')}
           </UncontrolledTooltip>
         </div>
         <Container>
@@ -394,7 +405,7 @@ function IndexNavbar() {
                       aria-expanded="false"
                     >
                       <i class="fa-solid fa-hotel"></i>
-                      Choose Your Hotel
+                      {i18next.t('choose_hotel')}
                     </div>
                     <div
                       className={
@@ -410,7 +421,7 @@ function IndexNavbar() {
                             ' dropdown-header text-dark font-weight-bolder d-flex align-items-center px-1'
                           }
                         >
-                          Hotel Location
+                          {i18next.t('hotel_location')}
                         </h6>
                         <div
                           className={
@@ -421,7 +432,7 @@ function IndexNavbar() {
                             setRedirectTagaytay ? handleSubmitTagaytay : ''
                           }
                         >
-                          <span>Tagaytay</span>
+                          <span>{i18next.t('tagaytay')}</span>
                         </div>
                         <div
                           className={
@@ -432,7 +443,7 @@ function IndexNavbar() {
                             setRedirectBoracay ? handleSubmitBoracay : ''
                           }
                         >
-                          <span>Boracay</span>
+                          <span>{i18next.t('boracay')}</span>
                         </div>
                         <div
                           className={
@@ -441,41 +452,9 @@ function IndexNavbar() {
                           }
                           onClick={setRedirectElNido ? handleSubmitElNido : ''}
                         >
-                          <span>El Nido</span>
+                          <span>{i18next.t('el_nido')}</span>
                         </div>
                       </div>
-
-                      {/* <div class="d-lg-none">
-                      <h6 class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-1">
-                        Landing Pages
-                      </h6>
-
-                      <Link to="/about" class="dropdown-item border-radius-md">
-                        <span>About Us</span>
-                      </Link>
-                      <Link
-                        to="/el-nido"
-                        class="dropdown-item border-radius-md"
-                      >
-                        <span>Contact Us</span>
-                      </Link>
-                      <a
-                        href="./pages/author.html"
-                        class="dropdown-item border-radius-md"
-                      >
-                        <span>Author</span>
-                      </a>
-
-                      <h6 class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-1 mt-3">
-                        Account
-                      </h6>
-                      <a
-                        href="./pages/sign-in.html"
-                        class="dropdown-item border-radius-md"
-                      >
-                        <span>Sign In</span>
-                      </a>
-                    </div> */}
                     </div>
                   </li>
 
@@ -490,7 +469,7 @@ function IndexNavbar() {
                       aria-expanded="false"
                     >
                       <i class="fa-solid fa-bell-concierge"></i>
-                      Services
+                      {i18next.t('services')}
                     </div>
                     <ul
                       class="dropdown-menu dropdown-menu-end dropdown-menu-animation dropdown-md dropdown-md-responsive p-3 border-radius-lg mt-0 mt-lg-3"
@@ -507,10 +486,10 @@ function IndexNavbar() {
                             <div class="w-100 d-flex align-items-center justify-content-between">
                               <div>
                                 <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
-                                  Rooms
+                                  {i18next.t('rooms_general')}
                                 </h6>
                                 <span class="text-sm">
-                                  Rooms from your preference
+                                  {i18next.t('rooms_preference')}
                                 </span>
                               </div>
                             </div>
@@ -525,7 +504,7 @@ function IndexNavbar() {
                                 setRedirectRoomSolo ? handleSubmitRoomSolo : ''
                               }
                             >
-                              Solo
+                              {i18next.t('rooms_general_solo')}
                             </div>
                             <div
                               className={
@@ -538,7 +517,7 @@ function IndexNavbar() {
                                   : ''
                               }
                             >
-                              Double
+                              {i18next.t('rooms_general_double')}
                             </div>
                             <div
                               className={
@@ -551,7 +530,7 @@ function IndexNavbar() {
                                   : ''
                               }
                             >
-                              Deluxe
+                              {i18next.t('rooms_general_deluxe')}
                             </div>
                             <div
                               className={
@@ -564,7 +543,7 @@ function IndexNavbar() {
                                   : ''
                               }
                             >
-                              Premier
+                              {i18next.t('rooms_general_premier')}
                             </div>
                           </div>
                         </li>
@@ -579,9 +558,9 @@ function IndexNavbar() {
                             <div class="w-100 d-flex align-items-center justify-content-between">
                               <div className={styles.navigation_row}>
                                 <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
-                                  Gatherings
+                                  {i18next.t('gathering_general')}
                                 </h6>
-                                <span class="text-sm">Event Plans</span>
+                                <span class="text-sm">{i18next.t('gathering_event_plans')}</span>
                               </div>
                             </div>
                           </div>
@@ -597,7 +576,7 @@ function IndexNavbar() {
                                   : ''
                               }
                             >
-                              Weddings
+                              {i18next.t('gathering_general_wedding')}
                             </div>
                             <div
                               className={
@@ -610,7 +589,7 @@ function IndexNavbar() {
                                   : ''
                               }
                             >
-                              Corporate
+                              {i18next.t('gathering_general_corporate')}
                             </div>
                             <div
                               className={
@@ -623,7 +602,7 @@ function IndexNavbar() {
                                   : ''
                               }
                             >
-                              Milestone
+                              {i18next.t('gathering_general_milestone')}
                             </div>
                           </div>
                         </li>
@@ -642,7 +621,7 @@ function IndexNavbar() {
                       aria-expanded="false"
                     >
                       <i class="fa-solid fa-newspaper"></i>
-                      Docs
+                      {i18next.t('library_general')}
                     </div>
                     <ul
                       class="dropdown-menu dropdown-menu-end dropdown-menu-animation dropdown-md dropdown-md-responsive mt-0 mt-lg-3 p-3 border-radius-lg"
@@ -663,11 +642,10 @@ function IndexNavbar() {
                               }
                             >
                               <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
-                                About Us
+                                {i18next.t('library_general_about')}
                               </h6>
                               <span class="text-sm">
-                                All about overview, quick start, license and
-                                contents
+                                {i18next.t('library_general_about_quote')}
                               </span>
                             </div>
                           </li>
@@ -684,10 +662,10 @@ function IndexNavbar() {
                               }
                             >
                               <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
-                                Gallery
+                                {i18next.t('library_general_gallery')}
                               </h6>
                               <span class="text-sm">
-                                See our colors, icons and typography
+                                {i18next.t('library_general_gallery_quote')}
                               </span>
                             </div>
                           </li>
@@ -704,86 +682,37 @@ function IndexNavbar() {
                               }
                             >
                               <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
-                                Amenities
+                                {i18next.t('library_general_amenities')}
                               </h6>
                               <span class="text-sm">
-                                Explore our collection of fully designed
-                                components
+                                {i18next.t('library_general_amenities_quote')}
                               </span>
                             </div>
                           </li>
                         </ul>
                       </div>
-
-                      {/* <div class="row d-lg-none">
-                      <div class="col-md-12 g-0">
-                        <a
-                          class="dropdown-item py-2 ps-3 border-radius-md"
-                          href="./pages/about-us.html"
-                        >
-                          <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
-                            Getting Started
-                          </h6>
-                          <span class="text-sm">
-                            All about overview, quick start, license and
-                            contents
-                          </span>
-                        </a>
-
-                        <a
-                          class="dropdown-item py-2 ps-3 border-radius-md"
-                          href="./pages/about-us.html"
-                        >
-                          <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
-                            Foundation
-                          </h6>
-                          <span class="text-sm">
-                            See our colors, icons and typography
-                          </span>
-                        </a>
-
-                        <a
-                          class="dropdown-item py-2 ps-3 border-radius-md"
-                          href="./pages/about-us.html"
-                        >
-                          <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
-                            Components
-                          </h6>
-                          <span class="text-sm">
-                            Explore our collection of fully designed components
-                          </span>
-                        </a>
-
-                        <a
-                          class="dropdown-item py-2 ps-3 border-radius-md"
-                          href="./pages/about-us.html"
-                        >
-                          <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
-                            Plugins
-                          </h6>
-                          <span class="text-sm">
-                            Check how you can integrate our plugins
-                          </span>
-                        </a>
-
-                        <a
-                          class="dropdown-item py-2 ps-3 border-radius-md"
-                          href="./pages/about-us.html"
-                        >
-                          <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
-                            Utility Classes
-                          </h6>
-                          <span class="text-sm">
-                            For those who want flexibility, use our utility
-                            classes
-                          </span>
-                        </a>
-                      </div>
-                    </div> */}
                     </ul>
                   </li>
                   <li class="nav-item dropdown dropdown-hover mx-2">
-                    <LanguageSelector />
+                    <FormGroup className={styles.language_selector + ' bg-dark'}>
+                      <Input className="bg-dark text-light" type="select" name="select" id="exampleSelect1" onChange={changeLanguage} value={lang}>
+                        <option value={"en"} className="bg-dark text-light">English</option>
+                        <option value={"ph"} className="bg-dark text-light">Tagalog</option>
+                        <option value={"th"} className="bg-dark text-light">ไทย</option>
+                      </Input>
+                    </FormGroup>
+                    {/* <nav className='container mb-4 mt-4'>
+                      <div className='row'>
+                        <div className='col-10'></div>
+                        <div className='col-2'>
+                          <select className='custom-select pull-right'>
+                            <option value={"en"}>English</option>
+                            <option value={"ph"}>Tagalog</option>
+                            <option value={"th"}>Thai</option>
+                          </select>
+                        </div>
+                      </div>
+                    </nav> */}
                   </li>
                   <li class="nav-item my-auto ms-3 ms-lg-0">
                     <a
@@ -793,7 +722,7 @@ function IndexNavbar() {
                       }
                       onClick={() => setLiveDemo(true)}
                     >
-                      Signup/Login
+                      {i18next.t('signup')}
                     </a>
 
                     {/* Modal */}
