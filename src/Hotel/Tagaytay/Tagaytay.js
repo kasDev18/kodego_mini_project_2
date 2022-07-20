@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Tagaytay.module.css';
+import { Card, CardImg, CardBody, CardText } from 'reactstrap';
 
 const iframe =
   '<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15479.458475973914!2d120.8861609!3d14.085168!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x91c5bb9003d5e4f8!2sThe%20Oriental%20Luxury%20Suites!5e0!3m2!1sen!2sph!4v1658321397261!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
@@ -100,7 +101,52 @@ class Boracay extends React.Component {
         {/* 
           Gathering
         */}
-        <div className={styles.HotelGatheringContainer + ' container mt-5'}>
+
+        <div className={styles.CardWrappers + ' container mt-5'}>
+          <Link to={'/gathering-corporate/tagaytay'}>
+            <Card className={styles.CardHolders}>
+              <CardImg
+                top
+                src="https://www.lazorpoint.com/hubfs/Blog/New%20Website%20Hero%20Images%201905%20x%201301%20%289%29.png"
+                alt="..."
+              />
+              <CardBody>
+                <CardText>
+                  <h1>Corporate</h1>
+                </CardText>
+              </CardBody>
+            </Card>
+          </Link>
+          <Link to={'/gathering-wedding/tagaytay'}>
+            <Card className={styles.CardHolders}>
+              <CardImg
+                top
+                src="https://www.beaches.com/blog/content/images/2019/11/Beaches-Turks-Caicos-Beach-Wedding2.jpg"
+                alt="..."
+              />
+              <CardBody>
+                <CardText>
+                  <h1>Wedding</h1>
+                </CardText>
+              </CardBody>
+            </Card>
+          </Link>
+          <Link to={'/gathering-milestone/tagaytay'}>
+            <Card className={styles.CardHolders}>
+              <CardImg
+                top
+                src="https://cdn0.weddingwire.com/vendor/537359/original/960/jpg/reception-rosales_51_953735-165212965895663.webp"
+                alt="..."
+              />
+              <CardBody>
+                <CardText>
+                  <h1>Milestone</h1>
+                </CardText>
+              </CardBody>
+            </Card>
+          </Link>
+        </div>
+        {/* <div className={styles.HotelGatheringContainer + ' container mt-5'}>
           <a href="google.com" className={styles.photo}>
             <div className={styles.HotelGatheringImage}>
               <h1>Corporate</h1>
@@ -137,7 +183,7 @@ class Boracay extends React.Component {
               </div>
             </div>
           </a>
-        </div>
+        </div> */}
 
         {/* 
           Testimonials
