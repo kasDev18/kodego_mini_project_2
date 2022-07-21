@@ -12,7 +12,48 @@ function Iframe(props) {
     />
   );
 }
+
 class Boracay extends React.Component {
+
+  //Redirect Per Room(Tagaytay) 
+  RedirectTagaytayRoomSolo = () => {
+    setTimeout(() => {
+      window.location = '/services-rooms-solo/tagaytay';
+    }, 500);
+  };
+  RedirectTagaytayRoomDouble = () => {
+    setTimeout(() => {
+      window.location = '/services-rooms-double/tagaytay';
+    }, 500);
+  };
+  RedirectTagaytayRoomDeluxe = () => {
+    setTimeout(() => {
+      window.location = '/services-rooms-deluxe/tagaytay';
+    }, 500);
+  };
+  RedirectTagaytayRoomPremier = () => {
+    setTimeout(() => {
+      window.location = '/services-rooms-premier/tagaytay';
+    }, 500);
+  };
+
+  //Redirect Per Event(Tagaytay) 
+  RedirectTagaytayGatherWedding = () => {
+    setTimeout(() => {
+      window.location = '/gathering-wedding/tagaytay';
+    }, 500);
+  };
+  RedirectTagaytayGatherCorporate = () => {
+    setTimeout(() => {
+      window.location = '/gathering-corporate/tagaytay';
+    }, 500);
+  };
+  RedirectTagaytayGatherMilestone = () => {
+    setTimeout(() => {
+      window.location = '/gathering-milestone/tagaytay';
+    }, 500);
+  };
+
   render() {
     return (
       <>
@@ -57,8 +98,8 @@ class Boracay extends React.Component {
             </div>
             <div className={styles.img_cont + ' d-flex justify-content-center pt-5'}>
               <div className="row container d-flex justify-content-center">
-                <div className={styles.HotelPackage + ' col-6'}>
-                  <Link to="/services-rooms-solo/tagaytay">
+                <div className={styles.HotelPackage + ' col-6'} onClick={this.RedirectTagaytayRoomSolo}>
+                  <div>
                     <div align="center" class="fond">
                       <div className={styles.carreaux_presentation_light}>
                         <div className={styles.shadow_swhow_mini}>
@@ -67,10 +108,10 @@ class Boracay extends React.Component {
                         </div>
                       </div>
                     </div>
-                  </Link>
+                  </div>
                 </div>
-                <div className={styles.HotelPackage + ' col-6'}>
-                  <Link to="/services-rooms-double/tagaytay">
+                <div className={styles.HotelPackage + ' col-6'} onClick={this.RedirectTagaytayRoomDouble}>
+                  <div>
                     <div align="center" class="fond">
                       <div className={styles.carreaux_presentation_light}>
                         <div className={styles.shadow_swhow_mini}>
@@ -79,14 +120,14 @@ class Boracay extends React.Component {
                         </div>
                       </div>
                     </div>
-                  </Link>
+                  </div>
                 </div>
               </div>
             </div>
             <div className={styles.img_cont + ' d-flex justify-content-center pt-5 pb-5 mb-5'}>
               <div className="row container">
-                <div className={styles.HotelPackage + ' col-6'}>
-                  <Link to="/services-rooms-deluxe/tagaytay">
+                <div className={styles.HotelPackage + ' col-6'} onClick={this.RedirectTagaytayRoomDeluxe}>
+                  <div>
                     <div align="center" class="fond">
                       <div className={styles.carreaux_presentation_light}>
                         <div className={styles.shadow_swhow_mini}>
@@ -95,10 +136,10 @@ class Boracay extends React.Component {
                         </div>
                       </div>
                     </div>
-                  </Link>
+                  </div>
                 </div>
-                <div className={styles.HotelPackage + ' col-6'}>
-                  <Link to="/services-rooms-premier/tagaytay">
+                <div className={styles.HotelPackage + ' col-6'} onClick={this.RedirectTagaytayRoomPremier}>
+                  <div>
                     <div align="center" class="fond">
                       <div className={styles.carreaux_presentation_light}>
                         <div className={styles.shadow_swhow_mini}>
@@ -107,7 +148,7 @@ class Boracay extends React.Component {
                         </div>
                       </div>
                     </div>
-                  </Link>
+                  </div>
                 </div>
               </div>
             </div>
@@ -122,7 +163,7 @@ class Boracay extends React.Component {
             <h2 className="text-light">Event Gather</h2>
           </div>
           <div className={styles + ' mt-5 d-flex align-items-center justify-content-center'}>
-            <Link to={'/gathering-corporate/tagaytay'}>
+            <div onClick={this.RedirectTagaytayGatherCorporate}>
               <Card className={styles.CardHolders}>
                 <CardImg
                   top
@@ -135,8 +176,8 @@ class Boracay extends React.Component {
                   </CardText>
                 </CardBody>
               </Card>
-            </Link>
-            <Link to={'/gathering-wedding/tagaytay'}>
+            </div>
+            <div onClick={this.RedirectTagaytayGatherWedding}>
               <Card className={styles.CardHolders}>
                 <CardImg
                   top
@@ -149,8 +190,8 @@ class Boracay extends React.Component {
                   </CardText>
                 </CardBody>
               </Card>
-            </Link>
-            <Link to={'/gathering-milestone/tagaytay'}>
+            </div>
+            <div onClick={this.RedirectTagaytayGatherMilestone}>
               <Card className={styles.CardHolders}>
                 <CardImg
                   top
@@ -163,7 +204,7 @@ class Boracay extends React.Component {
                   </CardText>
                 </CardBody>
               </Card>
-            </Link>
+            </div>
           </div>
         </div>
 
@@ -210,8 +251,10 @@ class Boracay extends React.Component {
         <div className={styles.map_cont + '  d-flex align-items-center justify-content-center'}>
           <div className="row container">
             <div className={styles.boraAddress + ' col-6 d-flex align-items-center'}>
-              <div className={styles.address}>
-                <h1>7Seven Luxury | Tagaytay</h1>
+              <div className={styles.address + ' p-1'}>
+                <div className="d-flex justify-content-center">
+                  <h1>7Seven Luxury | Tagaytay</h1>
+                </div>
                 <h4>Tagaytay - Nasugbu Hwy, Alfonso, Cavite</h4>
               </div>
             </div>
