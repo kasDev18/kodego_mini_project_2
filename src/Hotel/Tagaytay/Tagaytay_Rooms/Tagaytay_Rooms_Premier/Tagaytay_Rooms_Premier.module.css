@@ -12,6 +12,8 @@
 .BoracayDescription {
   padding: 20px;
   letter-spacing: 0.05em;
+  background: url('https://media1.thehungryjpeg.com/thumbs2/800_3519786_ae9e6acb5ff5991558409f1bcd9587cff1d64367_white-empty-room-3d-modern-blank-interior-vector-home-background.jpg')no-repeat;
+  background-size: cover;
 }
 
 .HotelPackage {
