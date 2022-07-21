@@ -31,18 +31,19 @@ import {
   Nav,
   FormGroup,
   Label,
-  Input
+  Input,
 } from 'reactstrap';
 import Loader from '../Loader/Loader';
 import axios from 'axios';
-import i18next from 'i18next'
+import i18next from 'i18next';
+import SignIn from '../SignIn/SignIn';
 
 function IndexNavbar() {
   // Language Selector
   const changeLanguage = (option) => {
-    localStorage.setItem('lang', option.target.value)
-    window.location.reload()
-  }
+    localStorage.setItem('lang', option.target.value);
+    window.location.reload();
+  };
   const lang = localStorage.getItem('lang') || 'en';
 
   // Redirection Navbar
@@ -196,146 +197,146 @@ function IndexNavbar() {
       {/* Return Loading Animation */}
       {setRedirectTagaytay
         ? redirectTagaytay && (
-          <>
-            <img
-              className={styles.image_loader}
-              src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/90/b3/5b/escala-tagaytay.jpg?w=1200&h=-1&s=1"
-            />
-            <Loader />
-          </>
-        )
+            <>
+              <img
+                className={styles.image_loader}
+                src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/90/b3/5b/escala-tagaytay.jpg?w=1200&h=-1&s=1"
+              />
+              <Loader />
+            </>
+          )
         : ''}
       {setRedirectBoracay
         ? redirectBoracay && (
-          <>
-            <img
-              className={styles.image_loader}
-              src="https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_680/v1630914997/blog/zzydhmcu7khdqixvlmxg.webp"
-            />
-            <Loader />
-          </>
-        )
+            <>
+              <img
+                className={styles.image_loader}
+                src="https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_680/v1630914997/blog/zzydhmcu7khdqixvlmxg.webp"
+              />
+              <Loader />
+            </>
+          )
         : ''}
       {setRedirectElNido
         ? redirectElNido && (
-          <>
-            <img
-              className={styles.image_loader}
-              src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp"
-            />
-            <Loader />
-          </>
-        )
+            <>
+              <img
+                className={styles.image_loader}
+                src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp"
+              />
+              <Loader />
+            </>
+          )
         : ''}
       {setRedirectRoomSolo
         ? redirectRoomSolo && (
-          <>
-            <img
-              className={styles.image_loader}
-              src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp"
-            />
-            <Loader />
-          </>
-        )
+            <>
+              <img
+                className={styles.image_loader}
+                src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp"
+              />
+              <Loader />
+            </>
+          )
         : ''}
       {setRedirectRoomDouble
         ? redirectRoomDouble && (
-          <>
-            <img
-              className={styles.image_loader}
-              src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp"
-            />
-            <Loader />
-          </>
-        )
+            <>
+              <img
+                className={styles.image_loader}
+                src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp"
+              />
+              <Loader />
+            </>
+          )
         : ''}
       {setRedirectRoomDeluxe
         ? redirectRoomDeluxe && (
-          <>
-            <img
-              className={styles.image_loader}
-              src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp"
-            />
-            <Loader />
-          </>
-        )
+            <>
+              <img
+                className={styles.image_loader}
+                src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp"
+              />
+              <Loader />
+            </>
+          )
         : ''}
       {setRedirectRoomPremier
         ? redirectRoomPremier && (
-          <>
-            <img
-              className={styles.image_loader}
-              src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp"
-            />
-            <Loader />
-          </>
-        )
+            <>
+              <img
+                className={styles.image_loader}
+                src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp"
+              />
+              <Loader />
+            </>
+          )
         : ''}
       {setRedirectGatheringWedding
         ? redirectGatheringWedding && (
-          <>
-            <img
-              className={styles.image_loader}
-              src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp"
-            />
-            <Loader />
-          </>
-        )
+            <>
+              <img
+                className={styles.image_loader}
+                src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp"
+              />
+              <Loader />
+            </>
+          )
         : ''}
       {setRedirectGatheringCorporate
         ? redirectGatheringCorporate && (
-          <>
-            <img
-              className={styles.image_loader}
-              src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp"
-            />
-            <Loader />
-          </>
-        )
+            <>
+              <img
+                className={styles.image_loader}
+                src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp"
+              />
+              <Loader />
+            </>
+          )
         : ''}
       {setRedirectGatheringMilestone
         ? redirectGatheringMilestone && (
-          <>
-            <img
-              className={styles.image_loader}
-              src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp"
-            />
-            <Loader />
-          </>
-        )
+            <>
+              <img
+                className={styles.image_loader}
+                src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp"
+              />
+              <Loader />
+            </>
+          )
         : ''}
       {setRedirectLibraryAbout
         ? redirectLibraryAbout && (
-          <>
-            <img
-              className={styles.image_loader}
-              src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp"
-            />
-            <Loader />
-          </>
-        )
+            <>
+              <img
+                className={styles.image_loader}
+                src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp"
+              />
+              <Loader />
+            </>
+          )
         : ''}
       {setRedirectLibraryAmenities
         ? redirectLibraryAmenities && (
-          <>
-            <img
-              className={styles.image_loader}
-              src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp"
-            />
-            <Loader />
-          </>
-        )
+            <>
+              <img
+                className={styles.image_loader}
+                src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp"
+              />
+              <Loader />
+            </>
+          )
         : ''}
       {setRedirectLibraryGallery
         ? redirectLibraryGallery && (
-          <>
-            <img
-              className={styles.image_loader}
-              src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp"
-            />
-            <Loader />
-          </>
-        )
+            <>
+              <img
+                className={styles.image_loader}
+                src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp"
+              />
+              <Loader />
+            </>
+          )
         : ''}
       {/* End Return Loading Animation */}
 
@@ -561,7 +562,9 @@ function IndexNavbar() {
                                 <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
                                   {i18next.t('gathering_general')}
                                 </h6>
-                                <span class="text-sm">{i18next.t('gathering_event_plans')}</span>
+                                <span class="text-sm">
+                                  {i18next.t('gathering_event_plans')}
+                                </span>
                               </div>
                             </div>
                           </div>
@@ -695,11 +698,26 @@ function IndexNavbar() {
                     </ul>
                   </li>
                   <li class="nav-item dropdown dropdown-hover mx-2">
-                    <FormGroup className={styles.language_selector + ' bg-dark'}>
-                      <Input className="bg-dark text-light" type="select" name="select" id="exampleSelect1" onChange={changeLanguage} value={lang}>
-                        <option value={"en"} className="bg-dark text-light">English</option>
-                        <option value={"ph"} className="bg-dark text-light">Tagalog</option>
-                        <option value={"th"} className="bg-dark text-light">ไทย</option>
+                    <FormGroup
+                      className={styles.language_selector + ' bg-dark'}
+                    >
+                      <Input
+                        className="bg-dark text-light"
+                        type="select"
+                        name="select"
+                        id="exampleSelect1"
+                        onChange={changeLanguage}
+                        value={lang}
+                      >
+                        <option value={'en'} className="bg-dark text-light">
+                          English
+                        </option>
+                        <option value={'ph'} className="bg-dark text-light">
+                          Tagalog
+                        </option>
+                        <option value={'th'} className="bg-dark text-light">
+                          ไทย
+                        </option>
                       </Input>
                     </FormGroup>
                     {/* <nav className='container mb-4 mt-4'>
@@ -728,10 +746,7 @@ function IndexNavbar() {
 
                     {/* Modal */}
                     <Modal isOpen={liveDemo} toggle={() => setLiveDemo(false)}>
-                      <div className="modal-header">
-                        <h5 className="modal-title" id="exampleModalLiveLabel">
-                          Modal title
-                        </h5>
+                      <div className="modal-body">
                         <button
                           aria-label="Close"
                           className="close"
@@ -741,33 +756,7 @@ function IndexNavbar() {
                         >
                           <span aria-hidden={true}>×</span>
                         </button>
-                      </div>
-                      <div className="modal-body">
-                        <p>Woohoo, you're reading this text in a modal!</p>
-                      </div>
-                      <div className="modal-footer">
-                        <div className="left-side">
-                          <Button
-                            className="btn-link"
-                            color="default"
-                            data-dismiss="modal"
-                            type="button"
-                            onClick={() => setLiveDemo(false)}
-                          >
-                            Never mind
-                          </Button>
-                        </div>
-                        <div className="divider" />
-                        <div className="right-side">
-                          <Button
-                            className="btn-link"
-                            color="danger"
-                            type="button"
-                            onClick={() => setLiveDemo(false)}
-                          >
-                            Delete
-                          </Button>
-                        </div>
+                        <SignIn />
                       </div>
                     </Modal>
                   </li>

@@ -46,6 +46,8 @@ import ElNidoDouble from './Hotel/El_Nido/El_Nido_Rooms/El_Nido_Rooms_Double/El_
 import ElNidoDelux from './Hotel/El_Nido/El_Nido_Rooms/El_Nido_Rooms_Deluxe/El_Nido_Rooms_Deluxe';
 import ElNidoPremier from './Hotel/El_Nido/El_Nido_Rooms/El_Nido_Rooms_Premier/El_Nido_Rooms_Premier';
 import Footer from './components/Footer/Footer';
+import SignIn from './components/SignIn/SignIn';
+import Register from './components/Register/Register';
 
 class App extends React.Component {
   render() {
@@ -55,6 +57,9 @@ class App extends React.Component {
         <div>
           <Routes>
             <Route path="/" element={<Landing />} />
+            <Route path="/sign-up" element={<SignIn />} />
+            <Route path="/register" element={<Register />} />
+
             <Route path="/boracay" element={<Boracay />} />
             <Route path="/el-nido" element={<ElNido />} />
             <Route path="/tagaytay" element={<Tagaytay />} />
