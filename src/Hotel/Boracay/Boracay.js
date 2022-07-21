@@ -12,6 +12,46 @@ function Iframe(props) {
   );
 }
 class Boracay extends React.Component {
+
+  //Redirect Per Room(Tagaytay) 
+  RedirectBoracayRoomSolo = () => {
+    setTimeout(() => {
+      window.location = '/services-rooms-solo/boracay';
+    }, 500);
+  };
+  RedirectBoracayRoomDouble = () => {
+    setTimeout(() => {
+      window.location = '/services-rooms-double/boracay';
+    }, 500);
+  };
+  RedirectBoracayRoomDeluxe = () => {
+    setTimeout(() => {
+      window.location = '/services-rooms-deluxe/boracay';
+    }, 500);
+  };
+  RedirectBoracayRoomPremier = () => {
+    setTimeout(() => {
+      window.location = '/services-rooms-premier/boracay';
+    }, 500);
+  };
+
+  //Redirect Per Event(Tagaytay) 
+  RedirectBoracayGatherWedding = () => {
+    setTimeout(() => {
+      window.location = '/gathering-wedding/boracay';
+    }, 500);
+  };
+  RedirectBoracayGatherCorporate = () => {
+    setTimeout(() => {
+      window.location = '/gathering-corporate/boracay';
+    }, 500);
+  };
+  RedirectBoracayGatherMilestone = () => {
+    setTimeout(() => {
+      window.location = '/gathering-milestone/boracay';
+    }, 500);
+  };
+
   render() {
     return (
       <>
@@ -59,7 +99,7 @@ class Boracay extends React.Component {
             </div>
             <div className={styles.img_cont + ' d-flex justify-content-center pt-5'}>
               <div className="row container d-flex justify-content-center">
-                <div className={styles.HotelPackage + ' col-6'} onClick={this.RedirectTagaytayRoomSolo}>
+                <div className={styles.HotelPackage + ' col-6'} onClick={this.RedirectBoracayRoomSolo}>
                   <div>
                     <div align="center" class="fond">
                       <div className={styles.carreaux_presentation_light}>
@@ -71,7 +111,7 @@ class Boracay extends React.Component {
                     </div>
                   </div>
                 </div>
-                <div className={styles.HotelPackage + ' col-6'} onClick={this.RedirectTagaytayRoomDouble}>
+                <div className={styles.HotelPackage + ' col-6'} onClick={this.RedirectBoracayRoomDouble}>
                   <div>
                     <div align="center" class="fond">
                       <div className={styles.carreaux_presentation_light}>
@@ -87,7 +127,7 @@ class Boracay extends React.Component {
             </div>
             <div className={styles.img_cont + ' d-flex justify-content-center pt-5 pb-5 mb-5'}>
               <div className="row container">
-                <div className={styles.HotelPackage + ' col-6'} onClick={this.RedirectTagaytayRoomDeluxe}>
+                <div className={styles.HotelPackage + ' col-6'} onClick={this.RedirectBoracayRoomDeluxe}>
                   <div>
                     <div align="center" class="fond">
                       <div className={styles.carreaux_presentation_light}>
@@ -99,7 +139,7 @@ class Boracay extends React.Component {
                     </div>
                   </div>
                 </div>
-                <div className={styles.HotelPackage + ' col-6'} onClick={this.RedirectTagaytayRoomPremier}>
+                <div className={styles.HotelPackage + ' col-6'} onClick={this.RedirectBoracayRoomPremier}>
                   <div>
                     <div align="center" class="fond">
                       <div className={styles.carreaux_presentation_light}>
@@ -124,7 +164,7 @@ class Boracay extends React.Component {
             <h2 className="text-light">Event Gather</h2>
           </div>
           <div className={styles + ' mt-5 d-flex align-items-center justify-content-center'}>
-            <div onClick={this.RedirectTagaytayGatherCorporate}>
+            <div onClick={this.RedirectBoracayGatherCorporate}>
               <Card className={styles.CardHolders}>
                 <CardImg
                   top
@@ -138,7 +178,7 @@ class Boracay extends React.Component {
                 </CardBody>
               </Card>
             </div>
-            <div onClick={this.RedirectTagaytayGatherWedding}>
+            <div onClick={this.RedirectBoracayGatherWedding}>
               <Card className={styles.CardHolders}>
                 <CardImg
                   top
@@ -152,7 +192,7 @@ class Boracay extends React.Component {
                 </CardBody>
               </Card>
             </div>
-            <div onClick={this.RedirectTagaytayGatherMilestone}>
+            <div onClick={this.RedirectBoracayGatherMilestone}>
               <Card className={styles.CardHolders}>
                 <CardImg
                   top
