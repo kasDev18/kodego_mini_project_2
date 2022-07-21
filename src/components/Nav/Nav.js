@@ -210,7 +210,7 @@ function IndexNavbar() {
           <>
             <img
               className={styles.image_loader}
-              src="https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_680/v1630914997/blog/zzydhmcu7khdqixvlmxg.webp"
+              src="https://www.discoveryshoresboracay.com/files/2017/05/View-from-the-upper-clusters.jpg"
             />
             <Loader />
           </>
