@@ -51,6 +51,7 @@ function IndexNavbar() {
       window.location = '/';
     }, 1500);
   };
+
   const [redirectTagaytay, setRedirectTagaytay] = useState(false);
   const handleSubmitTagaytay = async () => {
     setRedirectTagaytay(true);

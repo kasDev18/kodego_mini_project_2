@@ -12,6 +12,8 @@ import {
 import { Link } from 'react-router-dom';
 import Footer from '../Footer/Footer';
 import LandingCard from './LandingCard/LandingCard';
+import axios from 'axios';
+import i18next from 'i18next'
 
 class Landing extends React.Component {
   render() {
@@ -29,7 +31,7 @@ class Landing extends React.Component {
         <div className={styles.hotel_opening_desc}>
           <div className={styles.hotel_name}>
             <div className="d-flex justify-content-center pt-5">
-              <h1>7Seven Luxury Hotel</h1>
+              <h1>{i18next.t('landing_title_opening')}</h1>
             </div>
             <div
               className={
@@ -38,28 +40,20 @@ class Landing extends React.Component {
             >
               <div className={styles.description + ' mt-2'}>
                 <h5>
-                  As the premier boutique hotel, the 7Seven Luxury Hotel offers
-                  a luxury stay with 66 rooms and suites for those looking to
-                  stay well while traveling. Just steps from the amenities of
-                  our athletic and social club, the 7Seven Club, the
-                  newly-renovated rooms feature neutral pallets with
+                  {i18next.t('landing_opening_1')}
                 </h5>
               </div>
               <div className={styles.divider}>|</div>
               <div className={styles.description}>
                 <h5>
-                  Pacific Northwest accents. While here, guests enjoy all the
-                  perks of being a member: Take a dip in the pool, join a
-                  cycling class or get pampered at our spa. Our guests live like
-                  locals with shopping, restaurants and other cultural venues
-                  just a town car ride away.
+                  {i18next.t('landing_opening_2')}
                 </h5>
               </div>
             </div>
           </div>
           <div className={styles.offer}>
             <div className={styles + ' d-flex justify-content-center mt-5'}>
-              <h2>We Are Offering</h2>
+              <h2>{i18next.t('we_are_offering')}</h2>
             </div>
             <div className={styles.services_offer + ' d-flex p-5'}>
               <LandingCard />
@@ -74,7 +68,7 @@ class Landing extends React.Component {
               alt="..."
             />
             <h4 className={styles + ' position-absolute'}>
-              <b>OUR GUESTROOMS OFFER COMFORT, FAMILIARITY AND HOMELINESS</b>
+              <b>{i18next.t('landing_banner_1')}</b>
             </h4>
           </div>
           <div className={styles + ' mb-5'}>
@@ -84,7 +78,7 @@ class Landing extends React.Component {
               alt="..."
             />
             <h4 className={styles + ' position-absolute flex-end'}>
-              <b>CONTEMPORARY CUISINE WITH FOCUS ON FRESH & HEALTHY</b>
+              <b>{i18next.t('landing_banner_2')}</b>
             </h4>
           </div>
           <div className={styles + ' mb-5'}>
@@ -95,7 +89,7 @@ class Landing extends React.Component {
             />
             <h4 className={styles + ' position-absolute flex-end'}>
               <b>
-                MEETINGS, SEMINARS, CONVENTIONS, DEBUTS, OR WEDDINGS AT 7SEVEN
+                {i18next.t('landing_banner_3')}
               </b>
             </h4>
           </div>

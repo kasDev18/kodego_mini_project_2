@@ -4,6 +4,8 @@ import stay_img from './LandingCardImages/stay.jpg'
 import dine_img from './LandingCardImages/dine.jpg'
 import gather_img from './LandingCardImages/gather.jpg'
 import { Card, CardBody, CardTitle, CardText } from 'reactstrap';
+import axios from 'axios';
+import i18next from 'i18next'
 
 class LandingCard extends React.Component {
 
@@ -26,9 +28,9 @@ class LandingCard extends React.Component {
   }
 
   card = [
-    { card_img_src: stay_img, card_title: 'Stay', card_text: 'From luxe amenities to local attractions, Bellevue Club Hotel has it all. With so many avenues to explore and memories to make, you’re going to want to stay a while. We can’t blame you.' },
-    { card_img_src: dine_img, card_title: 'Dine', card_text: 'Refuel with whatever moves you – a morning espresso, tide-to-table lunch, craft cocktails, or an after-dinner indulgence. Our four distinct dining venues offer all this and more.' },
-    { card_img_src: gather_img, card_title: 'Gather', card_text: 'Creating iconic moments is our specialty. We have stunning spaces for any size of gathering, so whether you’re hosting a corporate meeting or the wedding of the year, we’re here to help.' },
+    { card_img_src: stay_img, card_title: i18next.t('landing_card_title_1'), card_text: i18next.t('landing_card_text_1') },
+    { card_img_src: dine_img, card_title: i18next.t('landing_card_title_2'), card_text: i18next.t('landing_card_text_2') },
+    { card_img_src: gather_img, card_title: i18next.t('landing_card_title_3'), card_text: i18next.t('landing_card_text_3') },
   ]
   card_array = []
 
@@ -45,15 +47,15 @@ class LandingCard extends React.Component {
             <div class="button_cont">
               <div className='d-flex justify-content-center'>
                 <div>
-                  <a className={styles.example_c + ' text-center btn-round mx-2'} onClick={this.RedirectTagaytay} rel="nofollow noopener">Tagaytay</a>
+                  <a className={styles.example_c + ' text-center btn-round mx-2'} onClick={this.RedirectTagaytay} rel="nofollow noopener">{i18next.t('landing_card_btn_1')}</a>
                 </div>
                 <div>
-                  <a className={styles.example_c + ' text-center btn-round mx-2'} onClick={this.RedirectBoracay} rel="nofollow noopener">Boracay</a>
+                  <a className={styles.example_c + ' text-center btn-round mx-2'} onClick={this.RedirectBoracay} rel="nofollow noopener">{i18next.t('landing_card_btn_2')}</a>
                 </div>
               </div>
               <div className='d-flex justify-content-center mt-2'>
                 <div>
-                  <a className={styles.example_c + ' text-center btn-round'} onClick={this.RedirectElNido} rel="nofollow noopener">El Nido</a>
+                  <a className={styles.example_c + ' text-center btn-round'} onClick={this.RedirectElNido} rel="nofollow noopener">{i18next.t('landing_card_btn_3')}</a>
                 </div>
               </div>
             </div>

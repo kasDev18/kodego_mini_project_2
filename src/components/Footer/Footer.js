@@ -2,6 +2,8 @@ import React from 'react';
 import styles from './Footer.module.css';
 import Newsletter_Modal from '../Newsletter_Modal/Newsletter_Modal';
 import { UncontrolledTooltip } from 'reactstrap';
+import axios from 'axios';
+import i18next from 'i18next'
 
 class Footer extends React.Component {
   awardsImage = [
@@ -52,35 +54,35 @@ class Footer extends React.Component {
             <div className=''>
               <div className="credits ml-auto d-flex justify-content-center text-light mb-5">
                 <span className="copyright">
-                  © {new Date().getFullYear()}, made with{" "}
-                  <i className="fa fa-heart heart" /> by <span className='text-warning'>7Seven</span> | Luxury Hotel
+                  © {new Date().getFullYear()}, {i18next.t('footer_made_with')}{" "}
+                  <i className="fa fa-heart heart" /> {i18next.t('footer_by')} <span className='text-warning'>{i18next.t('footer_seven')}</span> {i18next.t('footer_luxury_hotel')}
                 </span>
               </div>
             </div>
             <div className='d-flex justify-content-center'>
-              <h4 className='text-white'>Locations</h4>
+              <h4 className='text-white'>{i18next.t('footer_locations')}</h4>
             </div>
             <div className='d-flex justify-content-center mb-5'>
-              <h6 className='text-white'>7seven Tagaytay <span className='text-white mx-2 '> |</span></h6>
-              <h6 className='text-white'>7seven Boracay <span className='text-white mx-2'> |</span></h6>
-              <h6 className='text-white'>7seven El Nido </h6>
+              <h6 className='text-white'>{i18next.t('footer_seven_tagaytay')} <span className='text-white mx-2 '> |</span></h6>
+              <h6 className='text-white'>{i18next.t('footer_seven_boracay')} <span className='text-white mx-2'> |</span></h6>
+              <h6 className='text-white'>{i18next.t('footer_seven_el_nido')} </h6>
             </div>
             <hr className='bg-light mb-5'></hr>
             <div className='d-flex justify-content-center'>
-              <h4 className='text-white'>Quick Links</h4>
+              <h4 className='text-white'>{i18next.t('footer_quick_links')}</h4>
             </div>
             <div className='d-flex justify-content-center'>
-              <h6 className='text-white'>Careers <span className='text-white mb-2 mx-2'> |</span></h6>
-              <h6 className='text-white'>Privacy Policy <span className='text-white mx-2'> |</span></h6>
-              <h6 className='text-white'>Cookie Policy <span className='text-white mx-2'> |</span></h6>
-              <h6 className='text-white'>Reservation Policy </h6>
+              <h6 className='text-white'>{i18next.t('footer_careers')} <span className='text-white mb-2 mx-2'> |</span></h6>
+              <h6 className='text-white'>{i18next.t('footer_privacy')} <span className='text-white mx-2'> |</span></h6>
+              <h6 className='text-white'>{i18next.t('footer_cookie')} <span className='text-white mx-2'> |</span></h6>
+              <h6 className='text-white'>{i18next.t('footer_reserve')} </h6>
             </div>
           </div>
         </div>
         <div className={styles.footer + ' d-flex'}>
           <div className='col'>
             <div className={styles.media_title + ' pt-5 d-flex justify-content-end mx-3 px-4'}>
-              <h5 className='text-light text-transform-uppercase'>Stay Connected</h5>
+              <h5 className='text-light text-transform-uppercase'>{i18next.t('footer_stay')}</h5>
             </div>
             <ul className={styles.media_footer_cont + ' d-flex justify-content-end'}>
               {this.mediaFooterIconArray}
@@ -89,7 +91,7 @@ class Footer extends React.Component {
           </div>
           <div className='col '>
             <div className={styles.media_title + ' pt-5 mb-4'}>
-              <h5 className='text-light text-transform-uppercase'>Subscribe to our Newsletter</h5>
+              <h5 className='text-light text-transform-uppercase'>{i18next.t('footer_newsletter')}</h5>
             </div>
             <div className={styles.media_title}>
               <Newsletter_Modal />
