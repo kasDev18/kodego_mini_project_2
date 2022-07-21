@@ -12,6 +12,7 @@
 .BoracayDescription {
   padding: 20px;
   letter-spacing: 0.05em;
+  height: 90vh;
 }
 
 .HotelPackage {
@@ -33,12 +34,13 @@
 .carreaux_presentation_light {
   display: table-cell;
   width: 450px;
-  height: 450px;
+  height: 400px;
   background-size: cover;
   overflow: hidden;
   position: relative;
   background-image: url(https://gttp.imgix.net/310162/x/0/the-carmelence-view-s-lakeview-room.jpg?auto=format%2Ccompress&crop=faces%2Cedges%2Ccenter&bg=%23fff&fit=crop&q=35&h=1112&dpr=1);
 }
+
 .carreaux_presentation_light .shadow_swhow_mini {
   background-color: rgba(19, 30, 33, 0.4);
   position: absolute;
@@ -48,9 +50,11 @@
   right: 0;
   bottom: 0;
 }
+
 .carreaux_presentation_light:hover .shadow_swhow_mini {
   background-color: rgba(16, 23, 41, 0);
 }
+
 .carreaux_presentation_light .deroul_titre {
   position: absolute;
   text-transform: uppercase;
@@ -68,10 +72,12 @@
   -ms-transition: all 0.7s;
   transition: all 0.7s;
 }
+
 .carreaux_presentation_light:hover .deroul_titre {
   background-color: #1e4944;
   left: 0px;
 }
+
 .carreaux_presentation_light .deroul_soustitre {
   position: absolute;
   font-family: 'Roboto';
@@ -89,6 +95,7 @@
   -ms-transition: all 0.7s;
   transition: all 0.7s;
 }
+
 .carreaux_presentation_light:hover .deroul_soustitre {
   background-color: #417c74;
   right: 0px;
@@ -100,13 +107,25 @@
 */
 
 .CardWrappers {
-  display: flex;
-  justify-content: center;
+  height: 100vh;
+  background: url('https://ricksoetebier.com/wp-content/uploads/2017/11/event-background-1024x576.jpg')no-repeat;
+  background-size: cover;
+  transform: translateY(-50px);
+  /* margin-top: -80px; */
+  margin-bottom: -50px;
 }
+
+.CardWrappers h2 {
+  font-size: 40px;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
 .CardHolders {
   display: inline-block;
   text-align: center;
   width: 18rem;
+  height: 23rem;
   margin-left: 24px;
   border-radius: 13px;
 }
@@ -119,17 +138,27 @@
 
 .HotelTestimonials {
   /* margin-top: -240px; */
-  background-color: rgb(159, 255, 223);
-  display: flex;
-  justify-content: center;
+  background: url('https://newbt.org/wp-content/uploads/2019/01/AdobeStock_143798795.jpeg')no-repeat;
+  background-size: cover;
+  height: 80vh;
 }
 
 .HotelsTestimonialText {
-  display: inline-block;
-  width: 220px;
+  width: 280px;
+  height: 360px;
   margin: 30px;
   letter-spacing: 0.1em;
+  background: url('https://tse3.mm.bing.net/th?id=OIP.RLe63GG-1P5-Sjmez2iegQHaEo&pid=Api&P=0')no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: rgb(0, 0, 0);
+  /* border: 2px solid rgb(117, 21, 21) !important; */
 }
+
+/* .HotelsTestimonialText:hover {
+  border: 2px solid rgb(105, 28, 28) !important
+} */
+
 
 /* AWARDS */
 .Awards {
@@ -137,6 +166,7 @@
   text-align: center;
   border-top-width: medium;
 }
+
 .Awards img {
   height: 120px;
   width: 120px;
@@ -147,13 +177,46 @@
   width: 450px;
 }
 
-.boraAddress {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 120px;
+.map_cont {
+  height: 110vh;
+  background: url('http://thumbs.dreamstime.com/z/navigation-background-texture-15830438.jpg')no-repeat;
+  background-size: cover;
+}
+
+.address {
+  backdrop-filter: blur(8px);
+}
+
+.address h1,
+.address h4 {
+  color: rgb(0, 0, 0);
 }
 
 .gmaps {
   width: 100%;
   height: 400px;
+}
+
+.boracay_desc_cont {
+  transform: translateY(150px);
+}
+
+.boracay_desc_cont div:nth-child(1) {
+  margin-bottom: 100px;
+}
+
+.boracay_desc_cont h4 {
+  font-size: 40px;
+
+}
+
+.body_cont {
+  background: url('https://newbt.org/wp-content/uploads/2019/01/AdobeStock_143798795.jpeg')no-repeat;
+  background-size: cover;
+}
+
+.img_cont_cont h4 {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: bolder;
 }
