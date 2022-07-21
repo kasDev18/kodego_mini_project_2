@@ -12,6 +12,14 @@
 .BoracayDescription {
   padding: 20px;
   letter-spacing: 0.05em;
+  background: url('https://media1.thehungryjpeg.com/thumbs2/800_3519786_ae9e6acb5ff5991558409f1bcd9587cff1d64367_white-empty-room-3d-modern-blank-interior-vector-home-background.jpg')no-repeat;
+  background-size: cover;
+}
+
+.booking_cont {
+  background: url('https://media.istockphoto.com/photos/empty-room-interior-background-with-curtain-picture-id834726506?k=6&m=834726506&s=170667a&w=0&h=8-mEH28QxblDh-uflWtOziC5T3Q_1xhFOxZRs6k6yFQ=')no-repeat;
+  background-size: cover;
+
 }
 
 .HotelPackage {
