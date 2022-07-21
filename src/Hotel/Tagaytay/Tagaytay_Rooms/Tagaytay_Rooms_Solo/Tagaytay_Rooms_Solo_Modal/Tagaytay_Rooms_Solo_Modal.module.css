@@ -1,0 +1,65 @@
+.modal_btn_booking:hover {
+    color: rgb(255, 230, 0) !important;
+    background: rgb(255, 255, 255) !important;
+    z-index: 1000;
+}
+
+.modal_btn_save:hover {
+    background: rgb(0, 138, 0) !important;
+    color: #fff !important;
+}
+
+.calendar_icon {
+    position: absolute;
+    transform: translate(-220px, 12px);
+    color: #dacdcd;
+    font-size: large;
+}
+
+.family_member_icon {
+    position: absolute;
+    transform: translate(-130px, 13px);
+    color: #dacdcd;
+    font-size: large;
+}
+
+.booking_date_input {
+    width: 250px;
+    padding-left: 40px;
+}
+
+.family_member_input {
+    width: 300px;
+    padding-left: 40px;
+}
+
+.family_member_option {
+    top: -110px;
+    width: 300px;
+    z-index: 1000;
+}
+
+.option_item span {
+    transform: translateY(10px);
+    margin: 0 15px;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.option_item Button {
+    transform: translateY(-2px);
+    margin: 5px 0;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.children_counter {
+    transform: translateX(20px);
+}
+
+.price_icon {
+    position: absolute;
+    color: #dacdcd;
+    font-size: large;
+    transform: translate(10px, 11px);
+}

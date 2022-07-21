@@ -1,7 +1,8 @@
 import React from 'react';
 import styles from './El_Nido_Rooms_Deluxe.module.css';
 import { Link } from 'react-router-dom';
- 
+import RoomSoloModal from '../../../Tagaytay/Tagaytay_Rooms/Tagaytay_Rooms_Solo/Tagaytay_Rooms_Solo_Modal/Tagaytay_Rooms_Solo_Modal';
+
 class ElNidoRoomsDeluxe extends React.Component {
   render() {
     return (
@@ -37,7 +38,7 @@ class ElNidoRoomsDeluxe extends React.Component {
         {/* 
           Rooms
         */}
-        <div className="container my-5 ">
+        <div className={styles.booking_cont + ' my-5'}>
           <div className="row my-5">
             <div className={styles.HotelPackage + ' col-6'}>
               <Link to=" ">
@@ -74,7 +75,9 @@ class ElNidoRoomsDeluxe extends React.Component {
               </div>
             </div>
             <div className="text-center mt-5">
-              <span className="btn btn-primary ">Book Now</span>
+              <div>
+                <RoomSoloModal />
+              </div>
             </div>
           </div>
         </div>

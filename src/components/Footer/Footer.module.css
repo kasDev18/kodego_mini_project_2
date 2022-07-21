@@ -1,11 +1,12 @@
 .awards {
-    height: 50vh;
+    height: 70vh;
 }
 
 .awards {
     background: url('https://static.vecteezy.com/system/resources/previews/000/600/376/original/vector-elegant-circles-white-with-halftone-abstract-white-background.jpg')no-repeat;
     background-size: cover;
-    /* border: 1px solid grey; */
+    margin-top: -50px;
+    margin-bottom: -50px;
 }
 
 .container_awards {

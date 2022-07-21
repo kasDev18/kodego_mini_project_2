@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Boracay_Rooms_Solo.module.css';
 import { Link } from 'react-router-dom';
+import RoomSoloModal from '../../../Tagaytay/Tagaytay_Rooms/Tagaytay_Rooms_Solo/Tagaytay_Rooms_Solo_Modal/Tagaytay_Rooms_Solo_Modal';
 
 class BoracayRoomsSolo extends React.Component {
   render() {
@@ -37,7 +38,7 @@ class BoracayRoomsSolo extends React.Component {
         {/* 
           Rooms
         */}
-        <div className="container my-5 ">
+        <div className={styles.booking_cont + ' my-5'}>
           <div className="row my-5">
             <div className={styles.HotelPackage + ' col-6'}>
               <Link to=" ">
@@ -74,7 +75,9 @@ class BoracayRoomsSolo extends React.Component {
               </div>
             </div>
             <div className="text-center mt-5">
-              <span className="btn btn-primary ">Book Now</span>
+              <div>
+                <RoomSoloModal />
+              </div>
             </div>
           </div>
         </div>

@@ -39,6 +39,7 @@
   position: relative;
   background-image: url(https://upload.wikimedia.org/wikipedia/commons/8/83/Paraw_sailboats_in_Boracay_2.jpg);
 }
+
 .carreaux_presentation_light .shadow_swhow_mini {
   background-color: rgba(19, 30, 33, 0.4);
   position: absolute;
@@ -48,9 +49,11 @@
   right: 0;
   bottom: 0;
 }
+
 .carreaux_presentation_light:hover .shadow_swhow_mini {
   background-color: rgba(16, 23, 41, 0);
 }
+
 .carreaux_presentation_light .deroul_titre {
   position: absolute;
   text-transform: uppercase;
@@ -68,10 +71,12 @@
   -ms-transition: all 0.7s;
   transition: all 0.7s;
 }
+
 .carreaux_presentation_light:hover .deroul_titre {
   background-color: #1e4944;
   left: 0px;
 }
+
 .carreaux_presentation_light .deroul_soustitre {
   position: absolute;
   font-family: 'Roboto';
@@ -89,6 +94,7 @@
   -ms-transition: all 0.7s;
   transition: all 0.7s;
 }
+
 .carreaux_presentation_light:hover .deroul_soustitre {
   background-color: #417c74;
   right: 0px;
@@ -109,11 +115,13 @@
 .HotelGatheringContainer a {
   color: #111;
 }
+
 .HotelGatheringImage {
   margin-top: 400px;
   margin-left: 12px;
   position: relative;
 }
+
 .photo {
   transform: translate(-50%, -50%);
   display: inline-block;
@@ -215,6 +223,7 @@
   text-align: center;
   border-top-width: medium;
 }
+
 .Awards img {
   height: 120px;
   width: 120px;
@@ -228,5 +237,11 @@
 .boraAddress {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 120px; 
+  margin-top: 120px;
+}
+
+.booking_cont {
+  background: url('https://media.istockphoto.com/photos/empty-room-interior-background-with-curtain-picture-id834726506?k=6&m=834726506&s=170667a&w=0&h=8-mEH28QxblDh-uflWtOziC5T3Q_1xhFOxZRs6k6yFQ=')no-repeat;
+  background-size: cover;
+
 }
