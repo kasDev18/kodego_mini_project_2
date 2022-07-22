@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './Milestone.module.css';
 import { Link } from 'react-router-dom';
-import BookingForm from '../../components/BookingForm/BookingForm';
 
 class Milestone extends React.Component {
   render() {
@@ -174,7 +173,6 @@ class Milestone extends React.Component {
 
         <div className="container mt-5 bg-body">
           <h1 className="text-center mb-4">Book Now!</h1>
-          <BookingForm />
         </div>
       </>
     );

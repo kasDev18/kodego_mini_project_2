@@ -25,7 +25,7 @@ class Footer extends React.Component {
 
   CreateAwardsImageArray() {
     this.awardsImageArray = this.awardsImage.map((element) => (
-      <div className={styles.container_awards + ' container btn'} id={element.id} data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
+      <div className={styles.container_awards + ' container btn'} id={element.id}>
         <img src={element.src} />
       </div>
     ))

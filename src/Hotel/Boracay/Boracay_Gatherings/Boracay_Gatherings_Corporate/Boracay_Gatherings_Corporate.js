@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from './Boracay_Gatherings_Corporate.module.css';
 import { Link } from 'react-router-dom';
-import BookingForm from '../../../../components/BookingForm/BookingForm';
 import ModalComponent from '../../../../components/ModalComponent/ModalComponentMilestone';
+import BookingForm from '../../../../components/BookingForm/BookingForm';
 
 class BoracayGatheringsCorporate extends React.Component {
   render() {

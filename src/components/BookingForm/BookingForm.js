@@ -1,8 +1,9 @@
 import React from 'react';
+import styles from './BookingForm.module.css';
 
 const BookingForm = () => {
   return (
-    <div>
+    <div className={styles.booking_cont + ''}>
       <form>
         <div class="form-row">
           <div class="form-group col-md-6">

@@ -233,6 +233,7 @@ function IndexNavbar() {
         : ''}
       {setRedirectRoomSolo
         ? redirectRoomSolo && (
+<<<<<<< Updated upstream
             <>
               <img
                 alt="..."
@@ -242,6 +243,17 @@ function IndexNavbar() {
               <Loader />
             </>
           )
+=======
+          <>
+            <img
+              alt="..."
+              className={styles.image_loader}
+              src="https://res.cloudinary.com/sonder/image/private/s--kIPc5Gjx--/c_fill,f_auto,q_auto:eco,w_2000/v1/s3assets/unit_images/images/000/217/845/original/eTdSEWQ5.jpg"
+            />
+            <Loader />
+          </>
+        )
+>>>>>>> Stashed changes
         : ''}
       {setRedirectRoomDouble
         ? redirectRoomDouble && (

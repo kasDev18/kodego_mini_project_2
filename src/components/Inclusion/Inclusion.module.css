@@ -1,0 +1,12 @@
+.inclusion_cont img {
+    height: 100px;
+    width: 100px;
+}
+
+.inclusion_cont_1 {
+    width: 100px !important;
+    background: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
