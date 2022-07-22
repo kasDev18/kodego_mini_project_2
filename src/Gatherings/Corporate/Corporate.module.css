@@ -12,7 +12,23 @@
 .BoracayDescription {
   padding: 20px;
   letter-spacing: 0.05em;
+  background: url('https://media1.thehungryjpeg.com/thumbs2/800_3519786_ae9e6acb5ff5991558409f1bcd9587cff1d64367_white-empty-room-3d-modern-blank-interior-vector-home-background.jpg')no-repeat;
+  background-size: cover;
+  height: 80vh;
+  padding-top: 120px;
 }
+
+.gather_gen_cont {
+  background: url('http://pavbca.com/walldb/original/9/c/f/45814.jpg');
+  background-size: cover;
+  color: #ffffff !important;
+  padding: 50px 0;
+}
+
+.gather_gen_cont h1 {
+  color: #ffffff;
+}
+
 
 .HotelPackage {
   padding: 20px;
@@ -38,6 +54,7 @@
   overflow: hidden;
   position: relative;
 }
+
 .carreaux_presentation_light .shadow_swhow_mini {
   background-color: rgba(19, 30, 33, 0.4);
   position: absolute;
@@ -47,9 +64,11 @@
   right: 0;
   bottom: 0;
 }
+
 .carreaux_presentation_light:hover .shadow_swhow_mini {
   background-color: rgba(16, 23, 41, 0);
 }
+
 .carreaux_presentation_light .deroul_titre {
   position: absolute;
   text-transform: uppercase;
@@ -67,10 +86,12 @@
   -ms-transition: all 0.7s;
   transition: all 0.7s;
 }
+
 .carreaux_presentation_light:hover .deroul_titre {
   background-color: #1e4944;
   left: 0px;
 }
+
 .carreaux_presentation_light .deroul_soustitre {
   position: absolute;
   font-family: 'Roboto';
@@ -88,6 +109,7 @@
   -ms-transition: all 0.7s;
   transition: all 0.7s;
 }
+
 .carreaux_presentation_light:hover .deroul_soustitre {
   background-color: #417c74;
   right: 0px;
@@ -116,6 +138,7 @@
   text-align: center;
   border-top-width: medium;
 }
+
 .Awards img {
   height: 120px;
   width: 120px;
