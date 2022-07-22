@@ -22,7 +22,7 @@ class TagaytayRoomsPremier extends React.Component {
         */}
         <div className={styles.BoracayDescription}>
           <h2 className={styles.title + ' d-flex justify-content-center m-5'}>
-            7Seven Luxury Hotel | Tagaytay Room Solo
+            7Seven Luxury Hotel | Tagaytay Room Premier
           </h2>
           <div className={styles + ' container d-flex align-items-center'}>
             <h5>
