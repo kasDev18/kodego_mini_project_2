@@ -1,7 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import styles from './Tagaytay.module.css';
 import { Card, CardImg, CardBody, CardText } from 'reactstrap';
+import Testimonial from '../../components/Testimonial/Testimonial';
 
 const iframe =
   '<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15479.458475973914!2d120.8861609!3d14.085168!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x91c5bb9003d5e4f8!2sThe%20Oriental%20Luxury%20Suites!5e0!3m2!1sen!2sph!4v1658321397261!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
@@ -14,8 +14,7 @@ function Iframe(props) {
 }
 
 class Boracay extends React.Component {
-
-  //Redirect Per Room(Tagaytay) 
+  //Redirect Per Room(Tagaytay)
   RedirectTagaytayRoomSolo = () => {
     setTimeout(() => {
       window.location = '/services-rooms-solo/tagaytay';
@@ -37,7 +36,7 @@ class Boracay extends React.Component {
     }, 500);
   };
 
-  //Redirect Per Event(Tagaytay) 
+  //Redirect Per Event(Tagaytay)
   RedirectTagaytayGatherWedding = () => {
     setTimeout(() => {
       window.location = '/gathering-wedding/tagaytay';
@@ -72,18 +71,18 @@ class Boracay extends React.Component {
         */}
           <div className={styles.BoracayDescription + ' '}>
             <div className={styles.boracay_desc_cont}>
-              <div className='d-flex justify-content-center'>
+              <div className="d-flex justify-content-center">
                 <h4>7Seven Tagaytay Branch</h4>
               </div>
               <div className={styles + '  d-flex mb-5'}>
                 <h5 className="container mb-5 text-dark">
                   An upscale hotel overlooking the Batangas landscape along with
-                  picturesque views of the Taal Lake and Volcano, the Oriental Luxury
-                  Suites offers 7 room types named after a colorful city in Thailand.
-                  Each opulently styled Thai-inspired suite comes with a complimentary
-                  set breakfast, a set of bathroom amenities, a hot and cold shower,
-                  cable television, free parking, welcome drinks, free bottled water,
-                  and wifi access.
+                  picturesque views of the Taal Lake and Volcano, the Oriental
+                  Luxury Suites offers 7 room types named after a colorful city
+                  in Thailand. Each opulently styled Thai-inspired suite comes
+                  with a complimentary set breakfast, a set of bathroom
+                  amenities, a hot and cold shower, cable television, free
+                  parking, welcome drinks, free bottled water, and wifi access.
                 </h5>
               </div>
               <hr className="mx-5 mt-5"></hr>
@@ -96,9 +95,16 @@ class Boracay extends React.Component {
             <div className={styles + '  d-flex justify-content-center'}>
               <h4>Rooms Option</h4>
             </div>
-            <div className={styles.img_cont + ' d-flex justify-content-center pt-5'}>
+            <div
+              className={
+                styles.img_cont + ' d-flex justify-content-center pt-5'
+              }
+            >
               <div className="row container d-flex justify-content-center">
-                <div className={styles.HotelPackage + ' col-6'} onClick={this.RedirectTagaytayRoomSolo}>
+                <div
+                  className={styles.HotelPackage + ' col-6'}
+                  onClick={this.RedirectTagaytayRoomSolo}
+                >
                   <div>
                     <div align="center" class="fond">
                       <div className={styles.carreaux_presentation_light}>
@@ -110,7 +116,10 @@ class Boracay extends React.Component {
                     </div>
                   </div>
                 </div>
-                <div className={styles.HotelPackage + ' col-6'} onClick={this.RedirectTagaytayRoomDouble}>
+                <div
+                  className={styles.HotelPackage + ' col-6'}
+                  onClick={this.RedirectTagaytayRoomDouble}
+                >
                   <div>
                     <div align="center" class="fond">
                       <div className={styles.carreaux_presentation_light}>
@@ -124,9 +133,17 @@ class Boracay extends React.Component {
                 </div>
               </div>
             </div>
-            <div className={styles.img_cont + ' d-flex justify-content-center pt-5 pb-5 mb-5'}>
+            <div
+              className={
+                styles.img_cont +
+                ' d-flex justify-content-center pt-5 pb-5 mb-5'
+              }
+            >
               <div className="row container">
-                <div className={styles.HotelPackage + ' col-6'} onClick={this.RedirectTagaytayRoomDeluxe}>
+                <div
+                  className={styles.HotelPackage + ' col-6'}
+                  onClick={this.RedirectTagaytayRoomDeluxe}
+                >
                   <div>
                     <div align="center" class="fond">
                       <div className={styles.carreaux_presentation_light}>
@@ -138,7 +155,10 @@ class Boracay extends React.Component {
                     </div>
                   </div>
                 </div>
-                <div className={styles.HotelPackage + ' col-6'} onClick={this.RedirectTagaytayRoomPremier}>
+                <div
+                  className={styles.HotelPackage + ' col-6'}
+                  onClick={this.RedirectTagaytayRoomPremier}
+                >
                   <div>
                     <div align="center" class="fond">
                       <div className={styles.carreaux_presentation_light}>
@@ -162,8 +182,12 @@ class Boracay extends React.Component {
           <div className="d-flex justify-content-center pt-4">
             <h2 className="text-light">Event Gather</h2>
           </div>
-          <div className={styles + ' mt-5 d-flex align-items-center justify-content-center'}>
-            <div onClick={this.RedirectTagaytayGatherCorporate}>
+          <div
+            className={
+              styles + ' mt-5 d-flex align-items-center justify-content-center'
+            }
+          >
+            <div role="button" onClick={this.RedirectTagaytayGatherCorporate}>
               <Card className={styles.CardHolders}>
                 <CardImg
                   top
@@ -177,7 +201,7 @@ class Boracay extends React.Component {
                 </CardBody>
               </Card>
             </div>
-            <div onClick={this.RedirectTagaytayGatherWedding}>
+            <div role="button" onClick={this.RedirectTagaytayGatherWedding}>
               <Card className={styles.CardHolders}>
                 <CardImg
                   top
@@ -191,7 +215,7 @@ class Boracay extends React.Component {
                 </CardBody>
               </Card>
             </div>
-            <div onClick={this.RedirectTagaytayGatherMilestone}>
+            <div role="button" onClick={this.RedirectTagaytayGatherMilestone}>
               <Card className={styles.CardHolders}>
                 <CardImg
                   top
@@ -212,45 +236,21 @@ class Boracay extends React.Component {
           Testimonials
         */}
 
-        <div>
-          <div className={styles.HotelTestimonials + ' container-fluid d-flex justify-content-center align-items-center'}>
-            <div className={styles.HotelsTestimonialText + ' border border-2 rounded p-4'}>
-              <h4>outstanding home away from home</h4>
-              <p>
-                "Great facilities, food and a welcoming staff make this my go-to
-                for work/leisure travel in PNW!"
-              </p>
-            </div>
-            <div className={styles.HotelsTestimonialText + ' border border-2 rounded p-4'}>
-              <h4>always a great place to stay</h4>
-              <p>
-                "Their restaurants (Splash and Polaris) have excellent healthy
-                food. Super friendly people. Will always come back to this
-                hotel."
-              </p>
-            </div>
-            <div className={styles.HotelsTestimonialText + ' border border-2 rounded p-4'}>
-              <h4>amazing place to stay here</h4>
-              <p>
-                "The staff was so friendly and professional, super helpful too.
-                The room was clean and had everything we needed."
-              </p>
-            </div>
-            <div className={styles.HotelsTestimonialText + ' border border-2 rounded p-4'}>
-              <h4>excellent hotel with club experience</h4>
-              <p>
-                "This is a high-class property with a boutique hotel feel. I
-                have stayed here many times over the years and it has always
-                been a consistently good experience."
-              </p>
-            </div>
-            <hr />
-          </div>
-        </div>
+        <Testimonial />
 
-        <div className={styles.map_cont + '  d-flex align-items-center justify-content-center'}>
+        {/* MAPS */}
+        <div
+          className={
+            styles.map_cont +
+            '  d-flex align-items-center justify-content-center'
+          }
+        >
           <div className="row container">
-            <div className={styles.boraAddress + ' col-6 d-flex align-items-center'}>
+            <div
+              className={
+                styles.boraAddress + ' col-6 d-flex align-items-center'
+              }
+            >
               <div className={styles.address + ' p-1'}>
                 <div className="d-flex justify-content-center">
                   <h1>7Seven Luxury | Tagaytay</h1>

@@ -1,0 +1,21 @@
+/* TESTIMONIAL */
+
+.HotelTestimonials {
+  /* margin-top: -240px; */
+  background: url('https://newbt.org/wp-content/uploads/2019/01/AdobeStock_143798795.jpeg')
+    no-repeat;
+  background-size: cover;
+  height: 80vh;
+}
+
+.HotelsTestimonialText {
+  width: 280px;
+  height: 360px;
+  margin: 30px;
+  letter-spacing: 0.1em;
+  background: url('https://tse3.mm.bing.net/th?id=OIP.RLe63GG-1P5-Sjmez2iegQHaEo&pid=Api&P=0')
+    no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: rgb(0, 0, 0);
+}
