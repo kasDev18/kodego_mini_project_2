@@ -20,25 +20,30 @@ class BoracayRoomsSolo extends React.Component {
         {/* 
           Description Hotel
         */}
-        <div className={styles.BoracayDescription + ' container'}>
-          <p>
-            When you need a large venue for your business seminar or company
-            banquet, the 7Seven Luxury Hotel is sure to impress. Invite up to
-            144 guests, and we take care of the rest. The 7Seven Luxury Hotel
-            can be divided into two distinctive suites – one for business
-            presentations and the other for dining and discussions, or one for a
-            brainstorm over breakfast followed by a productive training session
-            in the other. A separate anteroom can also be used as a breakout
-            room during meetings, a VIP room for events or an interview room.
-            Whatever your agenda, the 7Seven Luxury Hotel at somewhere adapts to
-            meet your requirements.
-          </p>
+        <div className={styles.BoracayDescription}>
+          <h2 className={styles.title + ' d-flex justify-content-center m-5'}>
+            7Seven Luxury Hotel | Room Solo
+          </h2>
+          <div className={styles + ' container d-flex align-items-center'}>
+            <h5>
+              When you need a large venue for your business seminar or company
+              banquet, the 7Seven Luxury Hotel is sure to impress. Invite up to
+              144 guests, and we take care of the rest. The 7Seven Luxury Hotel
+              can be divided into two distinctive suites – one for business
+              presentations and the other for dining and discussions, or one for a
+              brainstorm over breakfast followed by a productive training session
+              in the other. A separate anteroom can also be used as a breakout
+              room during meetings, a VIP room for events or an interview room.
+              Whatever your agenda, the 7Seven Luxury Hotel at somewhere adapts to
+              meet your requirements.
+            </h5>
+          </div>
         </div>
 
         {/* 
           Rooms
         */}
-        <div className={styles.booking_cont + ' my-5'}>
+        <div className={styles.booking_cont}>
           <div className="row my-5">
             <div className={styles.HotelPackage + ' col-6'}>
               <Link to=" ">
