@@ -8,17 +8,17 @@ class RoomPremier extends React.Component {
   RedirectTagaytayPremierRoom = () => {
     setTimeout(() => {
       window.location = '/services-rooms-premier/tagaytay';
-    }, 1500);
+    }, 500);
   };
   RedirectBoracayPremierRoom = () => {
     setTimeout(() => {
       window.location = '/services-rooms-premier/boracay';
-    }, 1500);
+    }, 500);
   };
   RedirectElNidoPremierRoom = () => {
     setTimeout(() => {
       window.location = '/services-rooms-premier/elnido';
-    }, 1500);
+    }, 500);
   };
 
   render() {
