@@ -48,6 +48,7 @@ import ElNidoPremier from './Hotel/El_Nido/El_Nido_Rooms/El_Nido_Rooms_Premier/E
 import Footer from './components/Footer/Footer';
 import SignIn from './components/SignIn/SignIn';
 import Register from './components/Register/Register';
+import NotFound from './components/NotFound/NotFound';
 
 class App extends React.Component {
   render() {
@@ -168,6 +169,7 @@ class App extends React.Component {
               path="/gathering-milestone/elnido"
               element={<ElNidoGatheringMilestone />}
             />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </div>
         <Footer />

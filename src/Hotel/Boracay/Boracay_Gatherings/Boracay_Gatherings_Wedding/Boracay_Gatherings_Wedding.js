@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './Boracay_Gatherings_Wedding.module.css';
 import { Link } from 'react-router-dom';
 import BookingForm from '../../../../components/BookingForm/BookingForm';
+import ModalComponent from '../../../../components/ModalComponent/ModalComponentMilestone';
 
 class BoracayGatheringsWedding extends React.Component {
   render() {
@@ -51,7 +52,9 @@ class BoracayGatheringsWedding extends React.Component {
                     }}
                   >
                     <div className={styles.shadow_swhow_mini}>
-                      <div className={styles.deroul_titre}>Package 1</div>
+                      <div className={styles.deroul_titre}>
+                        <ModalComponent />
+                      </div>
                       <div class={styles.deroul_soustitre}>Book Now!</div>
                     </div>
                   </div>
@@ -68,7 +71,9 @@ class BoracayGatheringsWedding extends React.Component {
                     }}
                   >
                     <div className={styles.shadow_swhow_mini}>
-                      <div className={styles.deroul_titre}>Package 2</div>
+                      <div className={styles.deroul_titre}>
+                        <ModalComponent />
+                      </div>
                       <div class={styles.deroul_soustitre}>Book Now!</div>
                     </div>
                   </div>
@@ -85,7 +90,9 @@ class BoracayGatheringsWedding extends React.Component {
                     }}
                   >
                     <div className={styles.shadow_swhow_mini}>
-                      <div className={styles.deroul_titre}>Package 3</div>
+                      <div className={styles.deroul_titre}>
+                        <ModalComponent />
+                      </div>
                       <div class={styles.deroul_soustitre}>Book Now!</div>
                     </div>
                   </div>

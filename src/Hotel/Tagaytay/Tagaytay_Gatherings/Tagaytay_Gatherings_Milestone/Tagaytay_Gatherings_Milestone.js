@@ -68,7 +68,6 @@ class TagaytayGatheringsMilestone extends React.Component {
                   >
                     <div className={styles.shadow_swhow_mini}>
                       <div className={styles.deroul_titre}>
-                        {' '}
                         <ModalComponent />
                       </div>
                       <div class={styles.deroul_soustitre}>Book Now!</div>
