@@ -34,9 +34,9 @@ class ElNidoGatheringsWedding extends React.Component {
         {/* 
           Rooms
         */}
-        <div className="container my-5 ">
+        <div className="container my-5 pb-5">
           <h1 className="text-center">Choose your Package</h1>
-          <div className="row my-5">
+          <div className="row pb-5">
             <div className={styles.HotelPackage + ' col-4'}>
               <div align="center" class="fond">
                 <div
@@ -92,7 +92,7 @@ class ElNidoGatheringsWedding extends React.Component {
         </div>
 
         <div className="container mt-5 bg-body">
-          <h1 className="text-center mb-4">Book Now!</h1>
+          <h1 className="text-center mb-5">Book Now!</h1>
 
           <BookingForm />
         </div>

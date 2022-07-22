@@ -93,7 +93,7 @@ class ElNidoGatheringsMilestone extends React.Component {
         </div>
 
         <div className="container mt-5 bg-body">
-          <h1 className="text-center mb-4">Book Now!</h1>
+          <h1 className="text-center mb-4 pb-4">Book Now!</h1>
 
           <BookingForm />
         </div>
