@@ -9,9 +9,24 @@
   object-fit: cover;
 }
 
+.locations_cont {
+  background: url('https://media1.thehungryjpeg.com/thumbs2/800_3519786_ae9e6acb5ff5991558409f1bcd9587cff1d64367_white-empty-room-3d-modern-blank-interior-vector-home-background.jpg')no-repeat;
+  background-size: cover;
+}
+
+.rooms_opening_title {
+  font-size: 40px;
+  transform: translateY(80px);
+}
+
+
 .BoracayDescription {
   padding: 20px;
   letter-spacing: 0.05em;
+}
+
+.locations {
+  font-weight: 900;
 }
 
 .HotelPackage {
@@ -32,13 +47,14 @@
 
 .carreaux_presentation_light {
   display: table-cell;
-  width: 450px;
-  height: 450px;
+  width: 350px;
+  height: 400px;
   background-size: cover;
   overflow: hidden;
   position: relative;
   background-image: url(https://upload.wikimedia.org/wikipedia/commons/8/83/Paraw_sailboats_in_Boracay_2.jpg);
 }
+
 .carreaux_presentation_light .shadow_swhow_mini {
   background-color: rgba(19, 30, 33, 0.4);
   position: absolute;
@@ -48,9 +64,11 @@
   right: 0;
   bottom: 0;
 }
+
 .carreaux_presentation_light:hover .shadow_swhow_mini {
   background-color: rgba(16, 23, 41, 0);
 }
+
 .carreaux_presentation_light .deroul_titre {
   position: absolute;
   text-transform: uppercase;
@@ -68,10 +86,12 @@
   -ms-transition: all 0.7s;
   transition: all 0.7s;
 }
+
 .carreaux_presentation_light:hover .deroul_titre {
   background-color: #1e4944;
   left: 0px;
 }
+
 .carreaux_presentation_light .deroul_soustitre {
   position: absolute;
   font-family: 'Roboto';
@@ -89,6 +109,7 @@
   -ms-transition: all 0.7s;
   transition: all 0.7s;
 }
+
 .carreaux_presentation_light:hover .deroul_soustitre {
   background-color: #417c74;
   right: 0px;
@@ -109,11 +130,13 @@
 .HotelGatheringContainer a {
   color: #111;
 }
+
 .HotelGatheringImage {
   margin-top: 400px;
   margin-left: 12px;
   position: relative;
 }
+
 .photo {
   transform: translate(-50%, -50%);
   display: inline-block;
@@ -215,6 +238,7 @@
   text-align: center;
   border-top-width: medium;
 }
+
 .Awards img {
   height: 120px;
   width: 120px;
@@ -230,4 +254,9 @@
   margin-right: auto;
   margin-top: 120px;
   width: 18em;
+}
+
+.inclusion {
+  height: 180vh;
+  margin-top: -50px;
 }
