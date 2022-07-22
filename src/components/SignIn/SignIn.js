@@ -2,11 +2,6 @@ import React from 'react';
 import { FormGroup, Label, Input } from 'reactstrap';
 
 export class SignIn extends React.Component {
-  homepage = () => {
-    setTimeout(() => {
-      window.location = '/tagaytay';
-    }, 1500);
-  };
 
   render() {
     return (

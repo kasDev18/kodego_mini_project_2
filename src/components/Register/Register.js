@@ -2,6 +2,11 @@ import React from 'react';
 import { FormGroup, Label, Input, FormText, Button } from 'reactstrap';
 import styles from './Register.module.css';
 export class Register extends React.Component {
+  homepage = () => {
+    setTimeout(() => {
+      window.location = '/';
+    }, 1500);
+  };
   render() {
     return (
       <div>
@@ -11,6 +16,7 @@ export class Register extends React.Component {
               <div class="row gx-lg-5 align-items-center">
                 <div class="col-lg-6 mb-5 mb-lg-0">
                   <h1 class="my-5 display- fw-bold ls-tight">
+                    <button onClick={this.homepage} class="btn-primary btn">submit</button>
                     7SEVEN LUXURY HOTEL <br />
                     <span class="text-primary">your urban oasis awaits</span>
                   </h1>
@@ -87,9 +93,7 @@ export class Register extends React.Component {
                             </Label>
                           </FormGroup>
                         </div>
-                        <button
-                          type="submit"
-                          class="btn btn-primary btn-block mb-4"
+                        <button onClick={this.homepage}
                         >
                           Sign up
                         </button>
