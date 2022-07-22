@@ -124,7 +124,7 @@ class Boracay extends React.Component {
                 </div>
               </div>
             </div>
-            <div className={styles.HotelPackage + ' col-6 '}>
+            <div className={styles.HotelPackage + ' col-6 pb-5'}>
               <div align="center" class="fond">
                 <div
                   className={styles.carreaux_presentation_light}
