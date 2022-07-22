@@ -109,9 +109,6 @@ class About extends React.Component {
               Philippines’ most celebrated fashion designer – Mr. Francis
               Libiran.
             </p>
-            <div className="text-center">
-              <span className="btn btn-primary">BOOK NOW</span>
-            </div>
           </div>
         </div>
       </>
