@@ -21,8 +21,11 @@ class TagaytayRoomsPremier extends React.Component {
           Description Hotel
         */}
         <div className={styles.BoracayDescription}>
-          <p className='p-5'>
-            <b>
+          <h2 className={styles.title + ' d-flex justify-content-center m-5'}>
+            7Seven Luxury Hotel | Tagaytay Room Solo
+          </h2>
+          <div className={styles + ' container d-flex align-items-center'}>
+            <h5>
               When you need a large venue for your business seminar or company
               banquet, the 7Seven Luxury Hotel is sure to impress. Invite up to
               144 guests, and we take care of the rest. The 7Seven Luxury Hotel
@@ -33,57 +36,14 @@ class TagaytayRoomsPremier extends React.Component {
               room during meetings, a VIP room for events or an interview room.
               Whatever your agenda, the 7Seven Luxury Hotel at somewhere adapts to
               meet your requirements.
-            </b>
-          </p>
+            </h5>
+          </div>
         </div>
 
         {/* 
           Rooms
         */}
-        {/* <div className={styles.booking_cont + ' my-5'}>
-          <div className="row my-5">
-            <div className={styles.HotelPackage + ' col-6'}>
-              <Link to=" ">
-                <div align="center" class="fond">
-                  <div
-                    className={styles.carreaux_presentation_light}
-                    style={{
-                      backgroundImage: `url("https://dynamic-media-cdn.tripadvisor.com/media/photo-o/07/43/c7/14/avant-penthouse-suite--v4858299.jpg?w=1200&h=-1&s=1")`,
-                    }}
-                  >
-                    <div className={styles.shadow_swhow_mini}>
-                      <div className={styles.deroul_titre}>TAGAYTAY</div>
-                      <div class={styles.deroul_soustitre}>Book Now!</div>
-                    </div>
-                  </div>
-                </div>
-              </Link>
-            </div>
-            <div className={styles.HotelPackage + ' col-6'}>
-              <div className={styles.boraAddress}>
-                <h1 className="mb-5">PREMIER ROOM</h1>
-                <p>
-                  <strong>Floor area:</strong> 27 sqm
-                </p>
-                <p>
-                  <strong>Bed Configuration:</strong> Available in twin or queen
-                  bed configurations
-                </p>
-                <p>
-                  The room features a queen-sized bed. It has a spacious balcony
-                  and the most charming view of the Newcoast Beach and the
-                  Boracay Keyhole.
-                </p>
-              </div>
-            </div>
-            <div className="text-center mt-5">
-              <div>
-                <RoomSoloModal />
-              </div>
-            </div>
-          </div>
-        </div> */}
-        <div className={styles.booking_cont + ' my-5'}>
+        <div className={styles.booking_cont}>
           <div className="row my-5">
             <div className={styles.HotelPackage + ' col-6'}>
               <Link to=" ">
