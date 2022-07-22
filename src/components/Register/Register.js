@@ -1,4 +1,5 @@
 import React from 'react';
+import { FormGroup, Label, Input, FormText, Button } from 'reactstrap';
 import styles from './Register.module.css';
 export class Register extends React.Component {
   render() {
@@ -76,16 +77,15 @@ export class Register extends React.Component {
                         </div>
 
                         <div class="form-check d-flex justify-content-center mb-4">
-                          <input
-                            class="form-check-input me-2"
-                            type="checkbox"
-                            value=""
-                            id="form2Example33"
-                            checked
-                          />
-                          <label class="form-check-label" for="form2Example33">
-                            Subscribe to our newsletter
-                          </label>
+                          <FormGroup check>
+                            <Label check>
+                              <Input type="checkbox" /> Subscribe to our
+                              newsletter
+                              <span className="form-check-sign">
+                                <span className="check"></span>
+                              </span>
+                            </Label>
+                          </FormGroup>
                         </div>
                         <button
                           type="submit"

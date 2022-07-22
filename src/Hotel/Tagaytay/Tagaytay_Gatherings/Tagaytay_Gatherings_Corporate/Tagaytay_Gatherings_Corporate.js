@@ -2,8 +2,18 @@ import React from 'react';
 import styles from './Tagaytay_Gatherings_Corporate.module.css';
 import { Link } from 'react-router-dom';
 import BookingForm from '../../../../components/BookingForm/BookingForm';
-
+import ModalComponent from '../../../../components/ModalComponent/ModalComponentCorporate';
 class TagaytayGatheringsCorporate extends React.Component {
+  state = {
+    openModal: false,
+  };
+  onClickButton = (e) => {
+    e.preventDefault();
+    this.setState({ openModal: true });
+  };
+  onCloseModal = () => {
+    this.setState({ openModal: false });
+  };
   render() {
     return (
       <>
@@ -38,21 +48,21 @@ class TagaytayGatheringsCorporate extends React.Component {
           <h1 className="text-center">Choose your Package</h1>
           <div className="row my-5">
             <div className={styles.HotelPackage + ' col-4'}>
-              <Link to=" ">
-                <div align="center" class="fond">
-                  <div
-                    className={styles.carreaux_presentation_light}
-                    style={{
-                      backgroundImage: `url("https://img.tagvenue.com/resize/ef/d1/widen-1680-noupsize;5076-whole-venue-room.jpg")`,
-                    }}
-                  >
-                    <div className={styles.shadow_swhow_mini}>
-                      <div className={styles.deroul_titre}>Package 1</div>
-                      <div class={styles.deroul_soustitre}>Book Now!</div>
+              <div align="center" class="fond">
+                <div
+                  className={styles.carreaux_presentation_light}
+                  style={{
+                    backgroundImage: `url("https://img.tagvenue.com/resize/ef/d1/widen-1680-noupsize;5076-whole-venue-room.jpg")`,
+                  }}
+                >
+                  <div className={styles.shadow_swhow_mini}>
+                    <div className={styles.deroul_titre}>
+                      <ModalComponent />
                     </div>
+                    <div class={styles.deroul_soustitre}>Book Now!</div>
                   </div>
                 </div>
-              </Link>
+              </div>
             </div>
             <div className={styles.HotelPackage + ' col-4'}>
               <Link to=" ">
@@ -64,7 +74,9 @@ class TagaytayGatheringsCorporate extends React.Component {
                     }}
                   >
                     <div className={styles.shadow_swhow_mini}>
-                      <div className={styles.deroul_titre}>Package 2</div>
+                      <div className={styles.deroul_titre}>
+                        <ModalComponent />
+                      </div>
                       <div class={styles.deroul_soustitre}>Book Now!</div>
                     </div>
                   </div>
@@ -72,21 +84,25 @@ class TagaytayGatheringsCorporate extends React.Component {
               </Link>
             </div>
             <div className={styles.HotelPackage + ' col-4'}>
-              <Link to=" ">
-                <div align="center" class="fond">
-                  <div
-                    className={styles.carreaux_presentation_light}
-                    style={{
-                      backgroundImage: `url("https://img.tagvenue.com/resize/73/80/widen-1680-noupsize;13673-the-waiting-room-room.jpg")`,
-                    }}
-                  >
-                    <div className={styles.shadow_swhow_mini}>
-                      <div className={styles.deroul_titre}>Package 3</div>
-                      <div class={styles.deroul_soustitre}>Book Now!</div>
+              <div
+                align="center"
+                class="fond cursor-pointer"
+                onClick={this.showModal}
+              >
+                <div
+                  className={styles.carreaux_presentation_light}
+                  style={{
+                    backgroundImage: `url("https://img.tagvenue.com/resize/73/80/widen-1680-noupsize;13673-the-waiting-room-room.jpg")`,
+                  }}
+                >
+                  <div className={styles.shadow_swhow_mini}>
+                    <div className={styles.deroul_titre}>
+                      <ModalComponent />
                     </div>
+                    <div class={styles.deroul_soustitre}>Book Now!</div>
                   </div>
                 </div>
-              </Link>
+              </div>
             </div>
           </div>
         </div>

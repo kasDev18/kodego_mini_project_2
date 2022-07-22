@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './Tagaytay_Gatherings_Wedding.module.css';
 import { Link } from 'react-router-dom';
 import BookingForm from '../../../../components/BookingForm/BookingForm';
+import ModalComponentWedding from '../../../../components/ModalComponent/ModalComponentWedding';
 
 class TagaytayGatheringsWedding extends React.Component {
   render() {
@@ -47,7 +48,9 @@ class TagaytayGatheringsWedding extends React.Component {
                     }}
                   >
                     <div className={styles.shadow_swhow_mini}>
-                      <div className={styles.deroul_titre}>Package 1</div>
+                      <div className={styles.deroul_titre}>
+                        <ModalComponentWedding />
+                      </div>
                       <div class={styles.deroul_soustitre}>Book Now!</div>
                     </div>
                   </div>
@@ -64,7 +67,9 @@ class TagaytayGatheringsWedding extends React.Component {
                     }}
                   >
                     <div className={styles.shadow_swhow_mini}>
-                      <div className={styles.deroul_titre}>Package 2</div>
+                      <div className={styles.deroul_titre}>
+                        <ModalComponentWedding />
+                      </div>
                       <div class={styles.deroul_soustitre}>Book Now!</div>
                     </div>
                   </div>
@@ -81,7 +86,9 @@ class TagaytayGatheringsWedding extends React.Component {
                     }}
                   >
                     <div className={styles.shadow_swhow_mini}>
-                      <div className={styles.deroul_titre}>Package 3</div>
+                      <div className={styles.deroul_titre}>
+                        <ModalComponentWedding />
+                      </div>
                       <div class={styles.deroul_soustitre}>Book Now!</div>
                     </div>
                   </div>

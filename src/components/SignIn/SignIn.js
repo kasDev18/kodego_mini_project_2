@@ -1,6 +1,13 @@
 import React from 'react';
+import { FormGroup, Label, Input } from 'reactstrap';
 
 export class SignIn extends React.Component {
+  homepage = () => {
+    setTimeout(() => {
+      window.location = '/tagaytay';
+    }, 1500);
+  };
+
   render() {
     return (
       <div>
@@ -53,16 +60,14 @@ export class SignIn extends React.Component {
               <div class="row mb-4">
                 <div class="col-md-6 d-flex justify-content-center">
                   <div class="form-check mb-3 mb-md-0">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="loginCheck"
-                      checked
-                    />
-                    <label class="form-check-label" for="loginCheck">
-                      Remember me
-                    </label>
+                    <FormGroup check>
+                      <Label check>
+                        <Input type="checkbox" /> Remember me
+                        <span className="form-check-sign">
+                          <span className="check"></span>
+                        </span>
+                      </Label>
+                    </FormGroup>
                   </div>
                 </div>
 
@@ -71,7 +76,11 @@ export class SignIn extends React.Component {
                 </div>
               </div>
 
-              <button type="submit" class="btn btn-primary btn-block mb-4">
+              <button
+                onClick={this.homepage}
+                type="submit"
+                class="btn btn-primary btn-block mb-4"
+              >
                 Sign in
               </button>
 
