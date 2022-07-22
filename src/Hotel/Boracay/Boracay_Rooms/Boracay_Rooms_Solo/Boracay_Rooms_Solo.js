@@ -22,7 +22,7 @@ class BoracayRoomsSolo extends React.Component {
         */}
         <div className={styles.BoracayDescription}>
           <h2 className={styles.title + ' d-flex justify-content-center m-5'}>
-            7Seven Luxury Hotel | Room Solo
+            7Seven Luxury Hotel | Boracay Room Solo
           </h2>
           <div className={styles + ' container d-flex align-items-center'}>
             <h5>
