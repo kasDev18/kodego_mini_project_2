@@ -1,22 +1,20 @@
 import React from 'react';
 import styles from './Newsletter_Modal.module.css';
-import {
-  Button, FormGroup, Input, Modal, Row,
-  Col,
-} from "reactstrap";
+import { Button, FormGroup, Input, Modal, Row, Col } from 'reactstrap';
 
 function Newsletter_Modal() {
   const [loginModal, setLoginModal] = React.useState(false);
 
   const submit_btn = () => {
     window.location = '/';
-  }
+  };
 
   return (
     <>
       <a
         className=" text-white bg-gradient-warning p-2 border rounded mx-5 px-4"
         onClick={() => setLoginModal(true)}
+        role="button"
       >
         Login modal
       </a>
@@ -35,7 +33,7 @@ function Newsletter_Modal() {
           >
             <span aria-hidden={true}>×</span>
           </button>
-          <div className='d-flex justify-content-center mx-5'>
+          <div className="d-flex justify-content-center mx-5">
             <img
               src="http://static.pinnula.fr/news/i/win7-yellow-logo.png"
               width="50px"
@@ -58,12 +56,12 @@ function Newsletter_Modal() {
               <Input type="text" placeholder="Last name" />
             </Col>
           </Row>
-          <FormGroup className='mt-1'>
+          <FormGroup className="mt-1">
             <label>Email</label>
             <Input defaultValue="" placeholder="Email" type="text" />
           </FormGroup>
-          <div className="d-flex justify-content-center" >
-            <Button className="btn" color='success' onClick={submit_btn}>
+          <div className="d-flex justify-content-center">
+            <Button className="btn" color="success" onClick={submit_btn}>
               Submit
             </Button>
           </div>
