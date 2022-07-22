@@ -37,7 +37,7 @@ class About extends React.Component {
         {/* 
           Rooms
         */}
-        <div className="container">
+        <div className="container pb-5">
           <div className="row">
             <div className={styles.HotelPackage + ' col-6'}>
               <div align="center" class="fond">
