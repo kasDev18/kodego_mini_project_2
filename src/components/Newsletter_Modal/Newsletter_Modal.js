@@ -12,11 +12,11 @@ function Newsletter_Modal() {
   return (
     <>
       <a
-        className=" text-white bg-gradient-warning p-2 border rounded mx-5 px-4"
+        className=" text-white bg-gradient-warning p-2 border rounded mx-5 px-5"
         onClick={() => setLoginModal(true)}
         role="button"
       >
-        Login modal
+        Submit
       </a>
       <Modal
         isOpen={loginModal}

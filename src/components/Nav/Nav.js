@@ -249,7 +249,7 @@ function IndexNavbar() {
             <img
               alt="..."
               className={styles.image_loader}
-              src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp"
+              src="https://res.cloudinary.com/sonder/image/private/s--kIPc5Gjx--/c_fill,f_auto,q_auto:eco,w_2000/v1/s3assets/unit_images/images/000/217/845/original/eTdSEWQ5.jpg"
             />
             <Loader />
           </>
@@ -261,7 +261,7 @@ function IndexNavbar() {
             <img
               alt="..."
               className={styles.image_loader}
-              src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp"
+              src="https://res.cloudinary.com/sonder/image/private/s--kIPc5Gjx--/c_fill,f_auto,q_auto:eco,w_2000/v1/s3assets/unit_images/images/000/217/845/original/eTdSEWQ5.jpg"
             />
             <Loader />
           </>
@@ -273,7 +273,7 @@ function IndexNavbar() {
             <img
               alt="..."
               className={styles.image_loader}
-              src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp"
+              src="https://res.cloudinary.com/sonder/image/private/s--kIPc5Gjx--/c_fill,f_auto,q_auto:eco,w_2000/v1/s3assets/unit_images/images/000/217/845/original/eTdSEWQ5.jpg"
             />
             <Loader />
           </>
@@ -285,7 +285,7 @@ function IndexNavbar() {
             <img
               alt="..."
               className={styles.image_loader}
-              src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp"
+              src="https://milestonehotel.com/media/qpeflslh/the-milestone-wedding_5.jpg?width=1920&height=1080&anchor=center&format=webp&mode=crop&quality=80&rnd=132406786275430000&scale=both"
             />
             <Loader />
           </>
@@ -297,7 +297,7 @@ function IndexNavbar() {
             <img
               alt="..."
               className={styles.image_loader}
-              src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp"
+              src="https://theroomshotel.ru/public/frontend/images/business-services/business-services-4.jpg"
             />
             <Loader />
           </>
@@ -309,7 +309,7 @@ function IndexNavbar() {
             <img
               alt="..."
               className={styles.image_loader}
-              src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp"
+              src="https://content.redcarnationhotels.com/cache/5/6/9/d/2/f/569d2f5cd631a8c0d1f5932d1015a8fab32b4b17.webp"
             />
             <Loader />
           </>
@@ -321,7 +321,7 @@ function IndexNavbar() {
             <img
               alt="..."
               className={styles.image_loader}
-              src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp"
+              src="https://api.crimsonhotel.com/storage/media/image/slide/6ea9ab1baa0efb9e19094440c317e21b/video-poster-slide/698d51a19d8a121ce581499d7b701668/about-us.jpg?v=1576117329"
             />
             <Loader />
           </>
@@ -333,7 +333,7 @@ function IndexNavbar() {
             <img
               alt="..."
               className={styles.image_loader}
-              src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp"
+              src="https://api.crimsonhotel.com/storage/media/image/facility/c51ce410c124a10e0db5e4b97fc2af39/web-banner/eddb904a6db773755d2857aacadb1cb0/Untitled-2.jpg?v=1578638356"
             />
             <Loader />
           </>
@@ -345,7 +345,7 @@ function IndexNavbar() {
             <img
               alt="..."
               className={styles.image_loader}
-              src="https://www.kayak.com/rimg/himg/73/eb/75/hotelsdotcom-645023616-49873c22_w-273737.jpg?width=2160&height=1215&crop=true&outputtype=webp"
+              src="hhttp://localhost:3000/images/gallery.webp"
             />
             <Loader />
           </>

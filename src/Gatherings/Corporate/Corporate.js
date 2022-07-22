@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './Corporate.module.css';
-import { Link } from 'react-router-dom';
 import Testimonial from '../../components/Testimonial/Testimonial';
 
 class Corporate extends React.Component {
