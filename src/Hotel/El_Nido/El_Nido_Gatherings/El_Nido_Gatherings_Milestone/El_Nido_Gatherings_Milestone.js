@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './El_Nido_Gatherings_Milestone.module.css';
-import { Link } from 'react-router-dom';
 import BookingForm from '../../../../components/BookingForm/BookingForm';
 import ModalComponent from '../../../../components/ModalComponent/ModalComponentMilestone';
 
@@ -21,7 +20,7 @@ class ElNidoGatheringsMilestone extends React.Component {
         {/* 
           Description Hotel
         */}
-        <div className={styles.BoracayDescription}>
+        <div className={styles.BoracayDescription + ' container'}>
           <p>
             We pour our creativity into every room, always with our guests’
             comfort in mind. Each room has a distinct character, filled with
@@ -39,62 +38,56 @@ class ElNidoGatheringsMilestone extends React.Component {
           <h1 className="text-center">Choose your Package</h1>
           <div className="row my-5">
             <div className={styles.HotelPackage + ' col-4'}>
-              <Link to=" ">
-                <div align="center" class="fond">
-                  <div
-                    className={styles.carreaux_presentation_light}
-                    style={{
-                      backgroundImage: `url("https://img.tagvenue.com/resize/d8/33/widen-1680-noupsize;14525-the-london-gin-club-venue.jpg")`,
-                    }}
-                  >
-                    <div className={styles.shadow_swhow_mini}>
-                      <div className={styles.deroul_titre}>
-                        <ModalComponent />{' '}
-                      </div>
-                      <div class={styles.deroul_soustitre}>Book Now!</div>
+              <div align="center" class="fond">
+                <div
+                  className={styles.carreaux_presentation_light}
+                  style={{
+                    backgroundImage: `url("https://img.tagvenue.com/resize/d8/33/widen-1680-noupsize;14525-the-london-gin-club-venue.jpg")`,
+                  }}
+                >
+                  <div className={styles.shadow_swhow_mini}>
+                    <div className={styles.deroul_titre}>
+                      <ModalComponent />
                     </div>
+                    <div class={styles.deroul_soustitre}>Book Now!</div>
                   </div>
                 </div>
-              </Link>
+              </div>
             </div>
             <div className={styles.HotelPackage + ' col-4'}>
-              <Link to=" ">
-                <div align="center" class="fond">
-                  <div
-                    className={styles.carreaux_presentation_light}
-                    style={{
-                      backgroundImage: `url("https://img.tagvenue.com/resize/59/48/widen-1680-noupsize;335-whole-venue-room.jpg")`,
-                    }}
-                  >
-                    <div className={styles.shadow_swhow_mini}>
-                      <div className={styles.deroul_titre}>
-                        {' '}
-                        <ModalComponent />
-                      </div>
-                      <div class={styles.deroul_soustitre}>Book Now!</div>
+              <div align="center" class="fond">
+                <div
+                  className={styles.carreaux_presentation_light}
+                  style={{
+                    backgroundImage: `url("https://img.tagvenue.com/resize/59/48/widen-1680-noupsize;335-whole-venue-room.jpg")`,
+                  }}
+                >
+                  <div className={styles.shadow_swhow_mini}>
+                    <div className={styles.deroul_titre}>
+                      {' '}
+                      <ModalComponent />
                     </div>
+                    <div class={styles.deroul_soustitre}>Book Now!</div>
                   </div>
                 </div>
-              </Link>
+              </div>
             </div>
             <div className={styles.HotelPackage + ' col-4'}>
-              <Link to=" ">
-                <div align="center" class="fond">
-                  <div
-                    className={styles.carreaux_presentation_light}
-                    style={{
-                      backgroundImage: `url("https://img.tagvenue.com/resize/e8/a3/widen-1680-noupsize;1219-main-space-room.jpg")`,
-                    }}
-                  >
-                    <div className={styles.shadow_swhow_mini}>
-                      <div className={styles.deroul_titre}>
-                        <ModalComponent />
-                      </div>
-                      <div class={styles.deroul_soustitre}>Book Now!</div>
+              <div align="center" class="fond">
+                <div
+                  className={styles.carreaux_presentation_light}
+                  style={{
+                    backgroundImage: `url("https://img.tagvenue.com/resize/e8/a3/widen-1680-noupsize;1219-main-space-room.jpg")`,
+                  }}
+                >
+                  <div className={styles.shadow_swhow_mini}>
+                    <div className={styles.deroul_titre}>
+                      <ModalComponent />
                     </div>
+                    <div class={styles.deroul_soustitre}>Book Now!</div>
                   </div>
                 </div>
-              </Link>
+              </div>
             </div>
           </div>
         </div>

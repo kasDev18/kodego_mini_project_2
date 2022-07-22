@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './El_Nido_Gatherings_Corporate.module.css';
 import { Link } from 'react-router-dom';
-import ModalComponent from '../../../../components/ModalComponent/ModalComponentMilestone';
+import ModalComponent from '../../../../components/ModalComponent/ModalComponentCorporate';
 import BookingForm from '../../../../components/BookingForm/BookingForm';
 
 class ElNidoGatheringsCorporate extends React.Component {

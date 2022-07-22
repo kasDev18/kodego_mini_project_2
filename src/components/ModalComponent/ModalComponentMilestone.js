@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import { Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import styles from './ModalComponent.module.css';
 
 import Pdf from './files/CapacitiesChart.pdf';
@@ -8,6 +8,8 @@ export default class ModalComponent extends React.Component {
   constructor(props) {
     super(props);
     this.state = { modal: false };
+
+    this.toggle = this.toggle.bind(this);
   }
 
   toggle() {
@@ -24,7 +26,7 @@ export default class ModalComponent extends React.Component {
         </span>
         <Modal isOpen={this.state.modal}>
           <form onSubmit={this.handleSubmit}>
-            <ModalHeader>Corporate</ModalHeader>
+            <ModalHeader>Milestone</ModalHeader>
             <ModalBody>
               <div className="row modal-lg">
                 <div class="row">
@@ -33,7 +35,7 @@ export default class ModalComponent extends React.Component {
                       <div class="col-8 col-sm-6">
                         <img
                           className={styles.ModalImg}
-                          src="https://www.bellevueclubhotel.com/wp-content/uploads/2019/06/Corporate-Banner.jpg"
+                          src="https://img.tagvenue.com/resize/d8/33/widen-1680-noupsize;14525-the-london-gin-club-venue.jpg"
                           alt=""
                         />
                       </div>
