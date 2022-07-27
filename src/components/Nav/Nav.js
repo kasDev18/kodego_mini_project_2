@@ -39,6 +39,7 @@ import i18next from 'i18next';
 import SignIn from '../SignIn/SignIn';
 
 function IndexNavbar() {
+
   // Language Selector
   const changeLanguage = (option) => {
     localStorage.setItem('lang', option.target.value);
@@ -53,14 +54,18 @@ function IndexNavbar() {
     }, 1500);
   };
 
-  const [redirectTagaytay, setRedirectTagaytay] = useState(false);
-  const handleSubmitTagaytay = async () => {
-    setRedirectTagaytay(true);
-
-    await new Promise((resolve) => setTimeout(resolve, 2000));
-
+  const handleSubmitTagaytay = () => {
     window.location = '/tagaytay';
-  };
+  }
+
+  const [redirectTagaytay, setRedirectTagaytay] = useState(false);
+  // const handleSubmitTagaytay = async () => {
+  //   setRedirectTagaytay(true);
+
+  //   await new Promise((resolve) => setTimeout(resolve, 2000));
+
+  //   window.location = '/tagaytay';
+  // };
   const [redirectBoracay, setRedirectBoracay] = useState(false);
   const handleSubmitBoracay = async () => {
     setRedirectBoracay(true);
