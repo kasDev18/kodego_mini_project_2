@@ -2,7 +2,6 @@ import React from 'react';
 import styles from './Tagaytay.module.css';
 import { Card, CardImg, CardBody, CardText } from 'reactstrap';
 import Testimonial from '../../components/Testimonial/Testimonial';
-import Loader from '../../components/Loader/Loader';
 
 const iframe =
   '<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15479.458475973914!2d120.8861609!3d14.085168!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x91c5bb9003d5e4f8!2sThe%20Oriental%20Luxury%20Suites!5e0!3m2!1sen!2sph!4v1658321397261!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
@@ -20,7 +19,6 @@ class Boracay extends React.Component {
     this.state = {
       boracay: false,
     };
-    this.getData();
   }
 
   // getData = () => {
