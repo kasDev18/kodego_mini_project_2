@@ -54,18 +54,18 @@ function IndexNavbar() {
     }, 1500);
   };
 
-  // const handleSubmitTagaytay = () => {
-  //   window.location = '/tagaytay';
-  // }
+  const handleSubmitTagaytay = () => {
+    window.location = '/tagaytay';
+  }
 
   const [redirectTagaytay, setRedirectTagaytay] = useState(false);
-  const handleSubmitTagaytay = async () => {
-    setRedirectTagaytay(true);
+  // const handleSubmitTagaytay = async () => {
+  //   setRedirectTagaytay(true);
 
-    await new Promise((resolve) => setTimeout(resolve, 2000));
+  //   await new Promise((resolve) => setTimeout(resolve, 2000));
 
-    window.location = '/tagaytay';
-  };
+  //   window.location = '/tagaytay';
+  // };
   const [redirectBoracay, setRedirectBoracay] = useState(false);
   const handleSubmitBoracay = async () => {
     setRedirectBoracay(true);
