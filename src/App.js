@@ -57,7 +57,7 @@ class App extends React.Component {
         <NavMenu />
         <div>
           <Routes>
-            <Route path="/" element={<Landing />} />
+            <Route path="/kodego_mini_project_2" element={<Landing />} />
             <Route path="/sign-up" element={<SignIn />} />
             <Route path="/register" element={<Register />} />
 
