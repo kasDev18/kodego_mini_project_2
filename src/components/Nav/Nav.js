@@ -19,6 +19,7 @@
 import React, { useState } from 'react';
 // nodejs library that concatenates stringsnpx generate-react-cli component About
 import classnames from 'classnames';
+import logo from './image/win7-yellow-logo.png'
 import styles from './Nav.module.css';
 // reactstrap components
 import {
@@ -373,7 +374,7 @@ function IndexNavbar() {
         >
           {i18next.t('7seven_luxury_hotel')}{' '}
           <img
-            src="http://static.pinnula.fr/news/i/win7-yellow-logo.png"
+            src={logo}
             width="50px"
             height="50px"
             class="img-fluid border rounded-circle"
