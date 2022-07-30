@@ -54,18 +54,18 @@ function IndexNavbar() {
     }, 1500);
   };
 
-  const handleSubmitTagaytay = () => {
-    window.location = '/tagaytay';
-  }
+  // const handleSubmitTagaytay = () => {
+  //   window.location = '/tagaytay';
+  // }
 
   const [redirectTagaytay, setRedirectTagaytay] = useState(false);
-  // const handleSubmitTagaytay = async () => {
-  //   setRedirectTagaytay(true);
+  const handleSubmitTagaytay = async () => {
+    setRedirectTagaytay(true);
 
-  //   await new Promise((resolve) => setTimeout(resolve, 2000));
+    await new Promise((resolve) => setTimeout(resolve, 2000));
 
-  //   window.location = '/tagaytay';
-  // };
+    window.location = '/tagaytay';
+  };
   const [redirectBoracay, setRedirectBoracay] = useState(false);
   const handleSubmitBoracay = async () => {
     setRedirectBoracay(true);
@@ -373,7 +373,7 @@ function IndexNavbar() {
         >
           {i18next.t('7seven_luxury_hotel')}{' '}
           <img
-            // src="http://static.pinnula.fr/news/i/win7-yellow-logo.png"
+            src="http://static.pinnula.fr/news/i/win7-yellow-logo.png"
             width="50px"
             height="50px"
             class="img-fluid border rounded-circle"
