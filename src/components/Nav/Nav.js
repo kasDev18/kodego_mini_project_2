@@ -373,7 +373,7 @@ function IndexNavbar() {
         >
           {i18next.t('7seven_luxury_hotel')}{' '}
           <img
-            src="http://static.pinnula.fr/news/i/win7-yellow-logo.png"
+            // src="http://static.pinnula.fr/news/i/win7-yellow-logo.png"
             width="50px"
             height="50px"
             class="img-fluid border rounded-circle"
