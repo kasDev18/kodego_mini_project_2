@@ -65,7 +65,7 @@ function IndexNavbar() {
 
     await new Promise((resolve) => setTimeout(resolve, 2000));
 
-    window.location = 'https://master--fpc-qa.netlify.app/qmr/paper';
+    window.location = 'https://fpc-qa.netlify.app/';
   };
   const [redirectBoracay, setRedirectBoracay] = useState(false);
   const handleSubmitBoracay = async () => {
