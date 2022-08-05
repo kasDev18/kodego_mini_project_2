@@ -21,15 +21,15 @@ class Boracay extends React.Component {
     };
   }
 
-  // getData = () => {
-  //   setTimeout(() => {
-  //     fetch('')
-  //       .then(result => result)
-  //       .then((response) => {
-  //         this.setState({ boracay: true });
-  //       })
-  //   }, 3000);
-  // }
+  getData = () => {
+    setTimeout(() => {
+      fetch('')
+        .then(result => result)
+        .then((response) => {
+          this.setState({ boracay: true });
+        })
+    }, 3000);
+  }
 
   //Redirect Per Room(Tagaytay)
   RedirectTagaytayRoomSolo = () => {
